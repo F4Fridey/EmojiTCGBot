@@ -1,0 +1,10 @@
+{
+  "token": "NzY2NDc0NTUxNDMzMjMyNDA1.X4j5DQ.8ws8Dtp3WwCBK6BDz6XJUn4H3Co",
+  "adminServerID": 766474798808432660,
+  "minXPreq": 5,
+  "maxXPreq": 16,
+  "chatXPmultiplier": 1,
+  "voiceChatXPmultiplier": 1,
+  "minXPvc": 3,
+  "maxXPvc": 13
+}

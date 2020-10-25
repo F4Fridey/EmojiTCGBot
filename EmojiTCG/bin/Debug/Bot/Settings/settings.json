@@ -1,0 +1,12 @@
+{
+  "token": "NzY2NDc0NTUxNDMzMjMyNDA1.X4j5DQ.8ws8Dtp3WwCBK6BDz6XJUn4H3Co",
+  "adminServerID": 766474798808432660,
+  "minXPreq": 5,
+  "maxXPreq": 16,
+  "chatXPmultiplier": 1,
+  "voiceChatXPmultiplier": 1,
+  "minXPvc": 3,
+  "maxXPvc": 13,
+  "announcement": "There has been an update!\nVersion 1.0.1\n\nNew cards have been added!\nNew can be found in the shop!\nNew daily prizes for this month!\nEnjoy!",
+  "notification": "New item in `=shop pinned` !\nCheck it out!"
+}

@@ -1,0 +1,93 @@
+[
+  {
+    "name": "Normal Pack",
+    "id": 0,
+    "emoji": "<:normall:766791680376307714>:grinning:<:normalr:766791680791281674>",
+    "amount": 5,
+    "maxLegends": 1,
+    "maxURares": 1,
+    "maxRares": 2,
+    "maxUncommons": 3,
+    "maxCommons": 4,
+    "cardsUcanGet": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54
+    ],
+    "possibleBuildup": [
+      {
+        "types": "0",
+        "chances": "1"
+      },
+      {
+        "types": "01",
+        "chances": "7-3"
+      },
+      {
+        "types": "01",
+        "chances": "5-5"
+      },
+      {
+        "types": "0123",
+        "chances": "4-3-2-1"
+      },
+      {
+        "types": "234",
+        "chances": "5-3-2"
+      }
+    ],
+    "notes": "This is a normal booster pack. You can get most cards from this."
+  }
+]
