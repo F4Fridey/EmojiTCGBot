@@ -18,7 +18,7 @@ namespace EmojiTCG.Modules
         public async Task Help()
         {
             string reply = "";
-            reply += "```diff\n+ All EmojiTCG Commands:\n  help - All these commands.\n  status - Status of the bot.\n  inventory/inv (@mention) - Check your inventory. Only add @mention to check another inventory.\n  shop - Browse the shop.\n  open ID = Open a booster pack with a specific id.\n  daily - Get your daily reward.\n  melt cardID - Melt a card into a coin.\n  card ID - Check a cards stats.\nX deck - Command for your decks.\nX battle - Command to battle.\nX invite - Invite the bot to your server with this.\n- Administrator Commands\n  setup - Setup the server.\n  serverid - Get the server ID of this server.\n  unlink (serverid) - Only add server ID only if servers are linked to this server.\n```";
+            reply += "```diff\n+ All EmojiTCG Commands:\n  help - All these commands.\n  tutorial - Get a detailed explanation of how to use this bot.\n  status - Status of the bot.\n  inventory/inv (@mention) - Check your inventory. Only add @mention to check another inventory.\n  shop - Browse the shop.\n  open ID = Open a booster pack with a specific id.\n  daily - Get your daily reward.\n  melt cardID - Melt a card into a coin.\n  card ID - Check a cards stats.\nX deck - Command for your decks.\nX battle - Command to battle.\nX invite - Invite the bot to your server with this.\n- Administrator Commands\n  setup - Setup the server.\n  serverid - Get the server ID of this server.\n  unlink (serverid) - Only add server ID only if servers are linked to this server.\n```";
             await ReplyAsync(reply);
         }
 
