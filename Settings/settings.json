@@ -6,5 +6,7 @@
   "chatXPmultiplier": 1,
   "voiceChatXPmultiplier": 1,
   "minXPvc": 3,
-  "maxXPvc": 13
+  "maxXPvc": 13,
+  "announcement": "There has been an update!\nVersion 1.0.1\n\nNew cards have been added!\nNew can be found in the shop!\nNew daily prizes for this month!\nEnjoy!",
+  "notification": "New item in `=shop pinned` !\nCheck it out!"
 }

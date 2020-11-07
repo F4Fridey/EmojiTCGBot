@@ -26,6 +26,9 @@ namespace EmojiTCG
         public static List<Cards.Booster> boosters = new List<Cards.Booster>();
         public static List<Cards.Badge> badges = new List<Cards.Badge>();
 
+        //saving
+        public static int numToSave = 0;
+
         //Set Up
         public static List<SettingUp> settingUpList = new List<SettingUp>();
 

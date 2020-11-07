@@ -24,6 +24,7 @@ namespace EmojiTCG.ServerData
         public bool importantAnnouncements { get; set; }
         public bool notifyAnnouncements { get; set; }
         public uint battleWins { get; set; }
+        public bool dmRecieved { get; set; }
     }
 
     public class Deck

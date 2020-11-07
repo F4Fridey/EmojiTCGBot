@@ -4,414 +4,1097 @@
     "type": 0,
     "emoji": "<:com_l:769344307383107584>:grinning:<:com_r:769344307333038100>",
     "id": 0,
-    "notes": "1§ITEM§0§HEAL$Be Happy$5$0$0§<:com_l:769344307383107584>:grinning:<:com_r:769344307333038100>§Because I'm happy, clap along if you feel like happiness is the truth!"
+    "fullEmoji": "<:com_l:769344307383107584>:grinning:<:com_r:769344307333038100>",
+    "desc": "Because I'm happy, clap along if you feel like happiness is the truth!",
+    "notes": "1§ITEM§0§HEAL$Be Happy$5$0$0"
   },
   {
-    "name": "Smile!",
-    "type": 0,
-    "emoji": "<:com_l:769344307383107584>:slight_smile:<:com_r:769344307333038100>",
+    "name": "We are number 1",
+    "type": 4,
+    "emoji": "<a:leg_l:769679906240987147>:first_place:<a:leg_r:769679906845622272>",
     "id": 1,
-    "notes": "1§ITEM§0§HEAL$Be Happy$5$0$0§<:com_l:769344307383107584>:slight_smile:<:com_r:769344307333038100>§Turn that frown, upsidedown!"
+    "fullEmoji": "<a:leg_l:769679906240987147>:first_place:<a:leg_r:769679906845622272>",
+    "desc": "<https://www.youtube.com/watch?v=PfYnvDL0Qcw&feature=youtu.be&t=28>",
+    "notes": "0§0§0§0§"
   },
   {
     "name": "I have nothing",
     "type": 0,
     "emoji": "<:com_l:769344307383107584>:neutral_face:<:com_r:769344307333038100>",
     "id": 2,
-    "notes": "1§DPS§15§DPS$Bruh$10$0$1§<:com_l:769344307383107584>:neutral_face:<:com_r:769344307333038100>§Bruh."
+    "fullEmoji": "<:com_l:769344307383107584>:neutral_face:<:com_r:769344307333038100>",
+    "desc": "Bruh.",
+    "notes": "1§DPS§15§DPS$Bruh$10$0$1"
   },
   {
     "name": "Am Sad",
     "type": 0,
     "emoji": "<:com_l:769344307383107584>:slight_frown:<:com_r:769344307333038100>",
     "id": 3,
-    "notes": "1§DPS§10§DPS$Sadden$5$0$1§<:com_l:769344307383107584>:slight_frown:<:com_r:769344307333038100>§Embrace sadness. It means your human, and your normal."
+    "fullEmoji": "<:com_l:769344307383107584>:slight_frown:<:com_r:769344307333038100>",
+    "desc": "Embrace sadness. It means your human, and your normal.",
+    "notes": "1§DPS§10§DPS$Sadden$5$0$1"
   },
   {
     "name": "Am Angry",
     "type": 0,
     "emoji": "<:com_l:769344307383107584>:angry:<:com_r:769344307333038100>",
     "id": 4,
-    "notes": "1§DPS§10§DPS$Punch$10$0$1§<:com_l:769344307383107584>:angry:<:com_r:769344307333038100>§This is not very poggers."
+    "fullEmoji": "<:com_l:769344307383107584>:angry:<:com_r:769344307333038100>",
+    "desc": "This is not very poggers.",
+    "notes": "1§DPS§10§DPS$Punch$10$0$1"
   },
   {
     "name": "Heh heh...",
     "type": 1,
-    "emoji": "<:com_l:769344307383107584>:sweat_smile:<:unc_mr:769346094898348032>",
+    "emoji": "<:unc_l:769346094802665508>:sweat_smile:<:unc_mr:769346094898348032>",
     "id": 5,
-    "notes": "1§ITEM§0§HEAL$Be Happy$5$0$0§<:com_l:769344307383107584>:sweat_smile:<:unc_mr:769346094898348032>§Im fine."
+    "fullEmoji": "<:unc_l:769346094802665508>:sweat_smile:<:unc_mr:769346094898348032>",
+    "desc": "Im fine.",
+    "notes": "1§ITEM§0§HEAL$Be Happy$5$0$0"
   },
   {
     "name": "Heh",
     "type": 1,
     "emoji": "<:unc_l:769346094802665508>:upside_down:<:unc_mr:769346094898348032>",
     "id": 6,
-    "notes": "0§0§0§0§<:unc_l:769346094802665508>:upside_down:<:unc_mr:769346094898348032>§:upside_down:"
+    "fullEmoji": "<:unc_l:769346094802665508>:upside_down:<:unc_mr:769346094898348032>",
+    "desc": ":upside_down:",
+    "notes": "0§0§0§0"
   },
   {
     "name": "Very cool",
     "type": 1,
     "emoji": "<:unc_l:769346094802665508>:sunglasses:<:unc_mr:769346094898348032>",
     "id": 7,
-    "notes": "1§ITEM§0§HEAL$Be Cool$5$0$0§<:unc_l:769346094802665508>:sunglasses:<:unc_mr:769346094898348032>§Who's the cool one now?"
+    "fullEmoji": "<:unc_l:769346094802665508>:sunglasses:<:unc_mr:769346094898348032>",
+    "desc": "Who's the cool one now?",
+    "notes": "1§ITEM§0§HEAL$Be Cool$5$0$0"
   },
   {
     "name": "Boo hoo",
     "type": 1,
     "emoji": "<:unc_l:769346094802665508>:cry:<:unc_mr:769346094898348032>",
     "id": 8,
-    "notes": "1§DPS§5§DPS$Sadden$5$0$1§<:unc_l:769346094802665508>:cry:<:unc_mr:769346094898348032>§This is so sad. Alexa, play despasito."
+    "fullEmoji": "<:unc_l:769346094802665508>:cry:<:unc_mr:769346094898348032>",
+    "desc": "This is so sad. Alexa, play despasito.",
+    "notes": "1§DPS§5§DPS$Sadden$5$0$1"
   },
   {
     "name": "Neeeerd",
     "type": 2,
     "emoji": "<:rare_ml:769348056918392832>:nerd:<:rare_r:769348056763990087>",
     "id": 9,
-    "notes": "0§0§0§0§<:rare_ml:769348056918392832>:nerd:<:rare_r:769348056763990087>§You see, time travel is possible however it's quite difficult. First you need to find a way to withstand the gravitational forces of a black hole. But not any any hole, a spinning one. You see, what happens is, when a black hole spins, the singularity at the center becomes in infinitly thin torus instead of an infinitly small point. If a space craft were to pass through that torus, it would be prepelled into a parrallel universe. Unfortunatly, it would be impossible to return to the original universe because if you were to go through the torus again, you enter another parrallel univers. Essentialy you'd never return to the original universe."
+    "fullEmoji": "<:rare_ml:769348056918392832>:nerd:<:rare_r:769348056763990087>",
+    "desc": "You see, time travel is possible however it's quite difficult. First you need to find a way to withstand the gravitational forces of a black hole. But not any black hole, a spinning one. You see, what happens is, when a black hole spins, the singularity at the center becomes in infinitly thin torus instead of an infinitly small point. If a space craft were to pass through that torus, it would be prepelled into a parrallel universe. Unfortunatly, it would be impossible to return to the original universe because if you were to go through the torus again, you enter another parrallel universe. Essentialy you'd never return to the original universe.",
+    "notes": "0§0§0§0"
   },
   {
     "name": "Whoooo!",
     "type": 2,
     "emoji": "<:rare_ml:769348056918392832>:partying_face:<:rare_r:769348056763990087>",
     "id": 10,
-    "notes": "1§ITEM§10§HEAL$Be Happy$5$0$0§<:rare_ml:769348056918392832>:partying_face:<:rare_r:769348056763990087>§Ce-le-brate good times, come on!"
+    "fullEmoji": "<:rare_ml:769348056918392832>:partying_face:<:rare_r:769348056763990087>",
+    "desc": "Ce-le-brate good times, come on!",
+    "notes": "1§ITEM§10§HEAL$Be Happy$5$0$0"
   },
   {
     "name": "DD:",
     "type": 2,
     "emoji": "<:rare_ml:769348056918392832>:sob:<:rare_r:769348056763990087>",
     "id": 11,
-    "notes": "1§DPS§10§DPS$Sadden$5$0$1§<:rare_ml:769348056918392832>:sob:<:rare_r:769348056763990087>§Jesus, what a baby. How old are you again?"
+    "fullEmoji": "<:rare_ml:769348056918392832>:sob:<:rare_r:769348056763990087>",
+    "desc": "Jesus, what a baby. How old are you again?",
+    "notes": "1§DPS§10§DPS$Sadden$5$0$1"
   },
   {
     "name": "AHHH",
     "type": 3,
     "emoji": "<a:ultra_l:769371476679065641>:scream:<a:ultra_r:769371476427145229>",
     "id": 12,
-    "notes": "1§DPS§10§DPS$Scream$10$0$1§<a:ultra_l:769371476679065641>:scream:<a:ultra_r:769371476427145229>§Boo!"
+    "fullEmoji": "<a:ultra_l:769371476679065641>:scream:<a:ultra_r:769371476427145229>",
+    "desc": "Boo!",
+    "notes": "1§DPS§10§DPS$Scream$10$0$1"
   },
   {
     "name": "F%@^$",
     "type": 3,
     "emoji": "<a:ultra_l:769371476679065641>:face_with_symbols_over_mouth:<a:ultra_r:769371476427145229>",
     "id": 13,
-    "notes": "1§DPS§15§DPS$Scream$10$0$1§<a:ultra_l:769371476679065641>:face_with_symbols_over_mouth:<a:ultra_r:769371476427145229>§Are you f%@^&ing kidding me? You f%@^&ing piece of s*%!, absolute c&%*!"
+    "fullEmoji": "<a:ultra_l:769371476679065641>:face_with_symbols_over_mouth:<a:ultra_r:769371476427145229>",
+    "desc": "Are you f%@^&ing kidding me? You f%@^&ing piece of s*%!, absolute c&%*!",
+    "notes": "1§DPS§15§DPS$Scream$10$0$1"
   },
   {
     "name": "Crona",
     "type": 4,
-    "emoji": "<a:leg_l:769377624060723251>:mask:<a:leg_r:769377624040013834>",
+    "emoji": "<a:leg_l:769679906240987147>:mask:<a:leg_r:769679906845622272>",
     "id": 14,
-    "notes": "1§DPS§50§DPS$Cough$25$POISON$1§<a:leg_l:769377624060723251>:mask:<a:leg_r:769377624040013834>§*cough*"
+    "fullEmoji": "<a:leg_l:769679906240987147>:mask:<a:leg_r:769679906845622272>",
+    "desc": "*cough*",
+    "notes": "1§DPS§50§DPS$Cough$25$POISON$1"
   },
   {
-    "name": "Money money money!",
-    "type": 1,
-    "emoji": "<:unc_l:769346094802665508>:coin:<:unc_mr:769346094898348032>",
+    "name": "Number 15",
+    "type": 2,
+    "emoji": "<:rare_ml:769348056918392832>:hamburger:<:rare_r:769348056763990087>",
     "id": 15,
-    "notes": "1§DPS§10§DPS$Flex$5$0$1§<:unc_l:769346094802665508>:coin:<:unc_mr:769346094898348032>§Scrooge McDuck."
+    "fullEmoji": "<:rare_ml:769348056918392832>:hamburger:<:rare_r:769348056763990087>",
+    "desc": "Burger King foot lettuce.",
+    "notes": "0§0§0§0§"
   },
   {
     "name": "A winner is you",
     "type": 4,
-    "emoji": "<a:leg_l:769377624060723251>:trophy:<a:leg_r:769377624040013834>",
+    "emoji": "<a:leg_l:769679906240987147>:trophy:<a:leg_r:769679906845622272>",
     "id": 16,
-    "notes": "1§DPS§40§DPS$Flex$20$0$1§<a:leg_l:769377624060723251>:trophy:<a:leg_r:769377624040013834>§https://www.youtube.com/watch?v=1Bix44C1EzY"
+    "fullEmoji": "<a:leg_l:769679906240987147>:trophy:<a:leg_r:769679906845622272>",
+    "desc": "<https://www.youtube.com/watch?v=1Bix44C1EzY>",
+    "notes": "1§DPS§40§DPS$Flex$20$0$1"
   },
   {
     "name": "Gamer moment",
     "type": 0,
     "emoji": "<:com_l:769344307383107584>:video_game:<:com_r:769344307333038100>",
     "id": 17,
-    "notes": "1§ITEM§0§HEAL$Heal$5$0$0§<:com_l:769344307383107584>:video_game:<:com_r:769344307333038100>§Heal me! HEAL ME! I NEED HEALING!!!"
+    "fullEmoji": "<:com_l:769344307383107584>:video_game:<:com_r:769344307333038100>",
+    "desc": "Heal me! HEAL ME! I NEED HEALING!!!",
+    "notes": "1§ITEM§0§HEAL$Heal$5$0$0"
   },
   {
     "name": "Am Innocent",
     "type": 0,
     "emoji": "<:com_l:769344307383107584>:innocent:<:com_r:769344307333038100>",
     "id": 18,
-    "notes": "0§0§0§0§<:com_l:769344307383107584>:innocent:<:com_r:769344307333038100>§Totaly didnt do it, I swear."
+    "fullEmoji": "<:com_l:769344307383107584>:innocent:<:com_r:769344307333038100>",
+    "desc": "Totaly didnt do it, I swear.",
+    "notes": "0§0§0§0"
   },
   {
     "name": "Blush",
     "type": 0,
     "emoji": "<:com_l:769344307383107584>:blush:<:com_r:769344307333038100>",
     "id": 19,
-    "notes": "0§0§0§0§<:com_l:769344307383107584>:blush:<:com_r:769344307333038100>§UwU"
+    "fullEmoji": "<:com_l:769344307383107584>:blush:<:com_r:769344307333038100>",
+    "desc": "UwU",
+    "notes": "0§0§0§0"
   },
   {
     "name": "Dying on the inside",
     "type": 2,
     "emoji": "<:rare_ml:769348056918392832>:smiling_face_with_tear:<:rare_r:769348056763990087>",
     "id": 20,
-    "notes": "0§0§0§0§<:rare_ml:769348056918392832>:smiling_face_with_tear:<:rare_r:769348056763990087>§How could this happen to me? I've made my mistakes. Got nowhere to run. The night goes on."
+    "fullEmoji": "<:rare_ml:769348056918392832>:smiling_face_with_tear:<:rare_r:769348056763990087>",
+    "desc": "How could this happen to me? I've made my mistakes. Got nowhere to run. The night goes on.",
+    "notes": "0§0§0§0"
   },
   {
     "name": "In Love",
     "type": 1,
     "emoji": "<:unc_l:769346094802665508>:heart_eyes:<:unc_mr:769346094898348032>",
     "id": 21,
-    "notes": "0§0§0§0§<:unc_l:769346094802665508>:heart_eyes:<:unc_mr:769346094898348032>§<3"
+    "fullEmoji": "<:unc_l:769346094802665508>:heart_eyes:<:unc_mr:769346094898348032>",
+    "desc": "<3",
+    "notes": "0§0§0§0"
   },
   {
     "name": "Mwa <3",
     "type": 3,
     "emoji": "<a:ultra_l:769371476679065641>:kissing_heart:<a:ultra_r:769371476427145229>",
     "id": 22,
-    "notes": "1§ITEM§0§HEAL$Heal$5$0$0§<a:ultra_l:769371476679065641>:kissing_heart:<a:ultra_r:769371476427145229>§Lemme kiss you'r boo boo <3"
+    "fullEmoji": "<a:ultra_l:769371476679065641>:kissing_heart:<a:ultra_r:769371476427145229>",
+    "desc": "Lemme kiss you'r boo boo <3",
+    "notes": "1§ITEM§0§HEAL$Heal$5$0$0"
   },
   {
     "name": ":P",
     "type": 1,
     "emoji": "<:unc_l:769346094802665508>:yum:<:unc_mr:769346094898348032>",
     "id": 23,
-    "notes": "0§0§0§0§<:unc_l:769346094802665508>:yum:<:unc_mr:769346094898348032>§Nah nah, nah nah, naah naaaaaah!"
+    "fullEmoji": "<:unc_l:769346094802665508>:yum:<:unc_mr:769346094898348032>",
+    "desc": "Nah nah, nah nah, naah naaaaaah!",
+    "notes": "0§0§0§0"
   },
   {
     "name": "Bleh!",
     "type": 2,
     "emoji": "<:rare_ml:769348056918392832>:zany_face:<:rare_r:769348056763990087>",
     "id": 24,
-    "notes": "0§0§0§0§<:rare_ml:769348056918392832>:zany_face:<:rare_r:769348056763990087>§Hyuh hyuh hyuh!"
+    "fullEmoji": "<:rare_ml:769348056918392832>:zany_face:<:rare_r:769348056763990087>",
+    "desc": "Hyuh hyuh hyuh!",
+    "notes": "0§0§0§0"
   },
   {
     "name": "Mhm...",
     "type": 1,
     "emoji": "<:unc_l:769346094802665508>:face_with_raised_eyebrow:<:unc_mr:769346094898348032>",
     "id": 25,
-    "notes": "0§0§0§0§<:unc_l:769346094802665508>:face_with_raised_eyebrow:<:unc_mr:769346094898348032>§For some reason, I dont know why, I just dont believe you. Odd."
+    "fullEmoji": "<:unc_l:769346094802665508>:face_with_raised_eyebrow:<:unc_mr:769346094898348032>",
+    "desc": "For some reason, I dont know why, I just dont believe you. Odd.",
+    "notes": "0§0§0§0"
   },
   {
     "name": "Uhhh.",
     "type": 2,
     "emoji": "<:rare_ml:769348056918392832>:weary:<:rare_r:769348056763990087>",
     "id": 26,
-    "notes": "0§0§0§0§<:rare_ml:769348056918392832>:weary:<:rare_r:769348056763990087>§Dont come near me please."
+    "fullEmoji": "<:rare_ml:769348056918392832>:weary:<:rare_r:769348056763990087>",
+    "desc": "Dont come near me please.",
+    "notes": "0§0§0§0"
   },
   {
     "name": "Is for me?",
     "type": 1,
     "emoji": "<:unc_l:769346094802665508>:pleading_face:<:unc_mr:769346094898348032>",
     "id": 27,
-    "notes": "0§0§0§0§<:unc_l:769346094802665508>:pleading_face:<:unc_mr:769346094898348032>§What America says when you find oil."
+    "fullEmoji": "<:unc_l:769346094802665508>:pleading_face:<:unc_mr:769346094898348032>",
+    "desc": "What America says when you find oil.",
+    "notes": "0§0§0§0"
   },
   {
     "name": "Whhaaa?!",
     "type": 2,
     "emoji": "<:rare_ml:769348056918392832>:exploding_head:<:rare_r:769348056763990087>",
     "id": 28,
-    "notes": "1§DPS§20§DPS$Blow my mind$20$0$0§<:rare_ml:769348056918392832>:exploding_head:<:rare_r:769348056763990087>§Wait what? Really?! Holy sh*t! Woah!"
+    "fullEmoji": "<:rare_ml:769348056918392832>:exploding_head:<:rare_r:769348056763990087>",
+    "desc": "Wait what? Really?! Holy sh*t! Woah!",
+    "notes": "1§DPS§20§DPS$Blow my mind$20$0$0"
   },
   {
     "name": "Hmmm...",
     "type": 1,
     "emoji": "<:unc_l:769346094802665508>:thinking:<:unc_mr:769346094898348032>",
     "id": 29,
-    "notes": "0§0§0§0§<:unc_l:769346094802665508>:thinking:<:unc_mr:769346094898348032>§Hmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm..."
+    "fullEmoji": "<:unc_l:769346094802665508>:thinking:<:unc_mr:769346094898348032>",
+    "desc": "Hmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm...",
+    "notes": "0§0§0§0"
   },
   {
     "name": "Boooring...",
     "type": 0,
     "emoji": "<:com_l:769344307383107584>:yawning_face:<:com_r:769344307333038100>",
     "id": 30,
-    "notes": "0§0§0§0§<:com_l:769344307383107584>:yawning_face:<:com_r:769344307333038100>§This discription isnt going to be interesting.I'm telling you right now. It's not going to be interesting. Why are you still reading? I told you, you wouldn't find it interesting. So just stop here. Look I'm telling you right now, It's. Not. Interesting. Ok, fine, keep reading. You say I didnt warn you. See? I bet your feeling let down. You were expecting something, even though I told you it wasn't interesting. This is on you. Not me. Why are you still reading? What do you possibly hope to accomplish? I told you there is nothing here thats interesting. Stop! STOP! *Sigh*, fine keep reading. As if I care.\n\n\n||Told you it wasn't interesting...||"
+    "fullEmoji": "<:com_l:769344307383107584>:yawning_face:<:com_r:769344307333038100>",
+    "desc": "This discription isn't going to be interesting. I'm telling you right now. It's not going to be interesting. Why are you still reading? I told you, you wouldn't find it interesting. So just stop here. Look I'm telling you right now, It's. Not. Interesting. Ok, fine, keep reading. Dont say I didnt warn you. See? I bet your feeling let down. You were expecting something, even though I told you it wasn't interesting. This is on you. Not me. Why are you still reading? What do you possibly hope to accomplish? I told you there is nothing here thats interesting. Stop! STOP! *Sigh*, fine keep reading. As if I care.\n\n\n||Told you it wasn't interesting...||",
+    "notes": "0§0§0§0"
   },
   {
-    "name": "Spooky Season 2020",
-    "type": 4,
-    "emoji": "<a:leg_l:769377624060723251>:jack_o_lantern:<a:leg_r:769377624040013834>",
+    "name": "A Fan",
+    "type": 1,
+    "emoji": "<:unc_l:769346094802665508><a:fan:769974435611672576><:unc_mr:769346094898348032>",
     "id": 31,
-    "notes": "1§DPS§40§DPS$Spook$25$0$1#HEAL$Eat Candy$10$0$0§<a:leg_l:769377624060723251>:jack_o_lantern:<a:leg_r:769377624040013834>§Spooky scary skeletons, send shivers down your spine! You shake and shiver in surprise, when you hear the zombies shriek."
+    "fullEmoji": "<:unc_l:769346094802665508><a:fan:769974435611672576><:unc_mr:769346094898348032>",
+    "desc": "Hello? Hello, hello?",
+    "notes": "1§ITEM§0§DPS$Buzz$3$POISON$1"
   },
   {
     "name": "...",
     "type": 3,
     "emoji": "<a:ultra_l:769371476679065641>:no_mouth:<a:ultra_r:769371476427145229>",
     "id": 32,
-    "notes": "0§0§0§0§<a:ultra_l:769371476679065641>:no_mouth:<a:ultra_r:769371476427145229>§..."
+    "fullEmoji": "<a:ultra_l:769371476679065641>:no_mouth:<a:ultra_r:769371476427145229>",
+    "desc": "...",
+    "notes": "0§0§0§0"
   },
   {
     "name": "Eesh",
     "type": 1,
     "emoji": "<:unc_l:769346094802665508>:grimacing:<:unc_mr:769346094898348032>",
     "id": 33,
-    "notes": "1§DPS§15§DPS$Do Somthing Cringy$5$0$1§<:unc_l:769346094802665508>:grimacing:<:unc_mr:769346094898348032>§Snap! That's going into my cringe compilation."
+    "fullEmoji": "<:unc_l:769346094802665508>:grimacing:<:unc_mr:769346094898348032>",
+    "desc": "Snap! That's going into my cringe compilation.",
+    "notes": "1§DPS§15§DPS$Do Somthing Cringy$5$0$1"
   },
   {
     "name": "Yeah, whatever",
     "type": 0,
     "emoji": "<:com_l:769344307383107584>:rolling_eyes:<:com_r:769344307333038100>",
     "id": 34,
-    "notes": "0§0§0§0§<:com_l:769344307383107584>:rolling_eyes:<:com_r:769344307333038100>§Yeah, whatever. Thats your opinion. ||Which is wrong.||"
+    "fullEmoji": "<:com_l:769344307383107584>:rolling_eyes:<:com_r:769344307333038100>",
+    "desc": "Yeah, whatever. Thats your opinion. ||Which is wrong.||",
+    "notes": "0§0§0§0"
   },
   {
     "name": "Close your mouth",
     "type": 0,
     "emoji": "<:com_l:769344307383107584>:open_mouth:<:com_r:769344307333038100>",
     "id": 35,
-    "notes": "0§0§0§0§<:com_l:769344307383107584>:open_mouth:<:com_r:769344307333038100>§You don't want a fly to fly into your mouth."
+    "fullEmoji": "<:com_l:769344307383107584>:open_mouth:<:com_r:769344307333038100>",
+    "desc": "You don't want a fly to fly into your mouth.",
+    "notes": "0§0§0§0"
   },
   {
     "name": "zzz",
     "type": 0,
     "emoji": "<:com_l:769344307383107584>:sleeping:<:com_r:769344307333038100>",
     "id": 36,
-    "notes": "0§0§0§0§<:com_l:769344307383107584>:sleeping:<:com_r:769344307333038100>§Zzzzzz, feeeww... zzzzzzz, feeeeww..."
+    "fullEmoji": "<:com_l:769344307383107584>:sleeping:<:com_r:769344307333038100>",
+    "desc": "Zzzzzz, feeeww... zzzzzzz, feeeeww...",
+    "notes": "0§0§0§0"
   },
   {
     "name": "Cha-ching!",
     "type": 2,
     "emoji": "<:rare_ml:769348056918392832>:money_mouth:<:rare_r:769348056763990087>",
     "id": 37,
-    "notes": "0§0§0§0§<:rare_ml:769348056918392832>:money_mouth:<:rare_r:769348056763990087>§I heard money! I like that word. Count me in!"
+    "fullEmoji": "<:rare_ml:769348056918392832>:money_mouth:<:rare_r:769348056763990087>",
+    "desc": "I heard money! I like that word. Count me in!",
+    "notes": "0§0§0§0"
   },
   {
     "name": "Yeee-haww!",
     "type": 3,
     "emoji": "<a:ultra_l:769371476679065641>:cowboy:<a:ultra_r:769371476427145229>",
     "id": 38,
-    "notes": "1§DPS§10§DPS$Throw rope$5$0$1§<a:ultra_l:769371476679065641>:cowboy:<a:ultra_r:769371476427145229>§Yeah, I'm gonna take my horse to the old town road, I'm gonna ride 'til I can't no more! I got the horses in the back, horse tack is attached. Hat is matte black, got the boots that's black to match."
+    "fullEmoji": "<a:ultra_l:769371476679065641>:cowboy:<a:ultra_r:769371476427145229>",
+    "desc": "Yeah, I'm gonna take my horse to the old town road, I'm gonna ride 'til I can't no more! I got the horses in the back, horse tack is attached. Hat is matte black, got the boots that's black to match.",
+    "notes": "1§DPS§10§DPS$Throw rope$5$0$1"
   },
   {
     "name": "Devils 'ere",
     "type": 1,
     "emoji": "<:unc_l:769346094802665508>:smiling_imp:<:unc_mr:769346094898348032>",
     "id": 39,
-    "notes": "1§DPS§25§DPS$Burn in Hell$15$0$1#HEAL$Steal Lifeforce$10$0$0§<:unc_l:769346094802665508>:smiling_imp:<:unc_mr:769346094898348032>§Mwahahahaha- *cough* *cough* oh my *cough* *cough* ***cough*** ***COUGH*** oh my. I think I choked on my saliva. *ahhhheeeehm* *cough*"
+    "fullEmoji": "<:unc_l:769346094802665508>:smiling_imp:<:unc_mr:769346094898348032>",
+    "desc": "Mwahahahaha- *cough* *cough* oh my *cough* *cough* ***cough*** ***COUGH*** oh my. I think I choked on my saliva. *ahhhheeeehm* *cough*",
+    "notes": "1§DPS§25§DPS$Burn in Hell$15$0$1#HEAL$Steal Lifeforce$10$0$0"
   },
   {
     "name": "Spooky...",
     "type": 2,
     "emoji": "<:rare_ml:769348056918392832>:ghost:<:rare_r:769348056763990087>",
     "id": 40,
-    "notes": "1§DPS§10§DPS$Attempt to scare$5$0$1§<:rare_ml:769348056918392832>:ghost:<:rare_r:769348056763990087>§OoOooOhhHh! Spooky..."
+    "fullEmoji": "<:rare_ml:769348056918392832>:ghost:<:rare_r:769348056763990087>",
+    "desc": "OoOooOhhHh! Spooky...",
+    "notes": "1§DPS§10§DPS$Attempt to scare$5$0$1"
   },
   {
     "name": "Sh*t",
     "type": 0,
     "emoji": "<:com_l:769344307383107584>:shit:<:com_r:769344307333038100>",
     "id": 41,
-    "notes": "0§0§0§0§<:com_l:769344307383107584>:shit:<:com_r:769344307333038100>§***DIS-GUS-TANG!***"
+    "fullEmoji": "<:com_l:769344307383107584>:shit:<:com_r:769344307333038100>",
+    "desc": "***DIS-GUS-TANG!***",
+    "notes": "0§0§0§0"
   },
   {
     "name": "We are not alone",
     "type": 2,
     "emoji": "<:rare_ml:769348056918392832>:alien:<:rare_r:769348056763990087>",
     "id": 42,
-    "notes": "1§DPS§20§DPS$Shoot Laser$10$0$1§<:rare_ml:769348056918392832>:alien:<:rare_r:769348056763990087>§ooo-weee-ooooooo"
+    "fullEmoji": "<:rare_ml:769348056918392832>:alien:<:rare_r:769348056763990087>",
+    "desc": "ooo-weee-ooooooo",
+    "notes": "1§DPS§20§DPS$Shoot Laser$10$0$1"
   },
   {
     "name": "Big brain",
     "type": 2,
     "emoji": "<:rare_ml:769348056918392832>:brain:<:rare_r:769348056763990087>",
     "id": 43,
-    "notes": "1§DPS§15§DPS$200IQ Attack$10$0$1#HEAL$200IQ Heal$10$0$0§<:rare_ml:769348056918392832>:brain:<:rare_r:769348056763990087>§How many 1000IQ moves have you done? Thats what I though."
+    "fullEmoji": "<:rare_ml:769348056918392832>:brain:<:rare_r:769348056763990087>",
+    "desc": "How many 1000IQ moves have you done? Thats what I though.",
+    "notes": "1§DPS§15§DPS$200IQ Attack$10$0$1#HEAL$200IQ Heal$10$0$0"
   },
   {
     "name": "I :heart: you",
     "type": 2,
     "emoji": "<:rare_ml:769348056918392832>:anatomical_heart:<:rare_r:769348056763990087>",
     "id": 44,
-    "notes": "0§0§0§0§<:rare_ml:769348056918392832>:anatomical_heart:<:rare_r:769348056763990087>§Get it? Because it's a heart. And love is represented with a heart. Hehe, I'm so funny."
+    "fullEmoji": "<:rare_ml:769348056918392832>:anatomical_heart:<:rare_r:769348056763990087>",
+    "desc": "Get it? Because it's a heart. And love is represented with a heart. Hehe, I'm so funny.",
+    "notes": "0§0§0§0"
   },
   {
     "name": "Just breeeeeath",
     "type": 2,
     "emoji": "<:rare_ml:769348056918392832>:lungs:<:rare_r:769348056763990087>",
     "id": 45,
-    "notes": "0§0§0§0§<:rare_ml:769348056918392832>:lungs:<:rare_r:769348056763990087>§Is only game. Why you have to be mad?"
+    "fullEmoji": "<:rare_ml:769348056918392832>:lungs:<:rare_r:769348056763990087>",
+    "desc": "Is only game. Why you have to be mad?",
+    "notes": "0§0§0§0"
   },
   {
     "name": "The King",
     "type": 4,
-    "emoji": "<a:leg_l:769377624060723251>:crown:<a:leg_r:769377624040013834>",
+    "emoji": "<a:leg_l:769679906240987147>:crown:<a:leg_r:769679906845622272>",
     "id": 46,
-    "notes": "1§DPS§35§DPS$Royal Slap$15$0$1#HEAL$Royal Heal$10$0$0§<a:leg_l:769377624060723251>:crown:<a:leg_r:769377624040013834>§The king of all kings. The top dawg. The overlord. The guy incharge. My landlord."
+    "fullEmoji": "<a:leg_l:769679906240987147>:crown:<a:leg_r:769679906845622272>",
+    "desc": "The king of all kings. The top dawg. The overlord. The guy incharge. My landlord.",
+    "notes": "1§DPS§35§DPS$Royal Slap$15$0$1#HEAL$Royal Heal$10$0$0"
   },
   {
     "name": "Snek",
     "type": 1,
     "emoji": "<:com_l:769344307383107584>:snake:<:com_r:769344307333038100>",
     "id": 47,
-    "notes": "1§DPS§5§DPS$Bite$10$POISON$1§<:com_l:769344307383107584>:snake:<:com_r:769344307333038100>§Sssssssssssssssssss..."
+    "fullEmoji": "<:com_l:769344307383107584>:snake:<:com_r:769344307333038100>",
+    "desc": "Sssssssssssssssssss...",
+    "notes": "1§DPS§5§DPS$Bite$10$POISON$1"
   },
   {
     "name": "Too slow",
     "type": 0,
     "emoji": "<:com_l:769344307383107584>:snail:<:com_r:769344307333038100>",
     "id": 48,
-    "notes": "0§0§0§0§<:com_l:769344307383107584>:snail:<:com_r:769344307333038100>§Hight five! Down low! Ha! Too slow!"
+    "fullEmoji": "<:com_l:769344307383107584>:snail:<:com_r:769344307333038100>",
+    "desc": "Hight five! Down low! Ha! Too slow!",
+    "notes": "0§0§0§0"
   },
   {
     "name": "Murica!",
     "type": 0,
     "emoji": "<:com_l:769344307383107584>:eagle:<:com_r:769344307333038100>",
     "id": 49,
-    "notes": "1§DPS§30§DPS$Shoot Guns$20$0$1§<:com_l:769344307383107584>:eagle:<:com_r:769344307333038100>§Mericuh!! Fuck yeah!"
+    "fullEmoji": "<:com_l:769344307383107584>:eagle:<:com_r:769344307333038100>",
+    "desc": "Mericuh!! Fuck yeah!",
+    "notes": "1§DPS§30§DPS$Shoot Guns$20$0$1"
   },
   {
     "name": "Spider-spider",
     "type": 0,
     "emoji": "<:com_l:769344307383107584>:spider:<:com_r:769344307333038100>",
     "id": 50,
-    "notes": "1§DPS§1§DPS$Bite$1$0$1§<:com_l:769344307383107584>:spider:<:com_r:769344307333038100>§This is the Spiderspider! Like Spiderman, but a *spider*."
+    "fullEmoji": "<:com_l:769344307383107584>:spider:<:com_r:769344307333038100>",
+    "desc": "This is the Spiderspider! Like Spiderman, but a *spider*.",
+    "notes": "1§DPS§1§DPS$Bite$1$0$1"
   },
   {
     "name": "Birb food",
     "type": 0,
     "emoji": "<:com_l:769344307383107584>:worm:<:com_r:769344307333038100>",
     "id": 51,
-    "notes": "0§0§0§0§<:com_l:769344307383107584>:worm:<:com_r:769344307333038100>§Some birds actually chew up food and spit that food into their childrens mouths. The more you know!"
+    "fullEmoji": "<:com_l:769344307383107584>:worm:<:com_r:769344307333038100>",
+    "desc": "Some birds actually chew up food and spit that food into their childrens mouths. The more you know!",
+    "notes": "0§0§0§0"
   },
   {
     "name": "Hoo hoo",
     "type": 0,
     "emoji": "<:com_l:769344307383107584>:owl:<:com_r:769344307333038100>",
     "id": 52,
-    "notes": "0§0§0§0§<:com_l:769344307383107584>:owl:<:com_r:769344307333038100>§Did you know that owls can rotate their necks upto 270 degrees! I bet you can't do that!"
+    "fullEmoji": "<:com_l:769344307383107584>:owl:<:com_r:769344307333038100>",
+    "desc": "Did you know that owls can rotate their necks upto 270 degrees! I bet you can't do that!",
+    "notes": "0§0§0§0"
   },
   {
     "name": "Penguin from Madagascar",
     "type": 1,
     "emoji": "<:unc_l:769346094802665508>:penguin:<:unc_mr:769346094898348032>",
     "id": 53,
-    "notes": "0§0§0§0§<:unc_l:769346094802665508>:penguin:<:unc_mr:769346094898348032>§Kowalski, analysis."
+    "fullEmoji": "<:unc_l:769346094802665508>:penguin:<:unc_mr:769346094898348032>",
+    "desc": "Kowalski, analysis.",
+    "notes": "0§0§0§0"
   },
   {
     "name": "Birb",
     "type": 0,
     "emoji": "<:com_l:769344307383107584>:bird:<:com_r:769344307333038100>",
     "id": 54,
-    "notes": "0§0§0§0§<:com_l:769344307383107584>:bird:<:com_r:769344307333038100>§Look. Is birb. Good birb. Like birb."
-  },{
-  "name": "Jaws",
-  "type": 1,
-  "emoji": "<:unc_l:769346094802665508>:shark:<:unc_mr:769346094898348032>",
-  "id": 55,
-  "notes": "1§DPS§30§DPS$Bite$15$0$1§<:unc_l:769346094802665508>:shark:<:unc_mr:769346094898348032>§bah dum...... bah dum...... bah dum... bah dum... bah dum bah dum bah dum"
-},{
-  "name": "Mozzie",
-  "type": 0,
-  "emoji": "<:com_l:769344307383107584>:mosquito:<:com_r:769344307333038100>",
-  "id": 56,
-  "notes": "1§DPS§1§DPS$Bite$3$0$1§<:com_l:769344307383107584>:mosquito:<:com_r:769344307333038100>§Fuck this thing. I hate them. They're so anoying. I hope they all die."
-},{
-  "name": "Ich bin eine biene!",
-  "type": 1,
-  "emoji": "<:unc_l:769346094802665508>:bee:<:unc_mr:769346094898348032>",
-  "id": 57,
-  "notes": "1§DPS§5§DPS$Sting$5$0$1§<:unc_l:769346094802665508>:bee:<:unc_mr:769346094898348032>§They like to fick flowers."
-},{
-  "name": "Brontosaurus",
-  "type": 2,
-  "emoji": "<:rare_ml:769348056918392832>:sauropod:<:rare_r:769348056763990087>",
-  "id": 57,
-  "notes": "0§0§0§0§<:rare_ml:769348056918392832>:sauropod:<:rare_r:769348056763990087>§I dont remember the name of this but its the dino with the long neck. The cool one."
-},{
-  "name": "A Fsh",
-  "type": 0,
-  "emoji": "<:com_l:769344307383107584>:fish:<:com_r:769344307333038100>",
-  "id": 58,
-  "notes": "0§0§0§0§<:com_l:769344307383107584>:fish:<:com_r:769344307333038100>§Its has no I's. Get it?"
-}
+    "fullEmoji": "<:com_l:769344307383107584>:bird:<:com_r:769344307333038100>",
+    "desc": "Look. Is birb. Good birb. Like birb.",
+    "notes": "0§0§0§0"
+  },
+  {
+    "name": "Jaws",
+    "type": 1,
+    "emoji": "<:unc_l:769346094802665508>:shark:<:unc_mr:769346094898348032>",
+    "id": 55,
+    "fullEmoji": "<:unc_l:769346094802665508>:shark:<:unc_mr:769346094898348032>",
+    "desc": "bah dum...... bah dum...... bah dum... bah dum... bah dum bah dum bah dum",
+    "notes": "1§DPS§30§DPS$Bite$15$0$1"
+  },
+  {
+    "name": "Mozzie",
+    "type": 0,
+    "emoji": "<:com_l:769344307383107584>:mosquito:<:com_r:769344307333038100>",
+    "id": 56,
+    "fullEmoji": "<:com_l:769344307383107584>:mosquito:<:com_r:769344307333038100>",
+    "desc": "Fuck this thing. I hate them. They're so anoying. I hope they all die.",
+    "notes": "1§DPS§1§DPS$Bite$3$0$1"
+  },
+  {
+    "name": "Ich bin eine biene!",
+    "type": 1,
+    "emoji": "<:unc_l:769346094802665508>:bee:<:unc_mr:769346094898348032>",
+    "id": 57,
+    "fullEmoji": "<:unc_l:769346094802665508>:bee:<:unc_mr:769346094898348032>",
+    "desc": "They like to fick flowers.",
+    "notes": "1§DPS§5§DPS$Sting$5$0$1"
+  },
+  {
+    "name": "Brontosaurus",
+    "type": 2,
+    "emoji": "<:rare_ml:769348056918392832>:sauropod:<:rare_r:769348056763990087>",
+    "id": 58,
+    "fullEmoji": "<:rare_ml:769348056918392832>:sauropod:<:rare_r:769348056763990087>",
+    "desc": "I dont remember the name of this but its the dino with the long neck. The cool one.",
+    "notes": "0§0§0§0"
+  },
+  {
+    "name": "A Fsh",
+    "type": 0,
+    "emoji": "<:com_l:769344307383107584>:fish:<:com_r:769344307333038100>",
+    "id": 59,
+    "fullEmoji": "<:com_l:769344307383107584>:fish:<:com_r:769344307333038100>",
+    "desc": "Its has no I's. Get it?",
+    "notes": "0§0§0§0"
+  },
+  {
+    "name": "The Sun",
+    "type": 0,
+    "emoji": "<:com_l:769344307383107584>:sun_with_face:<:com_r:769344307333038100>",
+    "id": 60,
+    "fullEmoji": "<:com_l:769344307383107584>:sun_with_face:<:com_r:769344307333038100>",
+    "desc": "Using our revolutionary technique, you can convert sunlight into food. Taste the sun!",
+    "notes": "0§0§0§0§"
+  },
+  {
+    "name": "Shrooms",
+    "type": 0,
+    "emoji": "<:com_l:769344307383107584>:mushroom:<:com_r:769344307333038100>",
+    "id": 61,
+    "fullEmoji": "<:com_l:769344307383107584>:mushroom:<:com_r:769344307333038100>",
+    "desc": "Huh huh, this liiiiiiiit",
+    "notes": "0§0§0§0§"
+  },
+  {
+    "name": "Rock",
+    "type": 0,
+    "emoji": "<:com_l:769344307383107584>:rock:<:com_r:769344307333038100>",
+    "id": 62,
+    "fullEmoji": "<:com_l:769344307383107584>:rock:<:com_r:769344307333038100>",
+    "desc": "Its not just any boulder. Its Iraq!",
+    "notes": "0§0§0§0§"
+  },
+  {
+    "name": "Dead Tree",
+    "type": 0,
+    "emoji": "<:com_l:769344307383107584>:wood:<:com_r:769344307333038100>",
+    "id": 63,
+    "fullEmoji": "<:com_l:769344307383107584>:wood:<:com_r:769344307333038100>",
+    "desc": "How much wood would a wood chuck cuck, if a wood chuck would chuck wood?",
+    "notes": "0§0§0§0§"
+  },
+  {
+    "name": "Plent",
+    "type": 0,
+    "emoji": "<:com_l:769344307383107584>:potted_plant:<:com_r:769344307333038100>",
+    "id": 64,
+    "fullEmoji": "<:com_l:769344307383107584>:potted_plant:<:com_r:769344307333038100>",
+    "desc": "Give me the plant!",
+    "notes": "0§0§0§0§"
+  },
+  {
+    "name": "Moon",
+    "type": 0,
+    "emoji": "<:com_l:769344307383107584>:new_moon:<:com_r:769344307333038100>",
+    "id": 65,
+    "fullEmoji": "<:com_l:769344307383107584>:new_moon:<:com_r:769344307333038100>",
+    "desc": "Thats one small step for man, one giant leap for mankind.",
+    "notes": "0§0§0§0§"
+  },
+  {
+    "name": "Earth",
+    "type": 0,
+    "emoji": "<:com_l:769344307383107584>:earth_americas:<:com_r:769344307333038100>",
+    "id": 66,
+    "fullEmoji": "<:com_l:769344307383107584>:earth_americas:<:com_r:769344307333038100>",
+    "desc": "A small blue dot in a dead universe.",
+    "notes": "0§0§0§0§"
+  },
+  {
+    "name": "Saturn",
+    "type": 0,
+    "emoji": "<:com_l:769344307383107584>:ringed_planet:<:com_r:769344307333038100>",
+    "id": 67,
+    "fullEmoji": "<:com_l:769344307383107584>:ringed_planet:<:com_r:769344307333038100>",
+    "desc": "Imagine if earth had rings. That would be sick!",
+    "notes": "0§0§0§0§"
+  },
+  {
+    "name": "Gold Star",
+    "type": 0,
+    "emoji": "<:com_l:769344307383107584>:star:<:com_r:769344307333038100>",
+    "id": 68,
+    "fullEmoji": "<:com_l:769344307383107584>:star:<:com_r:769344307333038100>",
+    "desc": "Twinkle, twinkle, little star, how we wonder what you are.",
+    "notes": "0§0§0§0§"
+  },
+  {
+    "name": "Nice",
+    "type": 4,
+    "emoji": "<a:leg_l:769679906240987147>:smirk:<a:leg_r:769679906845622272>",
+    "id": 69,
+    "fullEmoji": "<a:leg_l:769679906240987147>:smirk:<a:leg_r:769679906845622272>",
+    "desc": "Nice",
+    "notes": "0§0§0§0§"
+  },
+  {
+    "name": "Lightning",
+    "type": 0,
+    "emoji": "<:com_l:769344307383107584>:zap:<:com_r:769344307333038100>",
+    "id": 70,
+    "fullEmoji": "<:com_l:769344307383107584>:zap:<:com_r:769344307333038100>",
+    "desc": "Kachow!",
+    "notes": "0§0§0§0§"
+  },
+  {
+    "name": "Cloudy with a chance of meatballs",
+    "type": 0,
+    "emoji": "<:com_l:769344307383107584>:cloud:<:com_r:769344307333038100>",
+    "id": 71,
+    "fullEmoji": "<:com_l:769344307383107584>:cloud:<:com_r:769344307333038100>",
+    "desc": "Gummi bears!",
+    "notes": "0§0§0§0§"
+  },
+  {
+    "name": "Rain",
+    "type": 0,
+    "emoji": "<:com_l:769344307383107584>:cloud_rain:<:com_r:769344307333038100>",
+    "id": 72,
+    "fullEmoji": "<:com_l:769344307383107584>:cloud_rain:<:com_r:769344307333038100>",
+    "desc": "It's raining men! Haleluja, it's raining men! Amen!",
+    "notes": "0§0§0§0§"
+  },
+  {
+    "name": "Gay",
+    "type": 2,
+    "emoji": "<:rare_ml:769348056918392832>:rainbow:<:rare_r:769348056763990087>",
+    "id": 73,
+    "fullEmoji": "<:rare_ml:769348056918392832>:rainbow:<:rare_r:769348056763990087>",
+    "desc": "No u",
+    "notes": "0§0§0§0§"
+  },
+  {
+    "name": "Sharknado!",
+    "type": 2,
+    "emoji": "<:rare_ml:769348056918392832>:cloud_tornado:<:rare_r:769348056763990087>",
+    "id": 74,
+    "fullEmoji": "<:rare_ml:769348056918392832>:cloud_tornado:<:rare_r:769348056763990087>",
+    "desc": "I'm pretty sure it's impossible. I mean, would'nt the sarks suffocate before they reached land or something?",
+    "notes": "0§0§0§0§"
+  },
+  {
+    "name": "Fire",
+    "type": 1,
+    "emoji": "<:unc_l:769346094802665508>:fire:<:unc_mr:769346094898348032>",
+    "id": 75,
+    "fullEmoji": "<:unc_l:769346094802665508>:fire:<:unc_mr:769346094898348032>",
+    "desc": "I hope you die in a fire! (It's a song, I dont actually want you to die in a fire)",
+    "notes": "0§0§0§0§"
+  },
+  {
+    "name": "Water",
+    "type": 1,
+    "emoji": "<:unc_l:769346094802665508>:droplet:<:unc_mr:769346094898348032>",
+    "id": 76,
+    "fullEmoji": "<:unc_l:769346094802665508>:droplet:<:unc_mr:769346094898348032>",
+    "desc": "One of the four elements.",
+    "notes": "0§0§0§0§"
+  },
+  {
+    "name": "Air",
+    "type": 1,
+    "emoji": "<:unc_l:769346094802665508>:dash:<:unc_mr:769346094898348032>",
+    "id": 77,
+    "fullEmoji": "<:unc_l:769346094802665508>:dash:<:unc_mr:769346094898348032>",
+    "desc": "The last air bender.",
+    "notes": "0§0§0§0§"
+  },
+  {
+    "name": "Oh yeah",
+    "type": 3,
+    "emoji": "<a:ultra_l:769371476679065641>:sweat_drops:<a:ultra_r:769371476427145229>",
+    "id": 78,
+    "fullEmoji": "<a:ultra_l:769371476679065641>:sweat_drops:<a:ultra_r:769371476427145229>",
+    "desc": ":eggplant: :smirk:",
+    "notes": "0§0§0§0§"
+  },
+  {
+    "name": "Below Zero",
+    "type": 2,
+    "emoji": "<:rare_ml:769348056918392832>:sweat_drops:<:rare_r:769348056763990087>",
+    "id": 79,
+    "fullEmoji": "<:rare_ml:769348056918392832>:sweat_drops:<:rare_r:769348056763990087>",
+    "desc": "Well are'nt you a special snowflake?",
+    "notes": "0§0§0§0§"
+  },
+  {
+    "name": "Comet",
+    "type": 1,
+    "emoji": "<:unc_l:769346094802665508>:comet:<:unc_mr:769346094898348032>",
+    "id": 80,
+    "fullEmoji": "<:unc_l:769346094802665508>:comet:<:unc_mr:769346094898348032>",
+    "desc": "Quick, make a wish!",
+    "notes": "0§0§0§0§"
+  },
+  {
+    "name": "Boom",
+    "type": 1,
+    "emoji": "<:unc_l:769346094802665508>:boom:<:unc_mr:769346094898348032>",
+    "id": 81,
+    "fullEmoji": "<:unc_l:769346094802665508>:boom:<:unc_mr:769346094898348032>",
+    "desc": "Your terrible at minesweeper.",
+    "notes": "0§0§0§0§"
+  },
+  {
+    "name": "Bamboo",
+    "type": 1,
+    "emoji": "<:unc_l:769346094802665508>:bamboo:<:unc_mr:769346094898348032>",
+    "id": 82,
+    "fullEmoji": "<:unc_l:769346094802665508>:bamboo:<:unc_mr:769346094898348032>",
+    "desc": "Ill give ya 12 bamboo!",
+    "notes": "0§0§0§0§"
+  },
+  {
+    "name": "Cactus",
+    "type": 2,
+    "emoji": "<:rare_ml:769348056918392832>:cactus:<:rare_r:769348056763990087>",
+    "id": 83,
+    "fullEmoji": "<:rare_ml:769348056918392832>:cactus:<:rare_r:769348056763990087>",
+    "desc": "Cactus? More like cucktus <a:UXDEE:774463275831918603>",
+    "notes": "0§0§0§0§"
+  },
+  {
+    "name": "Apple",
+    "type": 0,
+    "emoji": "<:com_l:769344307383107584>:apple:<:com_r:769344307333038100>",
+    "id": 84,
+    "fullEmoji": "<:com_l:769344307383107584>:apple:<:com_r:769344307333038100>",
+    "desc": "Hey apple. Apple. Apple. Hey apple. Hey. Hey apple.",
+    "notes": "0§0§0§0§"
+  },
+  {
+    "name": "Orange",
+    "type": 1,
+    "emoji": "<:unc_l:769346094802665508>:tangerine:<:unc_mr:769346094898348032>",
+    "id": 85,
+    "fullEmoji": "<:unc_l:769346094802665508>:tangerine:<:unc_mr:769346094898348032>",
+    "desc": "Uhm actually it's a tangerine.",
+    "notes": "0§0§0§0§"
+  },
+  {
+    "name": "Lemon",
+    "type": 0,
+    "emoji": "<:com_l:769344307383107584>:lemon:<:com_r:769344307333038100>",
+    "id": 86,
+    "fullEmoji": "<:com_l:769344307383107584>:lemon:<:com_r:769344307333038100>",
+    "desc": "When life gives you lemons. Don't make lemonade. Make life take the lemons back! Get mad! I don't want your damn lemons! What am I supposed to do with these? Demand to see life's manager! Make life rue the day it thought it could give Cave Johnson lemons! Do you know who I am? I'm the man who's going to burn your house down! With the lemons! I'm going to get my engineers to invent a combustible lemon that burns your house down!",
+    "notes": "0§0§0§0§"
+  },
+  {
+    "name": "Bananana",
+    "type": 0,
+    "emoji": "<:com_l:769344307383107584>:banana:<:com_r:769344307333038100>",
+    "id": 87,
+    "fullEmoji": "<:com_l:769344307383107584>:banana:<:com_r:769344307333038100>",
+    "desc": "Its the most beutiful thing I've ever seen in my life! It's a bananana, next to a BANANANA!",
+    "notes": "0§0§0§0§"
+  },
+  {
+    "name": "Watermelone",
+    "type": 1,
+    "emoji": "<:unc_l:769346094802665508>:watermelon:<:unc_mr:769346094898348032>",
+    "id": 88,
+    "fullEmoji": "<:unc_l:769346094802665508>:watermelon:<:unc_mr:769346094898348032>",
+    "desc": "She showers with Pantene, but I got watermelone to keep me clean!",
+    "notes": "0§0§0§0§"
+  },
+  {
+    "name": "Peach",
+    "type": 2,
+    "emoji": "<:rare_ml:769348056918392832>:peach:<:rare_r:769348056763990087>",
+    "id": 89,
+    "fullEmoji": "<:rare_ml:769348056918392832>:peach:<:rare_r:769348056763990087>",
+    "desc": ":smirk:",
+    "notes": "0§0§0§0§"
+  },
+  {
+    "name": "Mango",
+    "type": 1,
+    "emoji": "<:unc_l:769346094802665508>:mango:<:unc_mr:769346094898348032>",
+    "id": 90,
+    "fullEmoji": "<:unc_l:769346094802665508>:mango:<:unc_mr:769346094898348032>",
+    "desc": "My mango is to blow up, then act like I dont know nobody, ahahaha!",
+    "notes": "0§0§0§0§"
+  },
+  {
+    "name": "Pineapple",
+    "type": 0,
+    "emoji": "<:com_l:769344307383107584>:pineapple:<:com_r:769344307333038100>",
+    "id": 91,
+    "fullEmoji": "<:com_l:769344307383107584>:pineapple:<:com_r:769344307333038100>",
+    "desc": "Who lives in a pineapple under the sea?",
+    "notes": "0§0§0§0§"
+  },
+  {
+    "name": "Coconut",
+    "type": 2,
+    "emoji": "<:rare_ml:769348056918392832>:coconut:<:rare_r:769348056763990087>",
+    "id": 92,
+    "fullEmoji": "<:rare_ml:769348056918392832>:coconut:<:rare_r:769348056763990087>",
+    "desc": "<https://www.youtube.com/watch?v=w0AOGeqOnFY>",
+    "notes": "0§0§0§0§"
+  },
+  {
+    "name": "Eggplant",
+    "type": 3,
+    "emoji": "<a:ultra_l:769371476679065641>:eggplant:<a:ultra_r:769371476427145229>",
+    "id": 93,
+    "fullEmoji": "<a:ultra_l:769371476679065641>:eggplant:<a:ultra_r:769371476427145229>",
+    "desc": ":smirk:",
+    "notes": "0§0§0§0§"
+  },
+  {
+    "name": "Avocado",
+    "type": 0,
+    "emoji": "<:com_l:769344307383107584>:avocado:<:com_r:769344307333038100>",
+    "id": 94,
+    "fullEmoji": "<:com_l:769344307383107584>:avocado:<:com_r:769344307333038100>",
+    "desc": "FR E SH A VOCA DO",
+    "notes": "0§0§0§0§"
+  },
+  {
+    "name": "Olives!",
+    "type": 1,
+    "emoji": "<:unc_l:769346094802665508>:olive:<:unc_mr:769346094898348032>",
+    "id": 95,
+    "fullEmoji": "<:unc_l:769346094802665508>:olive:<:unc_mr:769346094898348032>",
+    "desc": "Welcome to the olive garden!",
+    "notes": "0§0§0§0§"
+  },
+  {
+    "name": "Pickel",
+    "type": 2,
+    "emoji": "<:rare_ml:769348056918392832>:cucumber:<:rare_r:769348056763990087>",
+    "id": 96,
+    "fullEmoji": "<:rare_ml:769348056918392832>:cucumber:<:rare_r:769348056763990087>",
+    "desc": "Pickel rick!",
+    "notes": "0§0§0§0§"
+  },
+  {
+    "name": "Halapenjo",
+    "type": 0,
+    "emoji": "<:com_l:769344307383107584>:hot_pepper:<:com_r:769344307333038100>",
+    "id": 97,
+    "fullEmoji": "<:com_l:769344307383107584>:hot_pepper:<:com_r:769344307333038100>",
+    "desc": "I guess you could say I'm halapenjo buisiness!",
+    "notes": "0§0§0§0§"
+  },
+  {
+    "name": "Potato",
+    "type": 1,
+    "emoji": "<:unc_l:769346094802665508>:potato:<:unc_mr:769346094898348032>",
+    "id": 98,
+    "fullEmoji": "<:unc_l:769346094802665508>:potato:<:unc_mr:769346094898348032>",
+    "desc": "My PC.",
+    "notes": "0§0§0§0§"
+  },
+  {
+    "name": "Croissant",
+    "type": 2,
+    "emoji": "<:rare_ml:769348056918392832>:croissant:<:rare_r:769348056763990087>",
+    "id": 99,
+    "fullEmoji": "<:rare_ml:769348056918392832>:croissant:<:rare_r:769348056763990087>",
+    "desc": "<https://youtu.be/cpvC8_NMXmU?t=3>",
+    "notes": "0§0§0§0§"
+  },
+  {
+    "name": "Bread",
+    "type": 0,
+    "emoji": "<:com_l:769344307383107584>:bread:<:com_r:769344307333038100>",
+    "id": 100,
+    "fullEmoji": "<:com_l:769344307383107584>:bread:<:com_r:769344307333038100>",
+    "desc": "Bread.",
+    "notes": "0§0§0§0§"
+  },
+  {
+    "name": "French Bread",
+    "type": 0,
+    "emoji": "<:com_l:769344307383107584>:french_bread:<:com_r:769344307333038100>",
+    "id": 101,
+    "fullEmoji": "<:com_l:769344307383107584>:french_bread:<:com_r:769344307333038100>",
+    "desc": "Bread. But french.",
+    "notes": "0§0§0§0§"
+  },
+  {
+    "name": "Flat Bread",
+    "type": 0,
+    "emoji": "<:com_l:769344307383107584>:flatbread:<:com_r:769344307333038100>",
+    "id": 102,
+    "fullEmoji": "<:com_l:769344307383107584>:flatbread:<:com_r:769344307333038100>",
+    "desc": "Bread. But flat.",
+    "notes": "0§0§0§0§"
+  },
+  {
+    "name": "Cheese",
+    "type": 2,
+    "emoji": "<:rare_ml:769348056918392832>:cheese:<:rare_r:769348056763990087>",
+    "id": 103,
+    "fullEmoji": "<:rare_ml:769348056918392832>:cheese:<:rare_r:769348056763990087>",
+    "desc": "Gromit, where's the cheeeese?",
+    "notes": "0§0§0§0§"
+  },
+  {
+    "name": "Egg",
+    "type": 0,
+    "emoji": "<:com_l:769344307383107584>:egg:<:com_r:769344307333038100>",
+    "id": 104,
+    "fullEmoji": "<:com_l:769344307383107584>:egg:<:com_r:769344307333038100>",
+    "desc": "Holds the record of most like on an instagram post, posted on January 4th, 2019",
+    "notes": "0§0§0§0§"
+  },
+  {
+    "name": "Im Lovin' It!",
+    "type": 1,
+    "emoji": "<:unc_l:769346094802665508>:fries:<:unc_mr:769346094898348032>",
+    "id": 105,
+    "fullEmoji": "<:unc_l:769346094802665508>:fries:<:unc_mr:769346094898348032>",
+    "desc": "Fun fact french fries weren't created in france. They were invented in Belgium.",
+    "notes": "0§0§0§0§"
+  },
+  {
+    "name": "Money money money!",
+    "type": 1,
+    "emoji": "<:unc_l:769346094802665508>:coin:<:unc_mr:769346094898348032>",
+    "id": 106,
+    "fullEmoji": "<:unc_l:769346094802665508>:coin:<:unc_mr:769346094898348032>",
+    "desc": "Scrooge McDuck.",
+    "notes": "1§DPS§10§DPS$Flex$5$0$1"
+  },
+  {
+    "name": "Pizzah!",
+    "type": 1,
+    "emoji": "<:unc_l:769346094802665508>:pizza:<:unc_mr:769346094898348032>",
+    "id": 107,
+    "fullEmoji": "<:unc_l:769346094802665508>:pizza:<:unc_mr:769346094898348032>",
+    "desc": "Another fnaf reference?",
+    "notes": "0§0§0§0§"
+  },
+  {
+    "name": "Taco",
+    "type": 0,
+    "emoji": "<:com_l:769344307383107584>:taco:<:com_r:769344307333038100>",
+    "id": 108,
+    "fullEmoji": "<:com_l:769344307383107584>:taco:<:com_r:769344307333038100>",
+    "desc": "It's Taco Tuesday everybody!!",
+    "notes": "0§0§0§0§"
+  },
+  {
+    "name": "Spaghet",
+    "type": 1,
+    "emoji": "<:unc_l:769346094802665508>:spaghetti:<:unc_mr:769346094898348032>",
+    "id": 109,
+    "fullEmoji": "<:unc_l:769346094802665508>:spaghetti:<:unc_mr:769346094898348032>",
+    "desc": "Somebady toucha mah spaghet!",
+    "notes": "0§0§0§0§"
+  },
+  {
+    "name": "Icecream",
+    "type": 0,
+    "emoji": "<:com_l:769344307383107584>:ice_cream:<:com_r:769344307333038100>",
+    "id": 110,
+    "fullEmoji": "<:com_l:769344307383107584>:ice_cream:<:com_r:769344307333038100>",
+    "desc": "I scream, you scream we all scream for Ice cream!",
+    "notes": "0§0§0§0§"
+  },
+  {
+    "name": "Cake",
+    "type": 3,
+    "emoji": "<a:ultra_l:769371476679065641>:cake:<a:ultra_r:769371476427145229>",
+    "id": 111,
+    "fullEmoji": "<a:ultra_l:769371476679065641>:cake:<a:ultra_r:769371476427145229>",
+    "desc": "It's your cake day! :DD",
+    "notes": "0§0§0§0§"
+  },
+  {
+    "name": "Sandwich",
+    "type": 1,
+    "emoji": "<:unc_l:769346094802665508>:sandwich:<:unc_mr:769346094898348032>",
+    "id": 112,
+    "fullEmoji": "<:unc_l:769346094802665508>:sandwich:<:unc_mr:769346094898348032>",
+    "desc": "What are you?! WHAT ARE YOU!?!?",
+    "notes": "0§0§0§0§"
+  },
+  {
+    "name": "Doughnut",
+    "type": 2,
+    "emoji": "<:rare_ml:769348056918392832>:doughnut:<:rare_r:769348056763990087>",
+    "id": 113,
+    "fullEmoji": "<:rare_ml:769348056918392832>:doughnut:<:rare_r:769348056763990087>",
+    "desc": "What are you doing you doughnut?!",
+    "notes": "0§0§0§0§"
+  },
+  {
+    "name": "Cookie",
+    "type": 0,
+    "emoji": "<:com_l:769344307383107584>:cookie:<:com_r:769344307333038100>",
+    "id": 114,
+    "fullEmoji": "<:com_l:769344307383107584>:cookie:<:com_r:769344307333038100>",
+    "desc": "The cookie moster's comming!",
+    "notes": "0§0§0§0§"
+  },
+  {
+    "name": "Nut",
+    "type": 3,
+    "emoji": "<a:ultra_l:769371476679065641>:peanuts:<a:ultra_r:769371476427145229>",
+    "id": 114,
+    "fullEmoji": "<a:ultra_l:769371476679065641>:peanuts:<a:ultra_r:769371476427145229>",
+    "desc": ":peanuts::peanuts::peanuts:",
+    "notes": "0§0§0§0§"
+  },
+  {
+    "name": "Milk",
+    "type": 1,
+    "emoji": "<:unc_l:769346094802665508>:milk:<:unc_mr:769346094898348032>",
+    "id": 115,
+    "fullEmoji": "<:unc_l:769346094802665508>:milk:<:unc_mr:769346094898348032>",
+    "desc": "He need some milk!",
+    "notes": "0§0§0§0§"
+  },
+  {
+    "name": "Ping!",
+    "type": 0,
+    "emoji": "<:com_l:769344307383107584>:ping_pong:<:com_r:769344307333038100>",
+    "id": 116,
+    "fullEmoji": "<:com_l:769344307383107584>:ping_pong:<:com_r:769344307333038100>",
+    "desc": "Pong!",
+    "notes": "0§0§0§0§"
+  },
+  {
+    "name": "Smile!",
+    "type": 0,
+    "emoji": "<:com_l:769344307383107584>:slight_smile:<:com_r:769344307333038100>",
+    "id": 117,
+    "fullEmoji": "<:com_l:769344307383107584>:slight_smile:<:com_r:769344307333038100>",
+    "desc": "Turn that frown, upsidedown!",
+    "notes": "1§ITEM§0§HEAL$Be Happy$5$0$0"
+  },
+  {
+    "name": "It's a trap!",
+    "type": 2,
+    "emoji": "<:rare_ml:769348056918392832>:mouse_trap:<:rare_r:769348056763990087>",
+    "id": 118,
+    "fullEmoji": "<:rare_ml:769348056918392832>:mouse_trap:<:rare_r:769348056763990087>",
+    "desc": "*Death star go brr*",
+    "notes": "0§0§0§0§"
+  },
+  {
+    "name": "Doctor who?",
+    "type": 4,
+    "emoji": "<a:leg_l:769679906240987147><a:tardis_go_brr:774478661780111371><a:leg_r:769679906845622272>",
+    "id": 119,
+    "fullEmoji": "<a:leg_l:769679906240987147><a:tardis_go_brr:774478661780111371><a:leg_r:769679906845622272>",
+    "desc": "<https://www.youtube.com/watch?v=6p5BEzoGwD4>",
+    "notes": "0§0§0§0§"
+  },
+  {
+    "name": "TNT",
+    "type": 2,
+    "emoji": "<:rare_ml:769348056918392832>:firecracker:<:rare_r:769348056763990087>",
+    "id": 120,
+    "fullEmoji": "<:rare_ml:769348056918392832>:firecracker:<:rare_r:769348056763990087>",
+    "desc": "'Cause I'm T.N.T., I'm dynamite. T.N.T., and I'll win the fight. T.N.T., I'm a power load. T.N.T., watch me explode",
+    "notes": "0§0§0§0§"
+  }
 ]

@@ -40,6 +40,7 @@ namespace EmojiTCG.Modules
     public class ItemOtherCard
     {
         public Card card { get; set; }
+        public bool inUse { get; set; }
     }
 
     public class LeaderBoardPlace

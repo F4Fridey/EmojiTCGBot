@@ -17,7 +17,28 @@ namespace EmojiTCG.Modules
         [Command("help")]
         public async Task Help()
         {
-            await ReplyAsync("```diff\n+ All EmojiTCG Commands:\n  help - All these commands.\n  status - Status of the bot.\n  inventory/inv (@mention) - Check your inventory. Only add @mention to check another inventory.\n  shop - Browse the shop.\n  open ID = Open a booster pack with a specific id.\n  daily - Get your daily reward.\n  melt cardID - Melt a card into a coin.\n card ID - Check a cards stats.\n  deck - Command for your decks.\n  battle - Command to battle.\n  invite - Invite the bot to your server with this.\n- Administrator Commands\n  setup - Setup the server.\n  serverid - Get the server ID of this server.\n  unlink (serverid) - Only add server ID only if servers are linked to this server.\n```");
+            string reply = "";
+            reply += "```diff\n+ All EmojiTCG Commands:\n  help - All these commands.\n  status - Status of the bot.\n  inventory/inv (@mention) - Check your inventory. Only add @mention to check another inventory.\n  shop - Browse the shop.\n  open ID = Open a booster pack with a specific id.\n  daily - Get your daily reward.\n  melt cardID - Melt a card into a coin.\n  card ID - Check a cards stats.\nX deck - Command for your decks.\nX battle - Command to battle.\nX invite - Invite the bot to your server with this.\n- Administrator Commands\n  setup - Setup the server.\n  serverid - Get the server ID of this server.\n  unlink (serverid) - Only add server ID only if servers are linked to this server.\n```";
+            await ReplyAsync(reply);
+        }
+
+        [Command("tutorial")]
+        [Alias("tut")]
+        public async Task Tutorial()
+        {
+            try
+            {
+                string reply = "Hello, welcome to the world of emojis! This bot allows you to collect, trade and battle emoji cards!\n\nIf you dont want to read this wall of text, you can listen to this video: <https://www.youtube.com/watch?v=dQw4w9WgXcQ>\n\nStart off by checking out your inventory with `=inv`!\nThis shows you everything you have including coins, badges, booster packs and cards. To look at other pages do `=inv #` *(# is page number)*\n\n**__Coins :coin: :__**\nCoins are the main currency. You use them to buy booster packs and to trade with others, but more on that later.\nYou earn coins by both chatting in the server and being in voice chat.\n**__Booster packs <:Normal_Pack:769405453565952050> :__**\nBooster packs are the main way to obtain cards. You can buy them in the shop. Once purchased they will appear in your inventory and you will be able to open them. To open one you do `=open <id>` where '<id>' is the booster packs id *(Which can be found next to the packs name in your inventory)*\nEach booster pack can give you certain cards at certain rarities. For example a normal booster pack will have a higher chance to give you lower tear cards, but has the benefit of giving you most of the available cards.";
+                await Context.User.SendMessageAsync(reply);
+                reply = "**__Cards <a:Halloween_2020_Card:769690597337858098> :__**\nCards are the main focus of this bot. You must collect them all! You can use cards to battle with other players, trade with other players or if you have duplicates, melt back into coins.\n**__The Shop :shopping_cart: :__**\nThe shop is where you can buy things with your coins. To access it do `=shop`. There are many categories in the shop which sell different things. You can access them using `=shop category` to get a list of all category ids and names, then `=shop <id/name>`. You can either use the shops ID or name given in the list.\nThe shop is updated every so often with new packs and items, so keep an eye on it.\nWhen you've found something to buy look for the ID of the item, which is usualy below the items image. With that, do `=shop buy <id>` where '<id>' is the ID of the item.";
+                await Context.User.SendMessageAsync(reply);
+                reply = "**__Trading <:trade:774445393047584790> :__**\nYou can trade cards and coins with other users. To do so you must create a trade request first using `=trade @mention <yourOffer> <recievingItems>` where '<yourOffer>' is a list of cards and coin amount you want to offer and '<recievingItems>' is a list of cards and coins you want in return.\nThe formatting for this is as follows `cardid,cardid,cardid` etc. If you want to offer coins, insert coin amount and a 'c' at the end like this: `100c`. If you want both add the coin amount to the card list like so: `cardid,cardid,cardid,100c`.\nHere is an example: `=trade @mention 1,2,3 4,5,50c`\nThis command says your offering cards 1, 2 and 3 for cards 4, 5 and 50 coins.\nOnce a trade request has been sent, it can be canceled with `=trade cancel`. The recipient of the request would now be able to do `=trade accept/a` to accept or `=trade reject/r` to reject.";
+                await Context.User.SendMessageAsync(reply);
+                reply = "**__Battling :crossed_swords: :__**\nYou can battle with other players with your cards. To get a tutorial on that, you can do `=battle tutorial`\n**__Melting Cards :fire: :__**\nYou can melt a card into 1 coin with the command `=melt <cardid>` where '<cardid>' is the ID of the card found next to its name in your inventory.\n**__Badges <:Bot_Creator:767154542939865089> :__**\nBadges are essentialy achievements, you get them for completing certain quotas. For example, you can get the Gen 1 badge for collecting all generation 1 cards.\n**__Daily Prizes <:Whats_Inside:769409287239499797> :__**\nYou can get daily rewards for doing `=daily` every day. The higher your streak, the better rewards.\nThere are also monthly daily prizes which can give more than just coins.\n**__Other bits 'n bobs :__**\nIf you want to invite this bot to your server you can do so with the invite link when doing `=invite`\nYou can get a list of all commands with `=help`\nYou can check the bots status with `=status`";
+                await Context.User.SendMessageAsync(reply);
+            }
+            catch { await ReplyAsync("```diff\n- DMs failed to send. You may need to allow DMs from server members in your settings.\n```"); return; }
+            await ReplyAsync("```diff\n+ DMs sent.\n  If you didnt recieve anything, you may need to enable DMs from non-friends.\n```");
         }
 
         [Command("status")]
@@ -107,7 +128,7 @@ namespace EmojiTCG.Modules
             }
         }
 
-        [Command("no")]
+        [Command("no"), RequireUserPermission(GuildPermission.Administrator)]
         public async Task No()
         {
             if (CurrentData.commandsEnabled)
@@ -207,7 +228,7 @@ namespace EmojiTCG.Modules
                                 }
                             }
                             Functions.SaveAllData();
-                            await ReplyAsync("```diff\n+ Set up complete. Have fun :D\n```");
+                            await ReplyAsync("```diff\n+ Set up complete. Do =tut to begin! :D\n```");
                             var adminChannel = CurrentData.client.GetChannel(767370970914619403) as IMessageChannel;
                             await adminChannel.SendMessageAsync("Bot setup in new server: " + Context.Guild.Name);
                             break;
@@ -220,7 +241,7 @@ namespace EmojiTCG.Modules
             }
         }
 
-        [Command("yes")]
+        [Command("yes"), RequireUserPermission(GuildPermission.Administrator)]
         public async Task Yes()
         {
             if (CurrentData.commandsEnabled)
@@ -296,7 +317,7 @@ namespace EmojiTCG.Modules
             }
         }
 
-        [Command("linkto")]
+        [Command("linkto"), RequireUserPermission(GuildPermission.Administrator)]
         public async Task LinkTo(params String[] stringArray)
         {
             if (CurrentData.commandsEnabled)
@@ -389,7 +410,7 @@ namespace EmojiTCG.Modules
             }
         }
 
-        [Command("unlink")]
+        [Command("unlink"), RequireUserPermission(GuildPermission.Administrator)]
         public async Task Unlink(params string[] args)
         {
             if (CurrentData.commandsEnabled)
@@ -448,34 +469,7 @@ namespace EmojiTCG.Modules
         {
             if (CurrentData.commandsEnabled)
             {
-                ulong contextGuildId = 0;
-                foreach (ServerData.ServerData _serverData in CurrentData.serverData)
-                {
-                    if (_serverData.serverId == Context.Guild.Id)
-                    {
-                        if (_serverData.linkedToServerId != 0)
-                        {
-                            foreach (ServerData.ServerData __serverData in CurrentData.serverData)
-                            {
-                                if (__serverData.linkedToThisServerIds.Contains(Context.Guild.Id))
-                                {
-
-                                    contextGuildId = _serverData.linkedToServerId;
-                                    break;
-                                }
-                                else
-                                {
-                                    contextGuildId = Context.Guild.Id;
-                                }
-                            }
-                        }
-                        else
-                        {
-                            contextGuildId = Context.Guild.Id;
-                        }
-                        break;
-                    }
-                }
+                ulong contextGuildId = Functions.CheckServerLinked(Context.Guild.Id);
 
                 List<string> pages = new List<string>();
                 try
@@ -628,34 +622,7 @@ namespace EmojiTCG.Modules
         {
             if (CurrentData.commandsEnabled)
             {
-                ulong contextGuildId = 0;
-                foreach (ServerData.ServerData _serverData in CurrentData.serverData)
-                {
-                    if (_serverData.serverId == Context.Guild.Id)
-                    {
-                        if (_serverData.linkedToServerId != 0)
-                        {
-                            foreach (ServerData.ServerData __serverData in CurrentData.serverData)
-                            {
-                                if (__serverData.linkedToThisServerIds.Contains(Context.Guild.Id))
-                                {
-
-                                    contextGuildId = _serverData.linkedToServerId;
-                                    break;
-                                }
-                                else
-                                {
-                                    contextGuildId = Context.Guild.Id;
-                                }
-                            }
-                        }
-                        else
-                        {
-                            contextGuildId = Context.Guild.Id;
-                        }
-                        break;
-                    }
-                }
+                ulong contextGuildId = Functions.CheckServerLinked(Context.Guild.Id);
 
                 int arg0 = 1;
                 ulong userID = 0;
@@ -759,12 +726,18 @@ namespace EmojiTCG.Modules
                     List<Card> sortedCards = new List<Card>();
                     for (int i = CardTypes.cardTypes.Count - 1; i >= 0; i--)
                     {
+                        List<Card> _sortedCards = new List<Card>();
                         foreach (Card _card in cards)
                         {
                             if (_card.type == (CardType)i)
                             {
-                                sortedCards.Add(_card);
+                                _sortedCards.Add(_card);
                             }
+                        }
+                        _sortedCards = _sortedCards.OrderBy(o => o.id).ToList();
+                        foreach (Card _card in _sortedCards)
+                        {
+                            sortedCards.Add(_card);
                         }
                     }
                     cards = sortedCards;
@@ -867,34 +840,7 @@ namespace EmojiTCG.Modules
         {
             if (CurrentData.commandsEnabled)
             {
-                ulong contextGuildId = 0;
-                foreach (ServerData.ServerData _serverData in CurrentData.serverData)
-                {
-                    if (_serverData.serverId == Context.Guild.Id)
-                    {
-                        if (_serverData.linkedToServerId != 0)
-                        {
-                            foreach (ServerData.ServerData __serverData in CurrentData.serverData)
-                            {
-                                if (__serverData.linkedToThisServerIds.Contains(Context.Guild.Id))
-                                {
-
-                                    contextGuildId = _serverData.linkedToServerId;
-                                    break;
-                                }
-                                else
-                                {
-                                    contextGuildId = Context.Guild.Id;
-                                }
-                            }
-                        }
-                        else
-                        {
-                            contextGuildId = Context.Guild.Id;
-                        }
-                        break;
-                    }
-                }
+                ulong contextGuildId = Functions.CheckServerLinked(Context.Guild.Id);
 
                 if (!args.Any())
                 {
@@ -1284,34 +1230,7 @@ namespace EmojiTCG.Modules
         {
             if (CurrentData.commandsEnabled)
             {
-                ulong contextGuildId = 0;
-                foreach (ServerData.ServerData _serverData in CurrentData.serverData)
-                {
-                    if (_serverData.serverId == Context.Guild.Id)
-                    {
-                        if (_serverData.linkedToServerId != 0)
-                        {
-                            foreach (ServerData.ServerData __serverData in CurrentData.serverData)
-                            {
-                                if (__serverData.linkedToThisServerIds.Contains(Context.Guild.Id))
-                                {
-
-                                    contextGuildId = _serverData.linkedToServerId;
-                                    break;
-                                }
-                                else
-                                {
-                                    contextGuildId = Context.Guild.Id;
-                                }
-                            }
-                        }
-                        else
-                        {
-                            contextGuildId = Context.Guild.Id;
-                        }
-                        break;
-                    }
-                }
+                ulong contextGuildId = Functions.CheckServerLinked(Context.Guild.Id);
 
                 if (!args[0].Any())
                 {
@@ -1447,34 +1366,7 @@ namespace EmojiTCG.Modules
         {
             if (CurrentData.commandsEnabled)
             {
-                ulong contextGuildId = 0;
-                foreach (ServerData.ServerData _serverData in CurrentData.serverData)
-                {
-                    if (_serverData.serverId == Context.Guild.Id)
-                    {
-                        if (_serverData.linkedToServerId != 0)
-                        {
-                            foreach (ServerData.ServerData __serverData in CurrentData.serverData)
-                            {
-                                if (__serverData.linkedToThisServerIds.Contains(Context.Guild.Id))
-                                {
-
-                                    contextGuildId = _serverData.linkedToServerId;
-                                    break;
-                                }
-                                else
-                                {
-                                    contextGuildId = Context.Guild.Id;
-                                }
-                            }
-                        }
-                        else
-                        {
-                            contextGuildId = Context.Guild.Id;
-                        }
-                        break;
-                    }
-                }
+                ulong contextGuildId = Functions.CheckServerLinked(Context.Guild.Id);
 
                 bool userExists = false;
                 for (int i = 0; i < CurrentData.serverData.Count; i++)
@@ -1774,34 +1666,7 @@ namespace EmojiTCG.Modules
         {
             if (CurrentData.commandsEnabled)
             {
-                ulong contextGuildId = 0;
-                foreach (ServerData.ServerData _serverData in CurrentData.serverData)
-                {
-                    if (_serverData.serverId == Context.Guild.Id)
-                    {
-                        if (_serverData.linkedToServerId != 0)
-                        {
-                            foreach (ServerData.ServerData __serverData in CurrentData.serverData)
-                            {
-                                if (__serverData.linkedToThisServerIds.Contains(Context.Guild.Id))
-                                {
-
-                                    contextGuildId = _serverData.linkedToServerId;
-                                    break;
-                                }
-                                else
-                                {
-                                    contextGuildId = Context.Guild.Id;
-                                }
-                            }
-                        }
-                        else
-                        {
-                            contextGuildId = Context.Guild.Id;
-                        }
-                        break;
-                    }
-                }
+                ulong contextGuildId = Functions.CheckServerLinked(Context.Guild.Id);
 
                 uint arg0 = 4000000000;
                 bool parsed = false;
@@ -1865,36 +1730,11 @@ namespace EmojiTCG.Modules
         [Command("deck")]
         public async Task Deck(params string[] args)
         {
+            await ReplyAsync("```diff\n- Battles are not enabled during the beta testing.\n```");
+            return;
             if (CurrentData.commandsEnabled)
             {
-                ulong contextGuildId = 0;
-                foreach (ServerData.ServerData _serverData in CurrentData.serverData)
-                {
-                    if (_serverData.serverId == Context.Guild.Id)
-                    {
-                        if (_serverData.linkedToServerId != 0)
-                        {
-                            foreach (ServerData.ServerData __serverData in CurrentData.serverData)
-                            {
-                                if (__serverData.linkedToThisServerIds.Contains(Context.Guild.Id))
-                                {
-
-                                    contextGuildId = _serverData.linkedToServerId;
-                                    break;
-                                }
-                                else
-                                {
-                                    contextGuildId = Context.Guild.Id;
-                                }
-                            }
-                        }
-                        else
-                        {
-                            contextGuildId = Context.Guild.Id;
-                        }
-                        break;
-                    }
-                }
+                ulong contextGuildId = Functions.CheckServerLinked(Context.Guild.Id);
 
                 if (args.Any())
                 {
@@ -2195,36 +2035,11 @@ namespace EmojiTCG.Modules
         [Command("battle")]
         public async Task Battle(params string[] args)
         {
+            await ReplyAsync("```diff\n- Battles are not enabled during beta testing.\n```");
+            return;
             if (CurrentData.commandsEnabled)
             {
-                ulong contextGuildId = 0;
-                foreach (ServerData.ServerData _serverData in CurrentData.serverData)
-                {
-                    if (_serverData.serverId == Context.Guild.Id)
-                    {
-                        if (_serverData.linkedToServerId != 0)
-                        {
-                            foreach (ServerData.ServerData __serverData in CurrentData.serverData)
-                            {
-                                if (__serverData.linkedToThisServerIds.Contains(Context.Guild.Id))
-                                {
-
-                                    contextGuildId = _serverData.linkedToServerId;
-                                    break;
-                                }
-                                else
-                                {
-                                    contextGuildId = Context.Guild.Id;
-                                }
-                            }
-                        }
-                        else
-                        {
-                            contextGuildId = Context.Guild.Id;
-                        }
-                        break;
-                    }
-                }
+                ulong contextGuildId = Functions.CheckServerLinked(Context.Guild.Id);
                 if (!args.Any())
                 {
                     await ReplyAsync("```diff\n+ Battle commands:\n  battle @mention deckName - Battle person with specific deck\n  battle cancel - Cancel request/forfeit\n  battle accept deckName - Accept battle request with specific deck\n  battle reject - Reject battle request\n```");
@@ -2356,7 +2171,11 @@ namespace EmojiTCG.Modules
                                                                     battleReq.player1deck.battleCards.Add(new BattleCard() { card = _card, health = health, activeEffects = new List<string>() });
                                                                 }else if (type == "ITEM")
                                                                 {
-                                                                    battleReq.player1deck.itemOtherCards.Add(new ItemOtherCard() { card = _card });
+                                                                    battleReq.player1deck.itemOtherCards.Add(new ItemOtherCard() { card = _card, inUse = false }) ;
+                                                                }
+                                                                else if (type == "SUPPORT")
+                                                                {
+                                                                    battleReq.player1deck.itemOtherCards.Add(new ItemOtherCard() { card = _card, inUse = false });
                                                                 }
                                                                 else
                                                                 {
@@ -2502,7 +2321,11 @@ namespace EmojiTCG.Modules
                                                                 }
                                                                 else if (type == "ITEM")
                                                                 {
-                                                                    CurrentData.serverData[i].battles[j].player2deck.itemOtherCards.Add(new ItemOtherCard() { card = _card });
+                                                                    CurrentData.serverData[i].battles[j].player2deck.itemOtherCards.Add(new ItemOtherCard() { card = _card, inUse = false });
+                                                                }
+                                                                else if (type == "SUPPORT")
+                                                                {
+                                                                    CurrentData.serverData[i].battles[j].player2deck.itemOtherCards.Add(new ItemOtherCard() { card = _card, inUse = false }) ;
                                                                 }
                                                                 else
                                                                 {
@@ -2551,34 +2374,238 @@ namespace EmojiTCG.Modules
         {
             if (CurrentData.commandsEnabled)
             {
-                ulong contextGuildId = 0;
-                foreach (ServerData.ServerData _serverData in CurrentData.serverData)
-                {
-                    if (_serverData.serverId == Context.Guild.Id)
-                    {
-                        if (_serverData.linkedToServerId != 0)
-                        {
-                            foreach (ServerData.ServerData __serverData in CurrentData.serverData)
-                            {
-                                if (__serverData.linkedToThisServerIds.Contains(Context.Guild.Id))
-                                {
+                ulong contextGuildId = Functions.CheckServerLinked(Context.Guild.Id);
+                
+                int sDIndex = 0;
+                int uDIndex = 0;
+                int bIndex = 0;
 
-                                    contextGuildId = _serverData.linkedToServerId;
+                bool serverFound = Functions.GetServerDataIndex(contextGuildId, out sDIndex);
+                bool userFound = false;
+                if (serverFound)
+                    userFound = Functions.GetUserDataIndex(Context.User.Id, sDIndex, out uDIndex);
+                if (!userFound)
+                {
+                    await ReplyAsync("```diff\n- You dont exist in my database...\n  You should, but you dont.\n  Who aaaare yooou?\n```");
+                    return;
+                }
+                bool battleFound = Functions.GetBattleIndex(Context.User.Id, sDIndex, out bIndex);
+                if (!battleFound)
+                {
+                    await ReplyAsync("```diff\n- You are not in a battle currently.\n```");
+                    return;
+                }
+                bool isTurn = true;
+                if (!Functions.CheckIfTurn(Context.User.Id, sDIndex, bIndex))
+                {
+                    isTurn = false;
+                }
+                bool isPlayer1 = false;
+                if (Context.User.Id == CurrentData.serverData[sDIndex].battles[bIndex].player1)
+                    isPlayer1 = true;
+
+                if (!args.Any())
+                {
+                    await ReplyAsync("```diff\n+ Battle action commands:\n  b list - List your deck (In DMs) and et card IDs\n  b select id - Select a card as your active card\n  b use itemId - Use one of you item cards\n  b attack 1,2,3 - Attack with the 1st, 2nd or 3rd attack\n```");
+                    return;
+                }
+
+                Battle battle = CurrentData.serverData[sDIndex].battles[bIndex];
+
+                BattleDeck playerDeck = new BattleDeck();
+                if (isPlayer1)
+                {
+                    playerDeck = CurrentData.serverData[sDIndex].battles[bIndex].player1deck;
+                }
+                else
+                {
+                    playerDeck = CurrentData.serverData[sDIndex].battles[bIndex].player2deck;
+                }
+
+                bool battleStarted = true;
+                if (CurrentData.serverData[sDIndex].battles[bIndex].turn < 3)
+                    battleStarted = false;
+
+                IEmote tick = new Emoji("\U00002705");
+                switch (args[0])
+                {
+                    default:
+                        await ReplyAsync("```diff\n- Unknown argument.\n```");
+                        break;
+                    case "list":
+                        string reply = "**__Your DPS cards:__**\n";
+                        await Context.User.SendMessageAsync(reply);
+                        int incremental = 0;
+                        
+                        reply = "";
+                        for (int i = 0; i < playerDeck.battleCards.Count; i++)
+                        {
+                            reply = Functions.GetCardInfoFormatted(playerDeck.battleCards[i].card.notes.Split('§').ToList(), playerDeck, i);
+                            if (incremental > 9 || i == playerDeck.battleCards.Count - 1)
+                            {
+                                await Context.User.SendMessageAsync(reply);
+                                reply = "";
+                                incremental = 0;
+                            }
+                            else
+                                incremental += 1;
+                        }
+                        reply = "``` ```\n**__Your OTHER cards:__**";
+                        await Context.User.SendMessageAsync(reply);
+                        reply = "";
+                        incremental = 0;
+                        for (int i = 0; i < playerDeck.itemOtherCards.Count; i++)
+                        {
+                            reply = Functions.GetCardInfoFormatted(playerDeck.itemOtherCards[i].card.notes.Split('§').ToList(), playerDeck, i);
+                            if (incremental > 9 || i == playerDeck.itemOtherCards.Count - 1)
+                            {
+                                await Context.User.SendMessageAsync(reply);
+                                reply = "";
+                                incremental = 0;
+                            }
+                            else
+                                incremental += 1;
+                        }
+                        await Context.Message.AddReactionAsync(tick);
+                        break;
+                    case "select":
+                        if (!battleStarted)
+                            return;
+                        if (!isTurn)
+                        {
+                            await ReplyAsync("diff\n- It is not your turn.\n```");
+                            return;
+                        }
+                        string arg1 = "";
+                        try { arg1 = args[1]; } catch { await ReplyAsync("```diff\n- Use the IDs found next to the name cards when doing =b list\n```"); return; }
+                        int id = -1;
+                        bool parsed = int.TryParse(arg1, out id);
+                        if (parsed && id > -1 && id < playerDeck.battleCards.Count)
+                        {
+                            bool isBattleCard = false;
+                            for (int c = 0; c < playerDeck.battleCards.Count; c++)
+                            {
+                                if (c == id)
+                                {
+                                    isBattleCard = true;
                                     break;
+                                }
+                            }
+                            if (isBattleCard)
+                            {
+                                if (isPlayer1)
+                                {
+                                    if (!CurrentData.serverData[sDIndex].battles[bIndex].player1deadCards.Contains(id))
+                                    {
+                                        CurrentData.serverData[sDIndex].battles[bIndex].player1activeCard = id;
+                                    }
+                                    else
+                                    {
+                                        await ReplyAsync("diff\n- That card has no HP left.\n```");
+                                        return;
+                                    }
                                 }
                                 else
                                 {
-                                    contextGuildId = Context.Guild.Id;
+                                    if (!CurrentData.serverData[sDIndex].battles[bIndex].player2deadCards.Contains(id))
+                                    {
+                                        CurrentData.serverData[sDIndex].battles[bIndex].player2activeCard = id;
+                                    }
+                                    else
+                                    {
+                                        await ReplyAsync("diff\n- That card has no HP left.\n```");
+                                        return;
+                                    }
                                 }
+                                if (CurrentData.serverData[sDIndex].battles[bIndex].turn < 3)
+                                {
+                                    CurrentData.serverData[sDIndex].battles[bIndex].turn += 1;
+                                    if (CurrentData.serverData[sDIndex].battles[bIndex].turn == 2)
+                                        await ReplyAsync("<@!" + CurrentData.serverData[sDIndex].battles[bIndex].player1 + "> Now you select a card.");
+                                }
+                                await Context.Message.AddReactionAsync(tick);
+
+                                //reply with battlefield
+                                await ReplyAsync(Functions.ReplyBattlefield(sDIndex, bIndex));
+                            }
+                            else
+                            {
+                                await ReplyAsync("```diff\n- You cant select that card.\n```");
                             }
                         }
                         else
                         {
-                            contextGuildId = Context.Guild.Id;
+                            await ReplyAsync("```diff\n- The id must be a number between 0 and " + playerDeck.battleCards.Count + ".\n Do =b list\n```");
                         }
                         break;
-                    }
+                    case "use":
+                        if (!battleStarted)
+                            return;
+                        string _arg1 = "";
+                        try { _arg1 = args[1]; } catch { await ReplyAsync("```diff\n- Use the IDs found next to the name cards when doing =b list\n```"); return; }
+                        int _id = -1;
+                        bool _parsed = int.TryParse(_arg1, out _id);
+                        if (_parsed && _id > playerDeck.battleCards.Count - 1 && _id < playerDeck.battleCards.Count + playerDeck.itemOtherCards.Count)
+                        {
+                            if (isPlayer1 && (battle.player1deadCards.Contains(_id) || battle.player1activeSupportCard.Contains(_id))) {
+                                await ReplyAsync("diff\n- That card has been used already.\n```");
+                                return;
+                            }
+                            else if (!isPlayer1 && (battle.player2deadCards.Contains(_id) || battle.player2activeSupportCard.Contains(_id))) {
+                                await ReplyAsync("diff\n- That card has been used already.\n```");
+                                return;
+                            }
+                            List<string> notes = notes = playerDeck.itemOtherCards[_id - playerDeck.battleCards.Count].card.notes.Split('§').ToList();
+                            string type = notes[1];
+
+                            List<string> tags = new List<string>();
+                            try { tags = notes[4].Split('#').ToList(); } catch { }
+                            switch (type)
+                            {
+                                default:
+                                    break;
+                                case "ITEM":
+                                    Functions.UseItemCard(sDIndex, bIndex, isPlayer1, notes);
+                                    await Context.Message.AddReactionAsync(tick);
+                                    //reply with battlefield
+                                    await ReplyAsync(Functions.ReplyBattlefield(sDIndex, bIndex));
+                                    break;
+                                case "SUPPORT":
+                                    int pos = 0;
+                                    try { pos = int.Parse(args[1]); } catch { }
+                                    if (pos > 0 && pos < 3)
+                                    {
+                                        Functions.UseSupportCard(sDIndex, bIndex, isPlayer1, _id, pos);
+                                        await Context.Message.AddReactionAsync(tick);
+                                        //reply with battlefield
+                                        await ReplyAsync(Functions.ReplyBattlefield(sDIndex, bIndex));
+                                    }
+                                    else 
+                                    {
+                                        await ReplyAsync("```diff\n- You must select which support slot to place it in. 1 or 2\n```");
+                                    }
+                                    break;
+                            }
+                        }
+                        else
+                        {
+                            await ReplyAsync("```diff\n- The id must be a number between" + playerDeck.battleCards.Count + " and " + (playerDeck.battleCards.Count + playerDeck.itemOtherCards.Count - 1) + ".\n Do =b list\n```");
+                        }
+                        break;
                 }
+            }
+            else
+            {
+                await ReplyAsync("```diff\n- Commands Currently Disabled.\n  Dont worry, you battle is just paused.\n```");
+            }
+        }
+        /*
+        [Command("b")]
+        public async Task BattleActions(params string[] args)
+        {
+            if (CurrentData.commandsEnabled)
+            {
+                ulong contextGuildId = Functions.CheckServerLinked(Context.Guild.Id);
                 bool inBattle = false;
                 bool isTurn = false;
                 Battle battle = new Battle();
@@ -3609,7 +3636,7 @@ namespace EmojiTCG.Modules
             {
                 await ReplyAsync("```diff\n- Commands Currently Disabled.\n  Dont worry, you battle is just paused.\n```");
             }
-        }
+        }*/
 
         [Command("announcements")]
         public async Task Announcements(params string[] args)
@@ -3804,7 +3831,7 @@ namespace EmojiTCG.Modules
                                 {
                                     foreach (UserData _userData in _serverData.userData)
                                     {
-                                        if (!idsSentTo.Contains(_userData.userId) && _userData.importantAnnouncements && _serverData.allowAnnouncements)
+                                        if (!idsSentTo.Contains(_userData.userId) && _userData.importantAnnouncements && _serverData.allowAnnouncements && (_userData.inventoryCards.Any() || _userData.inventoryBoosters.Any() || _userData.inventoryBadges.Any()))
                                         {
                                             string announcement = "> **Emoji TCG Announcment:**\n*Do `=announcements off` in ";
                                             var user = CurrentData.client.GetUser(_userData.userId);
@@ -3824,7 +3851,7 @@ namespace EmojiTCG.Modules
                                 {
                                     foreach (UserData _userData in _serverData.userData)
                                     {
-                                        if (!idsSentTo2.Contains(_userData.userId) && _userData.notifyAnnouncements && _serverData.allowNotifications)
+                                        if (!idsSentTo2.Contains(_userData.userId) && _userData.notifyAnnouncements && _serverData.allowNotifications && (_userData.inventoryCards.Any() || _userData.inventoryBoosters.Any() || _userData.inventoryBadges.Any()))
                                         {
                                             string notification = "> **Emoji TCG Notification:**\n*Do `=notifications off` in ";
                                             var user = CurrentData.client.GetUser(_userData.userId);

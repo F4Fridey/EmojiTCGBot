@@ -1,46 +1,5 @@
 [
   {
-    "name": "October",
-    "prizesPerDay": [
-      {
-        "prizeType": 1,
-        "name": "Day 1",
-        "emoji": ":coin:",
-        "itemId": 0,
-        "coinAmount": 20.0
-      },
-      {
-        "prizeType": 0,
-        "name": "Day 2",
-        "emoji": ":black_circle:",
-        "itemId": 0,
-        "coinAmount": 0.0
-      },
-      {
-        "prizeType": 2,
-        "name": "Day 3",
-        "emoji": "<:Ghost_Card:769690540949635092>",
-        "itemId": 40,
-        "coinAmount": 0.0
-      },
-      {
-        "prizeType": 1,
-        "name": "Day 4",
-        "emoji": ":coin:",
-        "itemId": 0,
-        "coinAmount": 40.0
-      },
-      {
-        "prizeType": 2,
-        "name": "Day 5",
-        "emoji": "<a:Halloween_2020_Card:769690597337858098>",
-        "itemId": 31,
-        "coinAmount": 0.0
-      }
-    ],
-    "month": 10
-  },
-  {
     "name": "November",
     "prizesPerDay": [
       {
@@ -65,18 +24,18 @@
         "coinAmount": 0.0
       },
       {
-        "prizeType": 0,
-        "name": "Day 4",
-        "emoji": ":black_circle:",
-        "itemId": 0,
-        "coinAmount": 0.0
-      },
-      {
         "prizeType": 1,
-        "name": "Day 5",
+        "name": "Day 4",
         "emoji": ":coin:",
         "itemId": 0,
         "coinAmount": 50.0
+      },
+      {
+        "prizeType": 0,
+        "name": "Day 5",
+        "emoji": ":black_circle:",
+        "itemId": 0,
+        "coinAmount": 0.0
       },
       {
         "prizeType": 0,
@@ -93,9 +52,9 @@
         "coinAmount": 0.0
       },
       {
-        "prizeType": 0,
+        "prizeType": 2,
         "name": "Day 8",
-        "emoji": ":black_circle:",
+        "emoji": "<:Normal_Pack:769405453565952050>",
         "itemId": 0,
         "coinAmount": 0.0
       },
@@ -107,11 +66,11 @@
         "coinAmount": 0.0
       },
       {
-        "prizeType": 2,
+        "prizeType": 1,
         "name": "Day 10",
-        "emoji": "<:Normal_Pack:769405453565952050>",
+        "emoji": ":coin:",
         "itemId": 0,
-        "coinAmount": 0.0
+        "coinAmount": 50.0
       },
       {
         "prizeType": 0,
@@ -123,23 +82,23 @@
       {
         "prizeType": 0,
         "name": "Day 12",
-        "emoji": ":black_circle:",
+        "emoji": ":coin:",
+        "itemId": 0,
+        "coinAmount": 40.0
+      },
+      {
+        "prizeType": 2,
+        "name": "Day 13",
+        "emoji": "<:Normal_Pack:769405453565952050>",
         "itemId": 0,
         "coinAmount": 0.0
       },
       {
         "prizeType": 1,
-        "name": "Day 13",
+        "name": "Day 14",
         "emoji": ":coin:",
         "itemId": 0,
-        "coinAmount": 50.0
-      },
-      {
-        "prizeType": 0,
-        "name": "Day 14",
-        "emoji": ":black_circle:",
-        "itemId": 0,
-        "coinAmount": 0.0
+        "coinAmount": 40.0
       },
       {
         "prizeType": 0,
@@ -156,64 +115,29 @@
         "coinAmount": 0.0
       },
       {
-        "prizeType": 0,
+        "prizeType": 2,
         "name": "Day 17",
-        "emoji": ":coin:",
+        "emoji": "<:Normal_Pack:769405453565952050>",
         "itemId": 0,
-        "coinAmount": 20.0
+        "coinAmount": 0.0
       },
       {
-        "prizeType": 2,
+        "prizeType": 0,
         "name": "Day 18",
-        "emoji": "<:Normal_Pack:769405453565952050>",
-        "itemId": 0,
-        "coinAmount": 0.0
-      },
-      {
-        "prizeType": 1,
-        "name": "Day 19",
-        "emoji": ":coin:",
-        "itemId": 0,
-        "coinAmount": 40.0
-      },
-      {
-        "prizeType": 0,
-        "name": "Day 20",
-        "emoji": ":black_circle:",
-        "itemId": 0,
-        "coinAmount": 0.0
-      },
-      {
-        "prizeType": 0,
-        "name": "Day 21",
-        "emoji": ":black_circle:",
-        "itemId": 0,
-        "coinAmount": 0.0
-      },
-      {
-        "prizeType": 2,
-        "name": "Day 22",
-        "emoji": "<:Normal_Pack:769405453565952050>",
-        "itemId": 0,
-        "coinAmount": 0.0
-      },
-      {
-        "prizeType": 0,
-        "name": "Day 23",
         "emoji": ":coin:",
         "itemId": 0,
         "coinAmount": 60.0
       },
       {
         "prizeType": 0,
-        "name": "Day 24",
+        "name": "Day 19",
         "emoji": ":black_circle:",
         "itemId": 0,
         "coinAmount": 0.0
       },
       {
         "prizeType": 0,
-        "name": "Day 25",
+        "name": "Day 20",
         "emoji": "<:Whats_Inside:769409287239499797>",
         "itemId": 0,
         "coinAmount": 0.0

@@ -14,6 +14,7 @@ using System.Reflection;
 using EmojiTCG.Cards;
 using EmojiTCG.Modules;
 using System.Runtime.InteropServices;
+using System.Runtime.Remoting.Contexts;
 
 namespace EmojiTCG
 {
@@ -230,7 +231,7 @@ namespace EmojiTCG
             Functions.LoadAllData();
 
             await _client.SetStatusAsync(UserStatus.Online);
-            await _client.SetGameAsync("for =help", null, ActivityType.Watching);
+            await _client.SetGameAsync("for =help or =tut", null, ActivityType.Watching);
 
             CurrentData.client = _client;
 
@@ -447,58 +448,25 @@ namespace EmojiTCG
 
         private async Task HandleCommandAsync(SocketMessage arg)
         {
-            
+            var message = arg as SocketUserMessage;
+            var context = new SocketCommandContext(_client, message);
+            if (message.Author.IsBot) return;
+            int argPos = 0;
             try
             {
-                var message = arg as SocketUserMessage;
-                var context = new SocketCommandContext(_client, message);
-                if (message.Author.IsBot) return;
-                int argPos = 0;
+                ulong contextGuildId = Functions.CheckServerLinked(context.Guild.Id);
+                int sDIndex = -1;
+                int uDIndex = -1;
+                bool serverExists = Functions.GetServerDataIndex(contextGuildId, out sDIndex);
                 bool userExistsInData = false;
-                ulong contextGuildId = 0;
-                foreach (ServerData.ServerData _serverData in CurrentData.serverData)
-                {
-                    if (_serverData.serverId == context.Guild.Id)
-                    {
-                        if (_serverData.linkedToServerId != 0)
-                        {
-                            foreach (ServerData.ServerData __serverData in CurrentData.serverData)
-                            {
-                                if (__serverData.linkedToThisServerIds.Contains(context.Guild.Id))
-                                {
-
-                                    contextGuildId = _serverData.linkedToServerId;
-                                }
-                                else
-                                {
-                                    contextGuildId = context.Guild.Id;
-                                }
-                            }
-                        }
-                        else
-                        {
-                            contextGuildId = context.Guild.Id;
-                        }
-                    }
-                    if (_serverData.serverId == contextGuildId)
-                    {
-                        foreach (ServerData.UserData _userdata in _serverData.userData)
-                        {
-                            if (_userdata.userId == context.User.Id)
-                            {
-                                userExistsInData = true;
-                                break;
-                            }
-                        }
-                        break;
-                    }
-                }
-                if (!userExistsInData)
+                if (serverExists)
+                    userExistsInData = Functions.GetUserDataIndex(context.User.Id, sDIndex, out uDIndex);
+                if (!userExistsInData && serverExists)
                 {
                     ServerData.UserData userdata = new ServerData.UserData()
                     {
                         userId = context.User.Id,
-                        coins = 100,
+                        coins = 20,
                         inventoryBadges = new List<uint>(),
                         inventoryBoosters = new List<uint>(),
                         inventoryCards = new List<uint>(),
@@ -508,116 +476,87 @@ namespace EmojiTCG
                         lastMin = DateTime.Now.Minute,
                         lastJoinVCTime = DateTime.Now.Ticks,
                         importantAnnouncements = true,
-                        notifyAnnouncements = true
+                        notifyAnnouncements = true,
+                        dmRecieved = false
                     };
+                    CurrentData.serverData[sDIndex].userData.Add(userdata);
+                    userExistsInData = true;
+
+                    int index;
+                    bool userInData = false;
                     for (int i = 0; i < CurrentData.serverData.Count; i++)
                     {
-                        if (CurrentData.serverData[i].serverId == contextGuildId)
+                        userInData = Functions.GetUserDataIndex(context.User.Id, i, out index);
+                        if (userInData && CurrentData.serverData[i].setup)
                         {
-                            CurrentData.serverData[i].userData.Add(userdata);
-                            userExistsInData = true;
-                        }
-                    }
-                }
-                if (userExistsInData)
-                {
-                    //halloween 2020
-                    /*for (int i = 0; i < CurrentData.serverData.Count; i++)
-                    {
-                        if (CurrentData.serverData[i].serverId == contextGuildId)
-                        {
-                            for (int j = 0; j < CurrentData.serverData[i].userData.Count; j++)
+                            if (!CurrentData.serverData[i].userData[index].dmRecieved && CurrentData.serverData[i].userData[index].notifyAnnouncements && CurrentData.serverData[i].allowNotifications)
                             {
-                                if (CurrentData.serverData[i].userData[j].userId == context.User.Id)
+                                string dm = "> **Emoji TCG Notification:**\n\nYou are in a server that has me. Occasionaly, about once a month, I send announcements and notifications to DMs. If you dont want to recieve them, you can do `=announcements off` and `=notifications off` in the server.\n*This will not be used to promote anything other than info about this bot.*\n\nAnyway you can do `=tutorial` in the server to get started collecting! :D\n\n`NOTE:` *This is a beta test, if you find bugs, spelling or grammar errors report it to F4Fridey! (Either ping or DM)*";
+                                try {   } catch { }
+                                try
                                 {
-                                    if (!CurrentData.serverData[i].userData[j].inventoryBadges.Contains(1) && CurrentData.serverData[i].userData[j].inventoryCards.Contains(31) && CurrentData.serverData[i].userData[j].inventoryCards.Contains(40) && DateTime.Now.Month == 10 && DateTime.Now.Year == 2020)
-                                    {
-                                        CurrentData.serverData[i].userData[j].inventoryBadges.Add(1);
-                                        IEmote emote = new Emoji("\U0001f383");
-                                        await context.Message.AddReactionAsync(emote);
-                                    }
-                                    break;
+                                    await context.User.SendMessageAsync(dm);
+                                    CurrentData.serverData[i].userData[index].dmRecieved = true;
+                                    string str = "DMed " + context.User.Username + " a notification message.";
+                                    Console.WriteLine(str);
                                 }
+                                catch { }
                             }
                             break;
                         }
-                    }*/
+                    }
+                }
+                if (userExistsInData && serverExists)
+                {
+                    //halloween 2020
+                    /*
+                    if (!CurrentData.serverData[sDIndex].userData[uDIndex].inventoryBadges.Contains(1) && CurrentData.serverData[sDIndex].userData[uDIndex].inventoryCards.Contains(31) && CurrentData.serverData[sDIndex].userData[uDIndex].inventoryCards.Contains(40) && DateTime.Now.Month == 10 && DateTime.Now.Year == 2020)
+                                    {
+                                        CurrentData.serverData[sDIndex].userData[uDIndex].inventoryBadges.Add(1);
+                                        IEmote emote = new Emoji("\U0001f383");
+                                        await context.Message.AddReactionAsync(emote);
+                                    } 
+                    */
                     //-----------
+                    //bot creator badge
                     if (context.User.Id == 350279720144863244)
                     {
                         if (!HasAdminBadge(context, contextGuildId))
                         {
-                            for (int i = 0; i < CurrentData.serverData.Count; i++)
-                            {
-                                if (CurrentData.serverData[i].serverId == contextGuildId)
-                                {
-                                    for (int j = 0; j < CurrentData.serverData[i].userData.Count; j++)
-                                    {
-                                        if (CurrentData.serverData[i].userData[j].userId == context.User.Id)
-                                        {
-                                            CurrentData.serverData[i].userData[j].inventoryBadges.Add(CurrentData.badges[0].id);
-                                            break;
-                                        }
-                                    }
-                                    break;
-                                }
-                            }
-                            IEmote emote = new Emoji("\U00002611");
+                            CurrentData.serverData[sDIndex].userData[uDIndex].inventoryBadges.Add(CurrentData.badges[0].id);
+                            Emote emote = Emote.Parse("<:Bot_Creator:774509373971890197>");
                             await context.Message.AddReactionAsync(emote);
                         }
                     }
                     //coin command
                     if (context.Message.Content == "coin" && contextGuildId == CurrentData.settings.adminServerID)
                     {
-                        for (int i = 0; i < CurrentData.serverData.Count; i++)
-                        {
-                            if (CurrentData.serverData[i].serverId == contextGuildId)
-                            {
-                                for (int j = 0; j < CurrentData.serverData[i].userData.Count; j++)
-                                {
-                                    if (CurrentData.serverData[i].userData[j].userId == context.User.Id)
-                                    {
-                                        Random rnd = new Random();
-                                        int coins = rnd.Next(1, 21);
-                                        CurrentData.serverData[i].userData[j].coins += coins;
-                                        break;
-                                    }
-                                }
-                                break;
-                            }
-                        }
+                        Random rnd = new Random();
+                        int coins = rnd.Next(1, 21);
+                        CurrentData.serverData[sDIndex].userData[uDIndex].coins += coins;
                         IEmote emote = new Emoji("\U0001FA99");
                         await context.Message.AddReactionAsync(emote);
                     }
                     //--------
-                    for (int i = 0; i < CurrentData.serverData.Count; i++)
+                    if (CurrentData.serverData[sDIndex].userData[uDIndex].lastMin != DateTime.Now.Minute)
                     {
-                        if (CurrentData.serverData[i].serverId == contextGuildId)
+                        CurrentData.serverData[sDIndex].userData[uDIndex].lastMin = DateTime.Now.Minute;
+                        CurrentData.serverData[sDIndex].userData[uDIndex].xp += 1 * CurrentData.settings.chatXPmultiplier;
+                        if (CurrentData.serverData[sDIndex].userData[uDIndex].xp >= CurrentData.serverData[sDIndex].userData[uDIndex].xpForCoin)
                         {
-                            for (int j = 0; j < CurrentData.serverData[i].userData.Count; j++)
-                            {
-                                if (CurrentData.serverData[i].userData[j].userId == context.User.Id)
-                                {
-                                    if (CurrentData.serverData[i].userData[j].lastMin != DateTime.Now.Minute)
-                                    {
-                                        CurrentData.serverData[i].userData[j].lastMin = DateTime.Now.Minute;
-                                        CurrentData.serverData[i].userData[j].xp += 1 * CurrentData.settings.chatXPmultiplier;
-                                        if (CurrentData.serverData[i].userData[j].xp >= CurrentData.serverData[i].userData[j].xpForCoin)
-                                        {
-                                            CurrentData.serverData[i].userData[j].xp = 0;
-                                            CurrentData.serverData[i].userData[j].coins += 1;
-                                            Random rnd = new Random();
-                                            CurrentData.serverData[i].userData[j].xpForCoin = rnd.Next(CurrentData.settings.minXPreq, CurrentData.settings.maxXPreq);
-                                            IEmote emote = new Emoji("\U0001FA99");
-                                            await context.Message.AddReactionAsync(emote);
-                                        }
-                                        
-                                    }
-                                    break;
-                                }
-                            }
-                            break;
+                            CurrentData.serverData[sDIndex].userData[uDIndex].xp = 0;
+                            CurrentData.serverData[sDIndex].userData[uDIndex].coins += 1;
+                            Random rnd = new Random();
+                            CurrentData.serverData[sDIndex].userData[uDIndex].xpForCoin = rnd.Next(CurrentData.settings.minXPreq, CurrentData.settings.maxXPreq);
+                            IEmote emote = new Emoji("\U0001FA99");
+                            await context.Message.AddReactionAsync(emote);
                         }
+                    }
+                    CurrentData.numToSave += 1;
+                    if (CurrentData.numToSave > 5 && CurrentData.commandsEnabled)
+                    {
+                        CurrentData.numToSave = 0;
+                        Functions.SaveAllData();
                     }
                 }
                 if (message.HasStringPrefix("=", ref argPos))
@@ -626,7 +565,7 @@ namespace EmojiTCG
                     if (!result.IsSuccess) Console.WriteLine(result.ErrorReason);
                 }
             }
-            catch { Console.WriteLine("Joined Server or DM recieved: Nominal Exception detected"); }
+            catch { Console.WriteLine("Joined Server or DM recieved or Server doesnt exist yet: Nominal Exception detected"); }
         }
 
         private static Task HandleVoiceEventsAsync(SocketUser user, SocketVoiceState oldVoiceState, SocketVoiceState newVoiceState)
@@ -634,93 +573,40 @@ namespace EmojiTCG
             if (CurrentData.commandsEnabled)
             {
                 ulong contextGuildId = 0;
-                foreach (ServerData.ServerData _serverData in CurrentData.serverData)
-                {
-                    if (newVoiceState.VoiceChannel != null)
-                    {
-                        if (_serverData.serverId == newVoiceState.VoiceChannel.Guild.Id)
-                        {
-                            if (_serverData.linkedToServerId != 0)
-                            {
-                                foreach (ServerData.ServerData __serverData in CurrentData.serverData)
-                                {
-                                    if (__serverData.linkedToThisServerIds.Contains(newVoiceState.VoiceChannel.Guild.Id))
-                                    {
+                if (newVoiceState.VoiceChannel != null)
+                    contextGuildId = Functions.CheckServerLinked(newVoiceState.VoiceChannel.Guild.Id);
+                else if (oldVoiceState.VoiceChannel != null)
+                    contextGuildId = Functions.CheckServerLinked(oldVoiceState.VoiceChannel.Guild.Id);
 
-                                        contextGuildId = _serverData.linkedToServerId;
-                                    }
-                                    else
-                                    {
-                                        contextGuildId = newVoiceState.VoiceChannel.Guild.Id;
-                                    }
-                                }
-                            }
-                            else
-                            {
-                                contextGuildId = newVoiceState.VoiceChannel.Guild.Id;
-                            }
-                        }
-                    }
-                    else if (oldVoiceState.VoiceChannel != null)
-                    {
-                        if (_serverData.serverId == oldVoiceState.VoiceChannel.Guild.Id)
-                        {
-                            if (_serverData.linkedToServerId != 0)
-                            {
-                                foreach (ServerData.ServerData __serverData in CurrentData.serverData)
-                                {
-                                    if (__serverData.linkedToThisServerIds.Contains(oldVoiceState.VoiceChannel.Guild.Id))
-                                    {
-
-                                        contextGuildId = _serverData.linkedToServerId;
-                                    }
-                                    else
-                                    {
-                                        contextGuildId = oldVoiceState.VoiceChannel.Guild.Id;
-                                    }
-                                }
-                            }
-                            else
-                            {
-                                contextGuildId = oldVoiceState.VoiceChannel.Guild.Id;
-                            }
-                        }
-                    }
-                }
-                for (int i = 0; i < CurrentData.serverData.Count; i++)
+                int sDIndex = -1;
+                int uDIndex = -1;
+                bool serverExists = Functions.GetServerDataIndex(contextGuildId, out sDIndex);
+                bool userExistsInData = false;
+                if (serverExists)
+                    userExistsInData = Functions.GetUserDataIndex(user.Id, sDIndex, out uDIndex);
+                if (userExistsInData)
                 {
-                    if (CurrentData.serverData[i].serverId == contextGuildId)
+                    if (oldVoiceState.VoiceChannel == null && newVoiceState.VoiceChannel != null)
                     {
-                        for (int j = 0; j < CurrentData.serverData[i].userData.Count; j++)
+                        //user joined
+                        CurrentData.serverData[sDIndex].userData[uDIndex].lastJoinVCTime = DateTime.Now.Ticks;
+                    }
+                    else if (oldVoiceState.VoiceChannel != null && newVoiceState.VoiceChannel == null)
+                    {
+                        //User left
+                        long elapsedTicks = DateTime.Now.Ticks - CurrentData.serverData[sDIndex].userData[uDIndex].lastJoinVCTime;
+                        TimeSpan elapsedSpan = new TimeSpan(elapsedTicks);
+                        double mins = elapsedSpan.TotalMinutes;
+                        Console.WriteLine(mins.ToString("0.000") + " " + elapsedTicks);
+                        Random rnd = new Random();
+                        int max = rnd.Next(CurrentData.settings.minXPvc, CurrentData.settings.maxXPvc);
+                        int pos = 0;
+                        while (mins >= 10 && pos < max)
                         {
-                            if (CurrentData.serverData[i].userData[j].userId == user.Id)
-                            {
-                                if (oldVoiceState.VoiceChannel == null && newVoiceState.VoiceChannel != null)
-                                {
-                                    //user joined
-                                    CurrentData.serverData[i].userData[j].lastJoinVCTime = DateTime.Now.Ticks;
-                                }
-                                else if (oldVoiceState.VoiceChannel != null && newVoiceState.VoiceChannel == null)
-                                {
-                                    //User left
-                                    long elapsedTicks = DateTime.Now.Ticks - CurrentData.serverData[i].userData[j].lastJoinVCTime;
-                                    TimeSpan elapsedSpan = new TimeSpan(elapsedTicks);
-                                    double mins = elapsedSpan.TotalMinutes;
-                                    Console.WriteLine(mins.ToString("0.000") + " " + elapsedTicks);
-                                    Random rnd = new Random();
-                                    int max = rnd.Next(CurrentData.settings.minXPvc, CurrentData.settings.maxXPvc);
-                                    int pos = 0;
-                                    while (mins >= 10 && pos < max)
-                                    {
-                                        pos += 1;
-                                        mins -= 10;
-                                        CurrentData.serverData[i].userData[j].coins += 1 * CurrentData.settings.voiceChatXPmultiplier;
-                                    }
-                                }
-                                break;
-                            }
+                            pos += 1;
+                            mins -= 10;
+                            CurrentData.serverData[sDIndex].userData[uDIndex].coins += 1 * CurrentData.settings.voiceChatXPmultiplier;
                         }
-                        break;
                     }
                 }
             }
@@ -729,25 +615,20 @@ namespace EmojiTCG
 
         bool HasAdminBadge(SocketCommandContext context, ulong contextGuildId)
         {
-            foreach (ServerData.ServerData _serverData in CurrentData.serverData)
+            int sDIndex = -1;
+            int uDIndex = -1;
+            bool serverExists = Functions.GetServerDataIndex(contextGuildId, out sDIndex);
+            bool userExistsInData = false;
+            if (serverExists)
+                userExistsInData = Functions.GetUserDataIndex(context.User.Id, sDIndex, out uDIndex);
+            if (userExistsInData)
             {
-                if (_serverData.serverId == contextGuildId)
+                foreach (uint _badgeId in CurrentData.serverData[sDIndex].userData[uDIndex].inventoryBadges)
                 {
-                    foreach (ServerData.UserData _userData in _serverData.userData)
+                    if (_badgeId == 0)
                     {
-                        if (_userData.userId == context.User.Id)
-                        {
-                            foreach (uint _badgeId in _userData.inventoryBadges)
-                            {
-                                if (_badgeId == 0)
-                                {
-                                    return true;
-                                }
-                            }
-                            break;
-                        }
+                        return true;
                     }
-                    break;
                 }
             }
             return false;

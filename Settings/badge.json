@@ -1,14 +1,8 @@
 [
   {
     "name": "Bot Creator",
-    "emoji": "<:Bot_Creator:767154542939865089>",
+    "emoji": "<:Bot_Creator:774509373971890197>",
     "notes": "The creator of this bot.",
     "id": 0
-  },
-  {
-    "name": "Halloween 2020",
-    "emoji": "<:Halloween_2020:767563660754681898>",
-    "notes": "Aquired all halloween 2020 items.",
-    "id": 1
   }
 ]
