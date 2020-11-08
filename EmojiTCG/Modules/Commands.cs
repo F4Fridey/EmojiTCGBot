@@ -1642,7 +1642,7 @@ namespace EmojiTCG.Modules
                                 }
                                 else
                                 {
-                                    await ReplyAsync("```diff\n- You can claim the daily bonus until tomorow.\n```");
+                                    await ReplyAsync("```diff\n- You can't claim the daily bonus until tomorow.\n```");
                                 }
                                 break;
                             }
