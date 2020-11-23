@@ -1,5 +1,9 @@
 battle
 
+fix daily not giving packs
 fix "valis"
 fix dr gravity got bot creator in their private server
+
 add melt multiple cards at once
+add zen garden type thing
+add shards you can get that when u collect them all you get stuff
