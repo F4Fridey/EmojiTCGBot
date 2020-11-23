@@ -1712,7 +1712,7 @@ namespace EmojiTCG.Modules
                     }
                     else
                     {
-                        string str = "```diff\n- " + args[0] + " is not a valis card ID.\n```";
+                        string str = "```diff\n- " + args[0] + " is not a valid card ID.\n```";
                         await ReplyAsync(str);
                     }
                 }

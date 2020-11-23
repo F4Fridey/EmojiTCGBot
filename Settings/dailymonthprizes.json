@@ -52,7 +52,7 @@
         "coinAmount": 0.0
       },
       {
-        "prizeType": 2,
+        "prizeType": 3,
         "name": "Day 8",
         "emoji": "<:Normal_Pack:769405453565952050>",
         "itemId": 0,
@@ -87,7 +87,7 @@
         "coinAmount": 40.0
       },
       {
-        "prizeType": 2,
+        "prizeType": 3,
         "name": "Day 13",
         "emoji": "<:Normal_Pack:769405453565952050>",
         "itemId": 0,
@@ -115,7 +115,7 @@
         "coinAmount": 0.0
       },
       {
-        "prizeType": 2,
+        "prizeType": 3,
         "name": "Day 17",
         "emoji": "<:Rare_Pack:774504252223258636>",
         "itemId": 1,
@@ -136,11 +136,11 @@
         "coinAmount": 0.0
       },
       {
-        "prizeType": 0,
+        "prizeType": 2,
         "name": "Day 20",
         "emoji": "<:Whats_Inside:769409287239499797>",
-        "itemId": 0,
-        "coinAmount": 0.0
+        "itemId": 121,
+        "coinAmount": 60.0
       }
     ],
     "month": 11
