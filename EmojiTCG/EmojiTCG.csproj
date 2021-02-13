@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C994C76F-6F9B-4BB2-8582-FAA2511AA4D0}</ProjectGuid>
+    <ProjectGuid>{F7EA48A0-34E2-4B9F-B646-3F32E47E10DA}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>EmojiTCG</RootNamespace>
     <AssemblyName>EmojiTCG</AssemblyName>
@@ -33,29 +33,29 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Discord.Net.Commands, Version=2.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Discord.Net.Commands.2.2.0\lib\net461\Discord.Net.Commands.dll</HintPath>
+    <Reference Include="Discord.Net.Commands, Version=2.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Discord.Net.Commands.2.3.0\lib\net461\Discord.Net.Commands.dll</HintPath>
     </Reference>
-    <Reference Include="Discord.Net.Core, Version=2.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Discord.Net.Core.2.2.0\lib\net461\Discord.Net.Core.dll</HintPath>
+    <Reference Include="Discord.Net.Core, Version=2.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Discord.Net.Core.2.3.0\lib\net461\Discord.Net.Core.dll</HintPath>
     </Reference>
-    <Reference Include="Discord.Net.Rest, Version=2.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Discord.Net.Rest.2.2.0\lib\net461\Discord.Net.Rest.dll</HintPath>
+    <Reference Include="Discord.Net.Rest, Version=2.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Discord.Net.Rest.2.3.0\lib\net461\Discord.Net.Rest.dll</HintPath>
     </Reference>
-    <Reference Include="Discord.Net.Webhook, Version=2.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Discord.Net.Webhook.2.2.0\lib\netstandard2.0\Discord.Net.Webhook.dll</HintPath>
+    <Reference Include="Discord.Net.Webhook, Version=2.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Discord.Net.Webhook.2.3.0\lib\netstandard2.0\Discord.Net.Webhook.dll</HintPath>
     </Reference>
-    <Reference Include="Discord.Net.WebSocket, Version=2.2.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Discord.Net.WebSocket.2.2.0\lib\net461\Discord.Net.WebSocket.dll</HintPath>
+    <Reference Include="Discord.Net.WebSocket, Version=2.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Discord.Net.WebSocket.2.3.0\lib\net461\Discord.Net.WebSocket.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.1.1.1\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.5.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Extensions.DependencyInjection, Version=3.1.9.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.3.1.9\lib\net461\Microsoft.Extensions.DependencyInjection.dll</HintPath>
+    <Reference Include="Microsoft.Extensions.DependencyInjection, Version=5.0.0.1, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.5.0.1\lib\net461\Microsoft.Extensions.DependencyInjection.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=3.1.9.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.Abstractions.3.1.9\lib\netstandard2.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.Abstractions.5.0.0\lib\net461\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
@@ -89,8 +89,9 @@
     <Compile Include="Cards\Booster.cs" />
     <Compile Include="Cards\Card.cs" />
     <Compile Include="CurrentData.cs" />
+    <Compile Include="Data\ServerData.cs" />
+    <Compile Include="Data\UserData.cs" />
     <Compile Include="Functions.cs" />
-    <Compile Include="Modules\Battle.cs" />
     <Compile Include="Modules\Commands.cs" />
     <Compile Include="Modules\DailyMonthPrizes.cs" />
     <Compile Include="Modules\Shop.cs" />
@@ -99,12 +100,11 @@
     <Compile Include="Modules\TradeRequest.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ServerData\ServerData.cs" />
-    <Compile Include="ServerData\UserData.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

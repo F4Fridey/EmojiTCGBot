@@ -21,10 +21,13 @@ namespace EmojiTCG
 
         //Bot Data
         public static Settings settings;
-        public static List<ServerData.ServerData> serverData = new List<ServerData.ServerData>();
+        public static List<Data.ServerData> serverData = new List<Data.ServerData>();
+        public static List<Data.UserData> userData = new List<Data.UserData>();
         public static List<Cards.Card> cards = new List<Cards.Card>();
         public static List<Cards.Booster> boosters = new List<Cards.Booster>();
         public static List<Cards.Badge> badges = new List<Cards.Badge>();
+        public static List<Modules.TradeRequest> tradeRequests = new List<TradeRequest>();
+        
 
         //saving
         public static int numToSave = 0;

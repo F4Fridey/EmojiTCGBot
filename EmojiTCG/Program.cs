@@ -11,8 +11,6 @@ using Microsoft.Extensions.DependencyInjection;
 using Newtonsoft.Json;
 using System.IO;
 using System.Reflection;
-using EmojiTCG.Cards;
-using EmojiTCG.Modules;
 using System.Runtime.InteropServices;
 using System.Runtime.Remoting.Contexts;
 
@@ -20,7 +18,6 @@ namespace EmojiTCG
 {
     public class Program
     {
-        
         static void Main(string[] args)
         {
             float tps = 5;
@@ -31,6 +28,7 @@ namespace EmojiTCG
                 try
                 {
                     new Program().RunBotAsync().GetAwaiter().GetResult();
+                    
                 }
                 catch
                 {
@@ -42,13 +40,7 @@ namespace EmojiTCG
         private DiscordSocketClient _client;
         private CommandService _commands;
         private IServiceProvider _services;
-        /*
-        public Settings settings;
-        public List<ServerData.ServerData> serverData = new List<ServerData.ServerData>();
-        public List<Cards.Card> cards = new List<Card>();
-        public List<Cards.Booster> boosters = new List<Booster>();
-        public List<Badge> badges = new List<Badge>();
-        */
+
         public async Task RunBotAsync()
         {
             _client = new DiscordSocketClient();
@@ -73,7 +65,6 @@ namespace EmojiTCG
                 json += File.ReadAllText(@"Bot/Settings/settings.json");
                 if (json == "")
                 {
-                    CurrentData.settings = CreateNewSettings();
                     json = JsonConvert.SerializeObject(CurrentData.settings, Formatting.Indented);
                     File.WriteAllText(@"Bot/Settings/settings.json", json);
                 }
@@ -83,50 +74,7 @@ namespace EmojiTCG
                 }
                 _token = CurrentData.settings.token;
             }
-            fileExists = File.Exists(@"Bot/ServerData/serverData.json");
-            if (!fileExists)
-            {
-                Directory.CreateDirectory(@"Bot/ServerData");
-                File.Create(@"Bot/ServerData/serverData.json");
-                Console.WriteLine("Error: serverData.json file did not exist. Please close the bot and fill in info in serverData.json.");
-            }
-            else
-            {
-                string json = "";
-                json += File.ReadAllText(@"Bot/ServerData/serverData.json");
-                if (json == "")
-                {
-                    CurrentData.serverData.Add(CreateNewServerData());
-                    json = JsonConvert.SerializeObject(CurrentData.serverData, Formatting.Indented);
-                    File.WriteAllText(@"Bot/ServerData/serverData.json", json);
-                }
-                else
-                {
-                    CurrentData.serverData = JsonConvert.DeserializeObject<List<ServerData.ServerData>>(json);
-                }
-            }
-            fileExists = File.Exists(@"Bot/Settings/cards.json");
-            if (!fileExists)
-            {
-                Directory.CreateDirectory(@"Bot/Settings");
-                File.Create(@"Bot/Settings/cards.json");
-                Console.WriteLine("Error: cards.json file did not exist. Please close the bot and fill in info in cards.json.");
-            }
-            else
-            {
-                string json = "";
-                json += File.ReadAllText(@"Bot/Settings/cards.json");
-                if (json == "")
-                {
-                    CurrentData.cards = CreateNewCards();
-                    json = JsonConvert.SerializeObject(CurrentData.cards, Formatting.Indented);
-                    File.WriteAllText(@"Bot/Settings/cards.json", json);
-                }
-                else
-                {
-                    CurrentData.cards = JsonConvert.DeserializeObject<List<Cards.Card>>(json);
-                }
-            }
+
             fileExists = File.Exists(@"Bot/Settings/boosters.json");
             if (!fileExists)
             {
@@ -140,7 +88,6 @@ namespace EmojiTCG
                 json += File.ReadAllText(@"Bot/Settings/boosters.json");
                 if (json == "")
                 {
-                    CurrentData.boosters.Add(CreateNewBooster());
                     json = JsonConvert.SerializeObject(CurrentData.boosters, Formatting.Indented);
                     File.WriteAllText(@"Bot/Settings/boosters.json", json);
                 }
@@ -149,6 +96,7 @@ namespace EmojiTCG
                     CurrentData.boosters = JsonConvert.DeserializeObject<List<Cards.Booster>>(json);
                 }
             }
+
             fileExists = File.Exists(@"Bot/Settings/badge.json");
             if (!fileExists)
             {
@@ -162,15 +110,15 @@ namespace EmojiTCG
                 json += File.ReadAllText(@"Bot/Settings/badge.json");
                 if (json == "")
                 {
-                    CurrentData.badges.Add(CreateNewBadge());
                     json = JsonConvert.SerializeObject(CurrentData.badges, Formatting.Indented);
                     File.WriteAllText(@"Bot/Settings/badge.json", json);
                 }
                 else
                 {
-                    CurrentData.badges = JsonConvert.DeserializeObject<List<Badge>>(json);
+                    CurrentData.badges = JsonConvert.DeserializeObject<List<Cards.Badge>>(json);
                 }
             }
+
             fileExists = File.Exists(@"Bot/Settings/shoppages.json");
             if (!fileExists)
             {
@@ -184,15 +132,15 @@ namespace EmojiTCG
                 json += File.ReadAllText(@"Bot/Settings/shoppages.json");
                 if (json == "")
                 {
-                    Shop.shopPages.Add(CreateNewShopPage(CurrentData.boosters[0], CurrentData.cards[0], CurrentData.badges[0]));
-                    json = JsonConvert.SerializeObject(Shop.shopPages, Formatting.Indented);
+                    json = JsonConvert.SerializeObject(Modules.Shop.shopPages, Formatting.Indented);
                     File.WriteAllText(@"Bot/Settings/shoppages.json", json);
                 }
                 else
                 {
-                    Shop.shopPages = JsonConvert.DeserializeObject<List<ShopPage>>(json);
+                    Modules.Shop.shopPages = JsonConvert.DeserializeObject<List<Modules.ShopPage>>(json);
                 }
             }
+
             fileExists = File.Exists(@"Bot/Settings/dailymonthprizes.json");
             if (!fileExists)
             {
@@ -206,232 +154,126 @@ namespace EmojiTCG
                 json += File.ReadAllText(@"Bot/Settings/dailymonthprizes.json");
                 if (json == "")
                 {
-                    CurrentData.dailyMonthPrizes.Add(CreateNewDailyMonthPrize());
                     json = JsonConvert.SerializeObject(CurrentData.dailyMonthPrizes, Formatting.Indented);
                     File.WriteAllText(@"Bot/Settings/dailymonthprizes.json", json);
                 }
                 else
                 {
-                    CurrentData.dailyMonthPrizes = JsonConvert.DeserializeObject<List<DailyMonthPrizes>>(json);
+                    CurrentData.dailyMonthPrizes = JsonConvert.DeserializeObject<List<Modules.DailyMonthPrizes>>(json);
+                }
+            }
+
+            fileExists = File.Exists(@"Bot/Settings/cards.json");
+            if (!fileExists)
+            {
+                Directory.CreateDirectory(@"Bot/Settings");
+                File.Create(@"Bot/Settings/cards.json");
+                Console.WriteLine("Error: cards.json file did not exist. Please close the bot and fill in info in cards.json.");
+            }
+            else
+            {
+                string json = "";
+                json += File.ReadAllText(@"Bot/Settings/cards.json");
+                if (json == "")
+                {
+                    json = JsonConvert.SerializeObject(CurrentData.cards, Formatting.Indented);
+                    File.WriteAllText(@"Bot/Settings/cards.json", json);
+                }
+                else
+                {
+                    CurrentData.cards = JsonConvert.DeserializeObject<List<Cards.Card>>(json);
+                }
+            }
+
+            fileExists = File.Exists(@"Bot/Data/userData.json");
+            if (!fileExists)
+            {
+                Directory.CreateDirectory(@"Bot/Data");
+                File.Create(@"Bot/Data/userData.json");
+                Console.WriteLine("Error: userData.json file did not exist. Please close the bot and fill in info in userData.json.");
+            }
+            else
+            {
+                string json = "";
+                json += File.ReadAllText(@"Bot/Data/userData.json");
+                if (json == "")
+                {
+                    json = JsonConvert.SerializeObject(CurrentData.userData, Formatting.Indented);
+                    File.WriteAllText(@"Bot/Data/userData.json", json);
+                }
+                else
+                {
+                    CurrentData.userData = JsonConvert.DeserializeObject<List<Data.UserData>>(json);
+                }
+            }
+
+            fileExists = File.Exists(@"Bot/Data/serverData.json");
+            if (!fileExists)
+            {
+                Directory.CreateDirectory(@"Bot/Data");
+                File.Create(@"Bot/Data/serverData.json");
+                Console.WriteLine("Error: serverData.json file did not exist. Please close the bot and fill in info in serverData.json.");
+            }
+            else
+            {
+                string json = "";
+                json += File.ReadAllText(@"Bot/Data/serverData.json");
+                if (json == "")
+                {
+                    json = JsonConvert.SerializeObject(CurrentData.serverData, Formatting.Indented);
+                    File.WriteAllText(@"Bot/Data/serverData.json", json);
+                }
+                else
+                {
+                    CurrentData.serverData = JsonConvert.DeserializeObject<List<Data.ServerData>>(json);
+                }
+            }
+
+            fileExists = File.Exists(@"Bot/Data/tradeReq.json");
+            if (!fileExists)
+            {
+                Directory.CreateDirectory(@"Bot/Data");
+                File.Create(@"Bot/Data/tradeReq.json");
+                Console.WriteLine("Error: tradeReq.json file did not exist. Please close the bot and fill in info in tradeReq.json.");
+            }
+            else
+            {
+                string json = "";
+                json += File.ReadAllText(@"Bot/Data/tradeReq.json");
+                if (json == "")
+                {
+                    json = JsonConvert.SerializeObject(CurrentData.tradeRequests, Formatting.Indented);
+                    File.WriteAllText(@"Bot/Data/tradeReq.json", json);
+                }
+                else
+                {
+                    CurrentData.tradeRequests = JsonConvert.DeserializeObject<List<Modules.TradeRequest>>(json);
                 }
             }
 
             string token = _token;
 
             _client.Log += _client_Log;
-
+            
             await RegisterCommandsAsync();
-
+            
             _client.UserVoiceStateUpdated += HandleVoiceEventsAsync;
 
             await _client.LoginAsync(TokenType.Bot, token);
 
-            await _client.StartAsync();
-
-            Functions.LoadAllData();
-
             await _client.SetStatusAsync(UserStatus.Online);
             await _client.SetGameAsync("for =help or =tut", null, ActivityType.Watching);
-
+            
             CurrentData.client = _client;
 
-            for (int i = 0; i < CurrentData.serverData.Count; i++)
+            for (int j = 0; j < CurrentData.userData.Count; j++)
             {
-                for (int j = 0; j < CurrentData.serverData[i].userData.Count; j++)
-                {
-                    CurrentData.serverData[i].userData[j].lastJoinVCTime = DateTime.Now.Ticks;
-                }
+                CurrentData.userData[j].lastJoinVCTime = DateTime.Now.Ticks;
             }
 
+            await _client.StartAsync();
+
             await Task.Delay(-1);
-        }
-
-        DailyMonthPrizes CreateNewDailyMonthPrize()
-        {
-            DailyMonthPrizes dailyMonthPrizes = new DailyMonthPrizes()
-            {
-                name = "Test Month Prizes",
-                prizesPerDay = new List<Prize>()
-                {
-                    new Prize()
-                    {
-                        name = "Day 1",
-                        prizeType = PrizeType.NOTHING,
-                        emoji = ":black_circle:",
-                        itemId = 0,
-                        coinAmount = 0
-                    }
-                },
-                month = 0
-            };
-            return dailyMonthPrizes;
-        }
-
-        ShopPage CreateNewShopPage(Booster booster, Card card, Badge badge)
-        {
-            ShopPage shopPage = new ShopPage()
-            {
-                category = ShopCategory.PINNED,
-                topThreeSlots = new List<ShopSlot>()
-                {
-                    new ShopSlot
-                    {
-                        itemId = booster.id,
-                        type = ShopSlotType.BOOSTER,
-                        stock = 4000000000,
-                        price = 10,
-                        name = "Test Booster Pack",
-                        id = 0
-                    },
-                    new ShopSlot
-                    {
-                        itemId = card.id,
-                        type = ShopSlotType.CARD,
-                        stock = 4000000000,
-                        price = 15,
-                        name = "Testitator",
-                        id = 1
-                    },
-                    new ShopSlot
-                    {
-                        itemId = badge.id,
-                        type = ShopSlotType.BADGE,
-                        stock = 4000000000,
-                        price = 20,
-                        name = "Test Badge",
-                        id = 2
-                    }
-                },
-                slots = new List<ShopSlot>()
-                {
-                    new ShopSlot
-                    {
-                        itemId = booster.id,
-                        type = ShopSlotType.BOOSTER,
-                        stock = 4000000000,
-                        price = 10,
-                        name = "Test Booster Pack",
-                        id = 0
-                    },
-                    new ShopSlot
-                    {
-                        itemId = card.id,
-                        type = ShopSlotType.CARD,
-                        stock = 4000000000,
-                        price = 15,
-                        name = "Testitator",
-                        id = 1
-                    },
-                    new ShopSlot
-                    {
-                        itemId = badge.id,
-                        type = ShopSlotType.BADGE,
-                        stock = 4000000000,
-                        price = 20,
-                        name = "Test Badge",
-                        id = 2
-                    }
-                },
-                text = "**__SHOP__**\n*To buy do `=shop buy id`*\n*Do `=shop category` to see other categories*\n**Category: __Pinned__**\n<:normaltl:766791680778436628><:normalt:766791680782499850><:normaltr:766791680795344896>     <:normaltl:766791680778436628><:normalt:766791680782499850><:normaltr:766791680795344896>     <:normaltl:766791680778436628><:normalt:766791680782499850><:normaltr:766791680795344896>\n<:normall:766791680376307714>:tools:<:normalr:766791680791281674>     <:normall:766791680376307714>:apple:<:normalr:766791680791281674>     <:normall:766791680376307714>:grinning:<:normalr:766791680791281674>\n<:normalbl:766791680762183730><:normalb:766791680765853736><:normalbr:766791680816185345>     <:normalbl:766791680762183730><:normalb:766791680765853736><:normalbr:766791680816185345>     <:normalbl:766791680762183730><:normalb:766791680765853736><:normalbr:766791680816185345>\nID:  0                     1                      2\n0: Test Booster Pack 10 coins\n1: Testitator Card 15 coins\n2: Test Badge 20 coins\n<:normaltl:766791680778436628><:normalt:766791680782499850><:normaltr:766791680795344896>     <:normaltl:766791680778436628><:normalt:766791680782499850><:normaltr:766791680795344896>     <:normaltl:766791680778436628><:normalt:766791680782499850><:normaltr:766791680795344896>\n<:normall:766791680376307714>:tools:<:normalr:766791680791281674>     <:normall:766791680376307714>:apple:<:normalr:766791680791281674>     <:normall:766791680376307714>:grinning:<:normalr:766791680791281674>\n<:normalbl:766791680762183730><:normalb:766791680765853736><:normalbr:766791680816185345>     <:normalbl:766791680762183730><:normalb:766791680765853736><:normalbr:766791680816185345>     <:normalbl:766791680762183730><:normalb:766791680765853736><:normalbr:766791680816185345>\nID:  0                     1                      2\n0: Test Booster Pack 10 coins\n1: Testitator Card 15 coins\n2: Test Badge 20 coins\n*Page: 1 Do `=shop pinned 2`*§**__SHOP__**\n*To buy do `=shop buy id`*\n*Do `=shop category` to see other categories*\n**Category: __Pinned__**\n<:normaltl:766791680778436628><:normalt:766791680782499850><:normaltr:766791680795344896>     <:normaltl:766791680778436628><:normalt:766791680782499850><:normaltr:766791680795344896>     <:normaltl:766791680778436628><:normalt:766791680782499850><:normaltr:766791680795344896>\n<:normall:766791680376307714>:tools:<:normalr:766791680791281674>     <:normall:766791680376307714>:apple:<:normalr:766791680791281674>     <:normall:766791680376307714>:grinning:<:normalr:766791680791281674>\n<:normalbl:766791680762183730><:normalb:766791680765853736><:normalbr:766791680816185345>     <:normalbl:766791680762183730><:normalb:766791680765853736><:normalbr:766791680816185345>     <:normalbl:766791680762183730><:normalb:766791680765853736><:normalbr:766791680816185345>\nID:  0                     1                      2\n0: Test Booster Pack 10 coins\n1: Testitator Card 15 coins\n2: Test Badge 20 coins\n<:normaltl:766791680778436628><:normalt:766791680782499850><:normaltr:766791680795344896>     <:normaltl:766791680778436628><:normalt:766791680782499850><:normaltr:766791680795344896>     <:normaltl:766791680778436628><:normalt:766791680782499850><:normaltr:766791680795344896>\n<:normall:766791680376307714>:tools:<:normalr:766791680791281674>     <:normall:766791680376307714>:apple:<:normalr:766791680791281674>     <:normall:766791680376307714>:grinning:<:normalr:766791680791281674>\n<:normalbl:766791680762183730><:normalb:766791680765853736><:normalbr:766791680816185345>     <:normalbl:766791680762183730><:normalb:766791680765853736><:normalbr:766791680816185345>     <:normalbl:766791680762183730><:normalb:766791680765853736><:normalbr:766791680816185345>\nID:  0                     1                      2\n0: Test Booster Pack 100 coins\n1: Testitator Card 150 coins\n2: Test Badge 200 coins\n*Page: 2*",
-                id = 0
-            };
-            return shopPage;
-        }
-
-        Booster CreateNewBooster()
-        {
-            Booster booster = new Booster
-            {
-                name = "Test Pack",
-                id = 0,
-                emoji = ":warning:",
-                amount = 5,
-                maxCommons = 4,
-                maxUncommons = 3,
-                maxRares = 2,
-                maxURares = 1,
-                maxLegends = 1,
-                cardsUcanGet = new List<uint>() { 1, 2, 3, 4, 5 },
-                possibleBuildup = new List<BuildUp>()
-                {
-                    new BuildUp() { types="1",chances="100"},
-                    new BuildUp() { types="12",chances="75-25"},
-                    new BuildUp() { types="12",chances="50-50"},
-                    new BuildUp() { types="1234",chances="40-30-20-10"},
-                    new BuildUp() { types="345",chances="50-30-20"}
-                },
-                notes = "This is just a tester pack."
-            };
-            return booster;
-        }
-
-        Badge CreateNewBadge()
-        {
-            Badge badge = new Badge
-            {
-                name = "The Tester",
-                emoji = ":tools:",
-                notes = "This is a test badge.",
-                id = 0
-            };
-            return badge;
-        }
-
-        List<Card> CreateNewCards()
-        {
-            List<Card> cards = new List<Card>();
-            cards.Add(new Card
-            {
-                name = "Testitator",
-                type = CardType.COMMON,
-                emoji = ":tools:",
-                id = 0,
-                notes = "canBattle§type§health§attackType$name$dmg$effect$target#attackType$name$dmg$effect$target§fullEmoji§description"
-            });
-            return cards;
-        }
-
-        ServerData.ServerData CreateNewServerData()
-        {
-            ServerData.ServerData data = new ServerData.ServerData()
-            {
-                serverId = 1,
-                prefix = "=",
-                linkedToServerId = 0,
-                linkedToThisServerIds = new List<ulong>()
-                {
-                    0
-                },
-                userData = new List<ServerData.UserData>()
-                {
-                    new ServerData.UserData
-                    {
-                        userId = 0,
-                        inventoryCards = new List<uint>(),
-                        inventoryBoosters = new List<uint>(),
-                        inventoryBadges = new List<uint>(),
-                        coins = 0
-                    }
-                },
-                tradeRequests = new List<TradeRequest>()
-                {
-                    new TradeRequest()
-                    {
-                        offererId = 0,
-                        accepterId = 0,
-                        offeredCoins = 0,
-                        acceptedCoins = 0,
-                        offererCardIds = new List<uint>(),
-                        accepterCardIds = new List<uint>()
-                    }
-                },
-                battles = new List<Battle>(),
-                leaderboard = new List<LeaderBoardPlace>(),
-                setup = false,
-                allowAnnouncements = true,
-                allowNotifications = true
-            };
-            return data;
         }
 
         private Task _client_Log(LogMessage arg)
@@ -454,102 +296,67 @@ namespace EmojiTCG
             int argPos = 0;
             try
             {
-                ulong contextGuildId = Functions.CheckServerLinked(context.Guild.Id);
-                int sDIndex = -1;
-                int uDIndex = -1;
-                bool serverExists = Functions.GetServerDataIndex(contextGuildId, out sDIndex);
                 bool userExistsInData = false;
-                if (serverExists)
-                    userExistsInData = Functions.GetUserDataIndex(context.User.Id, sDIndex, out uDIndex);
-                if (!userExistsInData && serverExists)
+                
+                foreach (Data.UserData _userdata in CurrentData.userData)
                 {
-                    ServerData.UserData userdata = new ServerData.UserData()
+                    if (_userdata.userId == context.User.Id)
+                    {
+                        userExistsInData = true;
+                        break;
+                    }
+                }
+
+                if (!userExistsInData)
+                {
+                    Data.UserData userdata = new Data.UserData()
                     {
                         userId = context.User.Id,
                         coins = 20,
                         inventoryBadges = new List<uint>(),
                         inventoryBoosters = new List<uint>(),
                         inventoryCards = new List<uint>(),
-                        decks = new List<ServerData.Deck>(),
+                        decks = new List<Data.Deck>(),
                         xp = 0,
                         xpForCoin = 10,
                         lastMin = DateTime.Now.Minute,
-                        lastJoinVCTime = DateTime.Now.Ticks,
-                        importantAnnouncements = true,
-                        notifyAnnouncements = true,
-                        dmRecieved = false
+                        lastJoinVCTime = DateTime.Now.Ticks
                     };
-                    CurrentData.serverData[sDIndex].userData.Add(userdata);
+                    CurrentData.userData.Add(userdata);
                     userExistsInData = true;
-
-                    int index;
-                    bool userInData = false;
-                    for (int i = 0; i < CurrentData.serverData.Count; i++)
+                }
+                
+                if (userExistsInData)
+                {
+                    for (int i = 0; i < CurrentData.userData.Count; i++)
                     {
-                        userInData = Functions.GetUserDataIndex(context.User.Id, i, out index);
-                        if (userInData && CurrentData.serverData[i].setup)
+                        if (CurrentData.userData[i].userId == context.User.Id)
                         {
-                            if (!CurrentData.serverData[i].userData[index].dmRecieved && CurrentData.serverData[i].userData[index].notifyAnnouncements && CurrentData.serverData[i].allowNotifications)
+                            //halloween 2020
+                            /*
+                            if (!CurrentData.serverData[sDIndex].userData[uDIndex].inventoryBadges.Contains(1) && CurrentData.serverData[sDIndex].userData[uDIndex].inventoryCards.Contains(31) && CurrentData.serverData[sDIndex].userData[uDIndex].inventoryCards.Contains(40) && DateTime.Now.Month == 10 && DateTime.Now.Year == 2020)
+                                            {
+                                                CurrentData.serverData[sDIndex].userData[uDIndex].inventoryBadges.Add(1);
+                                                IEmote emote = new Emoji("\U0001f383");
+                                                await context.Message.AddReactionAsync(emote);
+                                            } 
+                            */
+                            //-----------
+                            if (CurrentData.userData[i].lastMin != DateTime.Now.Minute)
                             {
-                                string dm = "> **Emoji TCG Notification:**\n\nYou are in a server that has me. Occasionaly, about once a month, I send announcements and notifications to DMs. If you dont want to recieve them, you can do `=announcements off` and `=notifications off` in the server.\n*This will not be used to promote anything other than info about this bot.*\n\nAnyway you can do `=tutorial` in the server to get started collecting! :D\n\n`NOTE:` *This is a beta test, if you find bugs, spelling or grammar errors report it to F4Fridey! (Either ping or DM)*";
-                                try {   } catch { }
-                                try
+                                CurrentData.userData[i].lastMin = DateTime.Now.Minute;
+                                CurrentData.userData[i].xp += 1 * CurrentData.settings.chatXPmultiplier;
+                                if (CurrentData.userData[i].xp >= CurrentData.userData[i].xpForCoin)
                                 {
-                                    await context.User.SendMessageAsync(dm);
-                                    CurrentData.serverData[i].userData[index].dmRecieved = true;
-                                    string str = "DMed " + context.User.Username + " a notification message.";
-                                    Console.WriteLine(str);
+                                    CurrentData.userData[i].xp = 0;
+                                    CurrentData.userData[i].coins += 1;
+                                    Random rnd = new Random();
+                                    CurrentData.userData[i].xpForCoin = rnd.Next(CurrentData.settings.minXPreq, CurrentData.settings.maxXPreq);
+                                    IEmote emote = new Emoji("\U0001FA99");
+                                    await context.Message.AddReactionAsync(emote);
                                 }
-                                catch { }
                             }
                             break;
-                        }
-                    }
-                }
-                if (userExistsInData && serverExists)
-                {
-                    //halloween 2020
-                    /*
-                    if (!CurrentData.serverData[sDIndex].userData[uDIndex].inventoryBadges.Contains(1) && CurrentData.serverData[sDIndex].userData[uDIndex].inventoryCards.Contains(31) && CurrentData.serverData[sDIndex].userData[uDIndex].inventoryCards.Contains(40) && DateTime.Now.Month == 10 && DateTime.Now.Year == 2020)
-                                    {
-                                        CurrentData.serverData[sDIndex].userData[uDIndex].inventoryBadges.Add(1);
-                                        IEmote emote = new Emoji("\U0001f383");
-                                        await context.Message.AddReactionAsync(emote);
-                                    } 
-                    */
-                    //-----------
-                    //bot creator badge
-                    if (context.User.Id == 350279720144863244)
-                    {
-                        if (!HasAdminBadge(context, contextGuildId))
-                        {
-                            CurrentData.serverData[sDIndex].userData[uDIndex].inventoryBadges.Add(CurrentData.badges[0].id);
-                            Emote emote = Emote.Parse("<:Bot_Creator:774509373971890197>");
-                            await context.Message.AddReactionAsync(emote);
-                        }
-                    }
-                    //coin command
-                    if (context.Message.Content == "coin" && contextGuildId == CurrentData.settings.adminServerID)
-                    {
-                        Random rnd = new Random();
-                        int coins = rnd.Next(1, 21);
-                        CurrentData.serverData[sDIndex].userData[uDIndex].coins += coins;
-                        IEmote emote = new Emoji("\U0001FA99");
-                        await context.Message.AddReactionAsync(emote);
-                    }
-                    //--------
-                    if (CurrentData.serverData[sDIndex].userData[uDIndex].lastMin != DateTime.Now.Minute)
-                    {
-                        CurrentData.serverData[sDIndex].userData[uDIndex].lastMin = DateTime.Now.Minute;
-                        CurrentData.serverData[sDIndex].userData[uDIndex].xp += 1 * CurrentData.settings.chatXPmultiplier;
-                        if (CurrentData.serverData[sDIndex].userData[uDIndex].xp >= CurrentData.serverData[sDIndex].userData[uDIndex].xpForCoin)
-                        {
-                            CurrentData.serverData[sDIndex].userData[uDIndex].xp = 0;
-                            CurrentData.serverData[sDIndex].userData[uDIndex].coins += 1;
-                            Random rnd = new Random();
-                            CurrentData.serverData[sDIndex].userData[uDIndex].xpForCoin = rnd.Next(CurrentData.settings.minXPreq, CurrentData.settings.maxXPreq);
-                            IEmote emote = new Emoji("\U0001FA99");
-                            await context.Message.AddReactionAsync(emote);
                         }
                     }
                     CurrentData.numToSave += 1;
@@ -559,6 +366,7 @@ namespace EmojiTCG
                         Functions.SaveAllData();
                     }
                 }
+
                 if (message.HasStringPrefix("=", ref argPos))
                 {
                     var result = await _commands.ExecuteAsync(context, argPos, _services);
@@ -574,27 +382,33 @@ namespace EmojiTCG
             {
                 ulong contextGuildId = 0;
                 if (newVoiceState.VoiceChannel != null)
-                    contextGuildId = Functions.CheckServerLinked(newVoiceState.VoiceChannel.Guild.Id);
+                    contextGuildId = newVoiceState.VoiceChannel.Guild.Id;
                 else if (oldVoiceState.VoiceChannel != null)
-                    contextGuildId = Functions.CheckServerLinked(oldVoiceState.VoiceChannel.Guild.Id);
+                    contextGuildId = oldVoiceState.VoiceChannel.Guild.Id;
 
-                int sDIndex = -1;
                 int uDIndex = -1;
-                bool serverExists = Functions.GetServerDataIndex(contextGuildId, out sDIndex);
                 bool userExistsInData = false;
-                if (serverExists)
-                    userExistsInData = Functions.GetUserDataIndex(user.Id, sDIndex, out uDIndex);
+                for (int i = 0; i < CurrentData.userData.Count; i++)
+                {
+                    if (CurrentData.userData[i].userId == user.Id)
+                    {
+                        userExistsInData = true;
+                        uDIndex = i;
+                        break;
+                    }
+                }
+
                 if (userExistsInData)
                 {
                     if (oldVoiceState.VoiceChannel == null && newVoiceState.VoiceChannel != null)
                     {
                         //user joined
-                        CurrentData.serverData[sDIndex].userData[uDIndex].lastJoinVCTime = DateTime.Now.Ticks;
+                        CurrentData.userData[uDIndex].lastJoinVCTime = DateTime.Now.Ticks;
                     }
                     else if (oldVoiceState.VoiceChannel != null && newVoiceState.VoiceChannel == null)
                     {
                         //User left
-                        long elapsedTicks = DateTime.Now.Ticks - CurrentData.serverData[sDIndex].userData[uDIndex].lastJoinVCTime;
+                        long elapsedTicks = DateTime.Now.Ticks - CurrentData.userData[uDIndex].lastJoinVCTime;
                         TimeSpan elapsedSpan = new TimeSpan(elapsedTicks);
                         double mins = elapsedSpan.TotalMinutes;
                         Console.WriteLine(mins.ToString("0.000") + " " + elapsedTicks);
@@ -605,51 +419,12 @@ namespace EmojiTCG
                         {
                             pos += 1;
                             mins -= 10;
-                            CurrentData.serverData[sDIndex].userData[uDIndex].coins += 1 * CurrentData.settings.voiceChatXPmultiplier;
+                            CurrentData.userData[uDIndex].coins += 1 * CurrentData.settings.voiceChatXPmultiplier;
                         }
                     }
                 }
             }
             return Task.CompletedTask;
-        }
-
-        bool HasAdminBadge(SocketCommandContext context, ulong contextGuildId)
-        {
-            int sDIndex = -1;
-            int uDIndex = -1;
-            bool serverExists = Functions.GetServerDataIndex(contextGuildId, out sDIndex);
-            bool userExistsInData = false;
-            if (serverExists)
-                userExistsInData = Functions.GetUserDataIndex(context.User.Id, sDIndex, out uDIndex);
-            if (userExistsInData)
-            {
-                foreach (uint _badgeId in CurrentData.serverData[sDIndex].userData[uDIndex].inventoryBadges)
-                {
-                    if (_badgeId == 0)
-                    {
-                        return true;
-                    }
-                }
-            }
-            return false;
-        }
-
-        Settings CreateNewSettings()
-        {
-            Settings settings = new Settings()
-            {
-                token = "place_token_here",
-                adminServerID = 0,
-                minXPreq = 5,
-                maxXPreq = 16,
-                chatXPmultiplier = 1,
-                voiceChatXPmultiplier = 1,
-                minXPvc = 3,
-                maxXPvc = 13,
-                announcement = "Announcements here",
-                notification = "Notifications here"
-            };
-            return settings;
         }
     }
 

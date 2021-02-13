@@ -17,6 +17,6 @@ namespace EmojiTCG.Modules
 
     public static class Shop
     {
-        public static List<ShopPage> shopPages = new List<ShopPage>(); 
+        public static List<ShopPage> shopPages = new List<ShopPage>();
     }
 }
