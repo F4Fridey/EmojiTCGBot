@@ -1198,7 +1198,6 @@ namespace EmojiTCG.Modules
                                 }
                                 break;
                             }
-                            break;
                         }
                     }
                     else
