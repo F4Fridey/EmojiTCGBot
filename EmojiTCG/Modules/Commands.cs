@@ -1706,7 +1706,7 @@ namespace EmojiTCG.Modules
                                         }
                                         break;
                                     }
-                                    break;
+                                    
                                 }
                                 break;
                             }
