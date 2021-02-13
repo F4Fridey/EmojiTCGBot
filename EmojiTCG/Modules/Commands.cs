@@ -9,6 +9,8 @@ using Discord.Commands;
 using Discord.WebSocket;
 using EmojiTCG.Cards;
 using EmojiTCG.ServerData;
+using System.IO;
+using Newtonsoft.Json;
 
 namespace EmojiTCG.Modules
 {
@@ -3810,14 +3812,33 @@ namespace EmojiTCG.Modules
                         Environment.Exit(0);
                         break;
                     case "test":
-                        string testAnnouncement = "> **Emoji TCG Announcment:**\n*Do `=announcements off` in ";
-                        testAnnouncement += "GuildName if you dont want to see these.*\n\n";
-                        testAnnouncement += CurrentData.settings.announcement;
-                        await ReplyAsync(testAnnouncement);
-                        string testNotification = "> **Emoji TCG Notification:**\n*Do `=notifications off` in ";
-                        testNotification += "GuildName if you dont want to see these.*\n\n";
-                        testNotification += CurrentData.settings.notification;
-                        await ReplyAsync(testNotification);
+                        List<NewUserData> udL = new List<NewUserData>();
+                        foreach (ServerData.ServerData _serverdata in CurrentData.serverData)
+                        {
+                            foreach (ServerData.UserData _userdata in _serverdata.userData)
+                            {
+                                NewUserData ud = new NewUserData() { 
+                                    userId = _userdata.userId,
+                                    inventoryCards = _userdata.inventoryCards,
+                                    inventoryBoosters = _userdata.inventoryBoosters,
+                                    inventoryBadges = _userdata.inventoryBadges,
+                                    decks = _userdata.decks,
+                                    coins = _userdata.coins,
+                                    dailyStreak = _userdata.dailyStreak,
+                                    dailyMonthStreak = _userdata.dailyMonthStreak,
+                                    lastDaily = _userdata.lastDaily,
+                                    xp = _userdata.xp,
+                                    xpForCoin = _userdata.xpForCoin,
+                                    lastMin = _userdata.lastMin,
+                                    lastJoinVCTime = _userdata.lastJoinVCTime
+                                };
+                                udL.Add(ud);
+                            }
+                        }
+                        Directory.CreateDirectory(@"Bot/Data");
+                        File.Create(@"Bot/Data/hmmm.json");
+                        string json = JsonConvert.SerializeObject(udL, Formatting.Indented);
+                        File.WriteAllText(@"Bot/Data/hmmm.json", json);
                         await Context.Message.AddReactionAsync(tick);
                         break;
                     case "announce":

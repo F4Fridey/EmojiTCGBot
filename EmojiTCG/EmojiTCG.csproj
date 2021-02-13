@@ -97,6 +97,7 @@
     <Compile Include="Modules\ShopPage.cs" />
     <Compile Include="Modules\ShopSlot.cs" />
     <Compile Include="Modules\TradeRequest.cs" />
+    <Compile Include="NewUserData.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ServerData\ServerData.cs" />
