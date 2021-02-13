@@ -3835,8 +3835,6 @@ namespace EmojiTCG.Modules
                                 udL.Add(ud);
                             }
                         }
-                        Directory.CreateDirectory(@"Bot/Data");
-                        File.Create(@"Bot/Data/hmmm.json");
                         string json = JsonConvert.SerializeObject(udL, Formatting.Indented);
                         File.WriteAllText(@"Bot/Data/hmmm.json", json);
                         await Context.Message.AddReactionAsync(tick);
