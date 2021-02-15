@@ -64,8 +64,8 @@ C:\Users\armst\Desktop\Private\Programming\EmojiTCG\EmojiTCGBot\EmojiTCG\bin\Deb
 C:\Users\armst\Desktop\Private\Programming\EmojiTCG\EmojiTCGBot\EmojiTCG\bin\Debug\System.Linq.Async.xml
 C:\Users\armst\Desktop\Private\Programming\EmojiTCG\EmojiTCGBot\EmojiTCG\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\armst\Desktop\Private\Programming\EmojiTCG\EmojiTCGBot\EmojiTCG\bin\Debug\System.Threading.Tasks.Extensions.xml
-C:\Users\armst\Desktop\Private\Programming\EmojiTCG\EmojiTCGBot\EmojiTCG\obj\Debug\EmojiTCG.csprojAssemblyReference.cache
 C:\Users\armst\Desktop\Private\Programming\EmojiTCG\EmojiTCGBot\EmojiTCG\obj\Debug\EmojiTCG.csproj.CoreCompileInputs.cache
 C:\Users\armst\Desktop\Private\Programming\EmojiTCG\EmojiTCGBot\EmojiTCG\obj\Debug\EmojiTCG.csproj.CopyComplete
 C:\Users\armst\Desktop\Private\Programming\EmojiTCG\EmojiTCGBot\EmojiTCG\obj\Debug\EmojiTCG.exe
 C:\Users\armst\Desktop\Private\Programming\EmojiTCG\EmojiTCGBot\EmojiTCG\obj\Debug\EmojiTCG.pdb
+C:\Users\armst\Desktop\Private\Programming\EmojiTCG\EmojiTCGBot\EmojiTCG\obj\Debug\EmojiTCG.csprojAssemblyReference.cache

@@ -1167,48 +1167,85 @@ namespace EmojiTCG.Modules
             if (CurrentData.commandsEnabled)
             {
                 uint arg0 = 4000000000;
-                bool parsed = false;
+                bool parsed;
                 if (args.Any())
                 {
-                    parsed = uint.TryParse(args[0], out arg0);
-                    if (parsed)
+                    for (int i = 0; i < args.Length; i++)
                     {
-                        for (int j = 0; j < CurrentData.userData.Count; j++)
+                        parsed = false;
+                        parsed = uint.TryParse(args[i], out arg0);
+                        if (parsed)
                         {
-                            if (CurrentData.userData[j].userId == Context.User.Id)
+                            for (int j = 0; j < CurrentData.userData.Count; j++)
                             {
-                                bool hasCard = false;
-                                foreach (uint _card in CurrentData.userData[j].inventoryCards)
+                                if (CurrentData.userData[j].userId == Context.User.Id)
                                 {
-                                    if (_card == arg0)
+                                    bool hasCard = false;
+                                    foreach (uint _card in CurrentData.userData[j].inventoryCards)
                                     {
-                                        CurrentData.userData[j].inventoryCards.Remove(_card);
-                                        CurrentData.userData[j].coins += 1;
-                                        hasCard = true;
-                                        IEmote emote = new Emoji("\U0001FA99");
-                                        IEmote emote2 = new Emoji("\U0001F525");
-                                        await Context.Message.AddReactionAsync(emote2);
-                                        await Context.Message.AddReactionAsync(emote);
-                                        break;
+                                        if (_card == arg0)
+                                        {
+                                            CardType type = CardType.OTHER;
+                                            CurrentData.userData[j].inventoryCards.Remove(_card);
+                                            foreach (Card _Card in CurrentData.cards)
+                                            {
+                                                if (_Card.id == _card)
+                                                {
+                                                    type = _Card.type;
+                                                    break;
+                                                }
+                                            }
+                                            double monee;
+                                            switch (type)
+                                            {
+                                                default:
+                                                    monee = 1;
+                                                    break;
+                                                case CardType.COMMON:
+                                                    monee = 1;
+                                                    break;
+                                                case CardType.UNCOMMON:
+                                                    monee = 2;
+                                                    break;
+                                                case CardType.RARE:
+                                                    monee = 3;
+                                                    break;
+                                                case CardType.ULTRARARE:
+                                                    monee = 4;
+                                                    break;
+                                                case CardType.LENGENDARY:
+                                                    monee = 5;
+                                                    break;
+                                            }
+
+                                            CurrentData.userData[j].coins += monee;
+                                            hasCard = true;
+                                            IEmote emote = new Emoji("\U0001FA99");
+                                            IEmote emote2 = new Emoji("\U0001F525");
+                                            await ReplyAsync("You got " + monee + " :coin: from melting that card.");
+                                            await Context.Message.AddReactionAsync(emote2);
+                                            await Context.Message.AddReactionAsync(emote);
+                                            break;
+                                        }
                                     }
+                                    if (!hasCard)
+                                    {
+                                        await ReplyAsync("```diff\n- You dont have card " + arg0 + ".\n```");
+                                    }
+                                    break;
                                 }
-                                if (!hasCard)
-                                {
-                                    await ReplyAsync("```diff\n- You dont have that card.\n```");
-                                }
-                                break;
                             }
                         }
-                    }
-                    else
-                    {
-                        string str = "```diff\n- " + args[0] + " is not a valid card ID.\n```";
-                        await ReplyAsync(str);
+                        else
+                        {
+                            string str = "```diff\n- " + args[0] + " is not a valid card ID.\n```";
+                            await ReplyAsync(str);
+                        }
                     }
                 }
                 else
                 {
-                    await ReplyAsync("```diff\n+ Melt command:\n  Melt a card into a coin.\n  melt cardid\n```");
+                    await ReplyAsync("```diff\n+ Melt command:\n  Melt a card into a coin. () means optional.\n  melt cardid (cardid) (cardid) (cardid)...\n```");
                 }
             }
             else
