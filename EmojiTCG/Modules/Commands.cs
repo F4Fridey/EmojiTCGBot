@@ -1310,6 +1310,72 @@ namespace EmojiTCG.Modules
             }
         }
 
+        [Command("coinboard"), RequireUserPermission(GuildPermission.Administrator)]
+        public async Task Coinboard(params String[] stringArray)
+        {
+            bool serverExists = false;
+            for (int i = 0; i < CurrentData.serverData.Count; i++)
+            {
+                if (CurrentData.serverData[i].serverId == Context.Guild.Id)
+                {
+                    serverExists = true;
+                    break;
+                }
+            }
+            if (!serverExists)
+            {
+                Data.ServerData serverDat = new Data.ServerData
+                {
+                    serverId = Context.Guild.Id,
+                    prefix = "=",
+                    coinboard = 0
+                };
+                CurrentData.serverData.Add(serverDat);
+            }
+
+            try
+            {
+                switch (stringArray[0])
+                {
+                    default:
+                        await ReplyAsync("```diff\n+ coinboard set\n+ coinbord off\n```");
+                        break;
+                    case "set":
+                        for (int i = 0; i < CurrentData.serverData.Count; i++)
+                        {
+                            if (CurrentData.serverData[i].serverId == Context.Guild.Id)
+                            {
+                                if (CurrentData.serverData[i].coinboard == Context.Channel.Id)
+                                {
+                                    await ReplyAsync("```diff\n- This channel is already set as the coin board.\n```");
+                                }
+                                else
+                                {
+                                    CurrentData.serverData[i].coinboard = Context.Channel.Id;
+                                    await ReplyAsync("```diff\n+ This channel is now set as the coin board.\n  Use \"=coinboard off\" to remove the board from this channel.\n```");
+                                }
+                                break;
+                            }
+                        }
+                        break;
+                    case "off":
+                        for (int i = 0; i < CurrentData.serverData.Count; i++)
+                        {
+                            if (CurrentData.serverData[i].serverId == Context.Guild.Id)
+                            {
+                                CurrentData.serverData[i].coinboard = 0;
+                                await ReplyAsync("```diff\n+ Coinboard now disabled.\n```");
+                                break;
+                            }
+                        }
+                        break;
+                }
+            }catch (Exception e)
+            {
+                await ReplyAsync("```diff\n+ coinboard set\n+ coinbord off\n```");
+            }
+        }
+
         [Command("admin"), RequireUserPermission(GuildPermission.Administrator)]
         public async Task Admin(params String[] stringArray)
         {

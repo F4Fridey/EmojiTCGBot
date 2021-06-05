@@ -10,6 +10,6 @@ namespace EmojiTCG.Data
     {
         public ulong serverId { get; set; }
         public string prefix { get; set; }
-        public int setupState { get; set; }
+        public ulong coinboard { get; set; }
     }
 }

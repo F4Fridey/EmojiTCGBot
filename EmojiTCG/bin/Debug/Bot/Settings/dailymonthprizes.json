@@ -1,6 +1,6 @@
 [
   {
-    "name": "Febuary",
+    "name": "June",
     "prizesPerDay": [
       {
         "prizeType": 1,
@@ -197,8 +197,22 @@
         "emoji": "<:Legend_Pack:809946496774045727>",
         "itemId": 2,
         "coinAmount": 0.0
+      },
+      {
+        "prizeType": 1,
+        "name": "Coins",
+        "emoji": ":coin:",
+        "itemId": 0,
+        "coinAmount": 20.0
+      },
+      {
+        "prizeType": 1,
+        "name": "Coins",
+        "emoji": ":coin:",
+        "itemId": 0,
+        "coinAmount": 20.0
       }
     ],
-    "month": 2
+    "month": 6
   }
 ]
