@@ -19,7 +19,7 @@ namespace EmojiTCG.Modules
         public async Task Help()
         {
             string reply = "";
-            reply += "```diff\n+ All EmojiTCG Commands:\n  help - All these commands.\n  tutorial - Get a detailed explanation of how to use this bot.\n  status - Status of the bot.\n  inventory/inv (@mention) - Check your inventory. Only add @mention to check another inventory.\n  shop - Browse the shop.\n  open ID = Open a booster pack with a specific id.\n  daily - Get your daily reward.\n  melt cardID - Melt a card into a coin.\n  card ID - Check a cards stats.\nX deck - Command for your decks.\nX battle - Command to battle.\nX invite - Invite the bot to your server with this.\n- Administrator Commands\n  setup - Setup the server.\n  serverid - Get the server ID of this server.\n  unlink (serverid) - Only add server ID only if servers are linked to this server.\n```";
+            reply += "```diff\n+ All EmojiTCG Commands:\n  help - All these commands.\n  tutorial - Get a detailed explanation of how to use this bot.\n  status - Status of the bot.\n  inventory/inv (@mention) - Check your inventory. Only add @mention to check another inventory.\n  shop - Browse the shop.\n  open ID = Open a booster pack with a specific id.\n  daily - Get your daily reward.\n  melt cardID - Melt a card into a coin.\n  card ID - Check a cards stats.\n- deck - Command for your decks. [WIP]\n- battle - Command to battle. [WIP]\n- invite - Invite the bot to your server with this. [DISABLED]\n+ Administrator Commands\n  None for now... :)\n```";
             await ReplyAsync(reply);
         }
 
@@ -365,7 +365,7 @@ namespace EmojiTCG.Modules
                     {
                         if (boosterPos == 1)
                             itemText += "__Booster Packs__:\n";
-                        itemText += boosters[boosterPos - 1].emoji + " " + boosters[boosterPos - 1].id + " " + boosters[boosterPos - 1].name + "\n";
+                        itemText += boosters[boosterPos - 1].emoji + " " + boosters[boosterPos - 1].name + " [ID:" + boosters[boosterPos - 1].id + "]\n";
                         if (boosterPos % 10 == 0 || boosterPos == boosters.Count)
                         {
                             boosterPage++;
@@ -378,7 +378,7 @@ namespace EmojiTCG.Modules
                     {
                         if (cardpos == 1)
                             itemText += "__Cards__:\n";
-                        itemText += cards[cardpos - 1].emoji + " " + cards[cardpos - 1].id + " " + cards[cardpos - 1].name + "\n";
+                        itemText += cards[cardpos - 1].emoji + " " + cards[cardpos - 1].name + " [ID:" + cards[cardpos - 1].id + "]\n";
                         if (cardpos % 10 == 0 || cardpos == cards.Count)
                         {
                             cardPage++;
@@ -1443,6 +1443,19 @@ namespace EmojiTCG.Modules
                         break;
                     case "test":
                         await Context.Message.AddReactionAsync(tick);
+                        break;
+                    case "listallemotes":
+                        string stri = ".\n";
+                        for (int i = 0; i < CurrentData.cards.Count; i++)
+                        {
+                            stri += CurrentData.cards[i].emoji;
+                            if (i % 3 == 0)
+                            {
+                                await ReplyAsync(stri);
+                                stri = ".\n";
+                            }
+                        }
+                        await ReplyAsync(stri);
                         break;
                 }
             }
