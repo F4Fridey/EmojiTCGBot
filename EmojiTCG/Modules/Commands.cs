@@ -269,8 +269,10 @@ namespace EmojiTCG.Modules
                 List<Badge> badges = new List<Badge>();
                 List<Booster> boosters = new List<Booster>();
                 List<uint> cardIds = new List<uint>();
+                List<int> cardAmounts = new List<int>();
                 List<uint> badgeIds = new List<uint>();
                 List<uint> boosterIds = new List<uint>();
+                List<int> boosterAmounts = new List<int>();
                 double coins = 0;
                 bool userExists = false;
                 foreach (Data.UserData _userdata in CurrentData.userData)
@@ -317,6 +319,24 @@ namespace EmojiTCG.Modules
                         }
                     }
                     cards = sortedCards;
+
+                    uint lastId = 4000000000;
+                    for (int i = 0; i < cards.Count; i++)
+                    {
+                        if (lastId == cards[i].id)
+                        {
+                            cards.RemoveAt(i);
+                            cardAmounts[i - 1] += 1;
+                            i -= 1;
+                        }
+                        else
+                        {
+                            cardAmounts.Add(1);
+                        }
+                        lastId = cards[i].id;
+                    }
+
+                    boosterIds.Sort();
                     foreach (uint _id in boosterIds)
                     {
                         foreach (Booster _booster in CurrentData.boosters)
@@ -328,6 +348,23 @@ namespace EmojiTCG.Modules
                             }
                         }
                     }
+
+                    lastId = 4000000000;
+                    for (int i = 0; i < boosters.Count; i++)
+                    {
+                        if (lastId == boosters[i].id)
+                        {
+                            boosters.RemoveAt(i);
+                            boosterAmounts[i - 1] += 1;
+                            i -= 1;
+                        }
+                        else
+                        {
+                            boosterAmounts.Add(1);
+                        }
+                        lastId = boosters[i].id;
+                    }
+
                     foreach (uint _id in badgeIds)
                     {
                         foreach (Badge _badge in CurrentData.badges)
@@ -365,7 +402,12 @@ namespace EmojiTCG.Modules
                     {
                         if (boosterPos == 1)
                             itemText += "__Booster Packs__:\n";
-                        itemText += boosters[boosterPos - 1].emoji + " " + boosters[boosterPos - 1].name + " [ID:" + boosters[boosterPos - 1].id + "]\n";
+                        string _amount = "";
+                        if (boosterAmounts[boosterPos - 1] > 1)
+                        {
+                            _amount += boosterAmounts[boosterPos - 1] + "x ";
+                        }
+                        itemText += boosters[boosterPos - 1].emoji + " " + _amount + "**" + boosters[boosterPos - 1].name + "** [ID:" + boosters[boosterPos - 1].id + "]\n";
                         if (boosterPos % 10 == 0 || boosterPos == boosters.Count)
                         {
                             boosterPage++;
@@ -378,7 +420,12 @@ namespace EmojiTCG.Modules
                     {
                         if (cardpos == 1)
                             itemText += "__Cards__:\n";
-                        itemText += cards[cardpos - 1].emoji + " " + cards[cardpos - 1].name + " [ID:" + cards[cardpos - 1].id + "]\n";
+                        string _amount = "";
+                        if (cardAmounts[cardpos - 1] > 1)
+                        {
+                            _amount += cardAmounts[cardpos - 1] + "x ";
+                        }
+                        itemText += cards[cardpos - 1].emoji + " " + _amount + "**" + cards[cardpos - 1].name + "** [ID:" + cards[cardpos - 1].id + "]\n";
                         if (cardpos % 10 == 0 || cardpos == cards.Count)
                         {
                             cardPage++;

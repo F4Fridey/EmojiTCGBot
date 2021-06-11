@@ -222,19 +222,23 @@
       15,
       46
     ],
-    "inventoryBoosters": [],
+    "inventoryBoosters": [
+      0,
+      0,
+      2
+    ],
     "inventoryBadges": [
       0
     ],
     "decks": [],
-    "coins": 232.0,
+    "coins": 18.0,
     "dailyStreak": 0,
     "dailyMonthStreak": 0,
     "lastDaily": "2021-05-08T22:48:41.607953+02:00",
-    "xp": 3,
-    "xpForCoin": 15,
-    "lastMin": 52,
-    "lastJoinVCTime": 637588607677956798,
+    "xp": 5,
+    "xpForCoin": 10,
+    "lastMin": 3,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -260,19 +264,24 @@
       105,
       6,
       103,
-      111
+      111,
+      89,
+      50,
+      33,
+      103,
+      103
     ],
     "inventoryBoosters": [],
     "inventoryBadges": [],
     "decks": [],
-    "coins": 224.0,
+    "coins": 33.0,
     "dailyStreak": 0,
-    "dailyMonthStreak": 1,
-    "lastDaily": "2021-06-07T15:49:58.804833+02:00",
-    "xp": 7,
-    "xpForCoin": 13,
-    "lastMin": 38,
-    "lastJoinVCTime": 637588607677956798,
+    "dailyMonthStreak": 2,
+    "lastDaily": "2021-06-11T08:12:47.577311+02:00",
+    "xp": 5,
+    "xpForCoin": 12,
+    "lastMin": 28,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -315,7 +324,7 @@
     "xp": 3,
     "xpForCoin": 10,
     "lastMin": 27,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -324,14 +333,14 @@
     "inventoryBoosters": [],
     "inventoryBadges": [],
     "decks": [],
-    "coins": 99.0,
+    "coins": 104.0,
     "dailyStreak": 0,
     "dailyMonthStreak": 0,
     "lastDaily": "2020-12-02T08:52:31.961924+01:00",
-    "xp": 1,
+    "xp": 3,
     "xpForCoin": 12,
-    "lastMin": 11,
-    "lastJoinVCTime": 637588607677956798,
+    "lastMin": 59,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -570,14 +579,14 @@
     "inventoryBoosters": [],
     "inventoryBadges": [],
     "decks": [],
-    "coins": 125.0,
+    "coins": 132.0,
     "dailyStreak": 0,
     "dailyMonthStreak": 0,
     "lastDaily": "2021-02-18T14:29:08.163904+01:00",
-    "xp": 1,
-    "xpForCoin": 6,
-    "lastMin": 33,
-    "lastJoinVCTime": 637588607677956798,
+    "xp": 8,
+    "xpForCoin": 9,
+    "lastMin": 2,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -661,14 +670,14 @@
     "inventoryBoosters": [],
     "inventoryBadges": [],
     "decks": [],
-    "coins": 1112.0,
+    "coins": 1122.0,
     "dailyStreak": 0,
     "dailyMonthStreak": 0,
     "lastDaily": "2020-12-21T23:21:26.205586+01:00",
-    "xp": 6,
-    "xpForCoin": 12,
-    "lastMin": 34,
-    "lastJoinVCTime": 637588607677956798,
+    "xp": 3,
+    "xpForCoin": 8,
+    "lastMin": 41,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -684,7 +693,7 @@
     "xp": 7,
     "xpForCoin": 8,
     "lastMin": 47,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -709,14 +718,14 @@
     "inventoryBoosters": [],
     "inventoryBadges": [],
     "decks": [],
-    "coins": 632.0,
+    "coins": 635.0,
     "dailyStreak": 0,
     "dailyMonthStreak": 0,
     "lastDaily": "2021-02-24T17:09:29.210186+01:00",
-    "xp": 7,
-    "xpForCoin": 9,
-    "lastMin": 6,
-    "lastJoinVCTime": 637588607677956798,
+    "xp": 4,
+    "xpForCoin": 6,
+    "lastMin": 0,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -732,7 +741,7 @@
     "xp": 2,
     "xpForCoin": 10,
     "lastMin": 11,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -750,7 +759,7 @@
     "xp": 2,
     "xpForCoin": 13,
     "lastMin": 35,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -759,14 +768,14 @@
     "inventoryBoosters": [],
     "inventoryBadges": [],
     "decks": [],
-    "coins": 582.0,
+    "coins": 605.0,
     "dailyStreak": 0,
     "dailyMonthStreak": 0,
     "lastDaily": "2021-03-02T08:15:11.807992+01:00",
-    "xp": 5,
-    "xpForCoin": 13,
-    "lastMin": 37,
-    "lastJoinVCTime": 637588607677956798,
+    "xp": 2,
+    "xpForCoin": 15,
+    "lastMin": 33,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -957,7 +966,7 @@
     "xp": 5,
     "xpForCoin": 15,
     "lastMin": 2,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -973,7 +982,7 @@
     "xp": 2,
     "xpForCoin": 7,
     "lastMin": 56,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -989,7 +998,7 @@
     "xp": 13,
     "xpForCoin": 14,
     "lastMin": 3,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -1013,10 +1022,10 @@
     "dailyStreak": 0,
     "dailyMonthStreak": 0,
     "lastDaily": "2020-12-01T17:46:45.47792+01:00",
-    "xp": 9,
+    "xp": 10,
     "xpForCoin": 12,
-    "lastMin": 22,
-    "lastJoinVCTime": 637588607677956798,
+    "lastMin": 21,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -1103,7 +1112,7 @@
     "xp": 9,
     "xpForCoin": 12,
     "lastMin": 1,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -1119,7 +1128,7 @@
     "xp": 9,
     "xpForCoin": 12,
     "lastMin": 25,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -1135,7 +1144,7 @@
     "xp": 12,
     "xpForCoin": 13,
     "lastMin": 17,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -1151,7 +1160,7 @@
     "xp": 2,
     "xpForCoin": 5,
     "lastMin": 32,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -1167,7 +1176,7 @@
     "xp": 1,
     "xpForCoin": 14,
     "lastMin": 34,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -1180,10 +1189,10 @@
     "dailyStreak": 0,
     "dailyMonthStreak": 0,
     "lastDaily": "0001-01-01T00:00:00",
-    "xp": 6,
+    "xp": 8,
     "xpForCoin": 14,
-    "lastMin": 52,
-    "lastJoinVCTime": 637588607677956798,
+    "lastMin": 37,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -1199,7 +1208,7 @@
     "xp": 5,
     "xpForCoin": 10,
     "lastMin": 25,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -1260,14 +1269,14 @@
     "inventoryBoosters": [],
     "inventoryBadges": [],
     "decks": [],
-    "coins": 1699.0,
+    "coins": 1704.0,
     "dailyStreak": 0,
     "dailyMonthStreak": 0,
     "lastDaily": "2021-01-03T15:21:41.340827+01:00",
     "xp": 2,
     "xpForCoin": 7,
     "lastMin": 51,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -1276,14 +1285,14 @@
     "inventoryBoosters": [],
     "inventoryBadges": [],
     "decks": [],
-    "coins": 137.0,
+    "coins": 138.0,
     "dailyStreak": 0,
     "dailyMonthStreak": 0,
     "lastDaily": "0001-01-01T00:00:00",
-    "xp": 9,
-    "xpForCoin": 14,
-    "lastMin": 53,
-    "lastJoinVCTime": 637588607677956798,
+    "xp": 6,
+    "xpForCoin": 8,
+    "lastMin": 39,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -1296,10 +1305,10 @@
     "dailyStreak": 0,
     "dailyMonthStreak": 0,
     "lastDaily": "0001-01-01T00:00:00",
-    "xp": 7,
+    "xp": 9,
     "xpForCoin": 10,
-    "lastMin": 54,
-    "lastJoinVCTime": 637588607677956798,
+    "lastMin": 6,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -1315,7 +1324,7 @@
     "xp": 12,
     "xpForCoin": 13,
     "lastMin": 7,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -1331,7 +1340,7 @@
     "xp": 12,
     "xpForCoin": 13,
     "lastMin": 36,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -1347,7 +1356,7 @@
     "xp": 5,
     "xpForCoin": 12,
     "lastMin": 18,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -1363,7 +1372,7 @@
     "xp": 5,
     "xpForCoin": 15,
     "lastMin": 1,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -1379,7 +1388,7 @@
     "xp": 3,
     "xpForCoin": 10,
     "lastMin": 8,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -1395,7 +1404,7 @@
     "xp": 2,
     "xpForCoin": 10,
     "lastMin": 55,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -1411,7 +1420,7 @@
     "xp": 6,
     "xpForCoin": 9,
     "lastMin": 45,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -1424,10 +1433,10 @@
     "dailyStreak": 0,
     "dailyMonthStreak": 0,
     "lastDaily": "0001-01-01T00:00:00",
-    "xp": 7,
+    "xp": 8,
     "xpForCoin": 12,
-    "lastMin": 25,
-    "lastJoinVCTime": 637588607677956798,
+    "lastMin": 24,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -1440,10 +1449,10 @@
     "dailyStreak": 0,
     "dailyMonthStreak": 0,
     "lastDaily": "0001-01-01T00:00:00",
-    "xp": 9,
+    "xp": 10,
     "xpForCoin": 12,
-    "lastMin": 35,
-    "lastJoinVCTime": 637588607677956798,
+    "lastMin": 42,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -1452,14 +1461,14 @@
     "inventoryBoosters": [],
     "inventoryBadges": [],
     "decks": [],
-    "coins": 871.0,
+    "coins": 879.0,
     "dailyStreak": 0,
     "dailyMonthStreak": 0,
     "lastDaily": "0001-01-01T00:00:00",
-    "xp": 1,
-    "xpForCoin": 15,
-    "lastMin": 51,
-    "lastJoinVCTime": 637588607677956798,
+    "xp": 8,
+    "xpForCoin": 13,
+    "lastMin": 10,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -1475,7 +1484,7 @@
     "xp": 3,
     "xpForCoin": 7,
     "lastMin": 27,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -1491,7 +1500,7 @@
     "xp": 0,
     "xpForCoin": 10,
     "lastMin": 6,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -1507,7 +1516,7 @@
     "xp": 9,
     "xpForCoin": 10,
     "lastMin": 23,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -1523,7 +1532,7 @@
     "xp": 8,
     "xpForCoin": 10,
     "lastMin": 12,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -1539,7 +1548,7 @@
     "xp": 0,
     "xpForCoin": 10,
     "lastMin": 11,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -1555,7 +1564,7 @@
     "xp": 5,
     "xpForCoin": 10,
     "lastMin": 52,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -1571,7 +1580,7 @@
     "xp": 7,
     "xpForCoin": 10,
     "lastMin": 30,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -1587,7 +1596,7 @@
     "xp": 4,
     "xpForCoin": 10,
     "lastMin": 28,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -1596,14 +1605,14 @@
     "inventoryBoosters": [],
     "inventoryBadges": [],
     "decks": [],
-    "coins": 114.0,
+    "coins": 115.0,
     "dailyStreak": 0,
     "dailyMonthStreak": 1,
     "lastDaily": "2021-06-08T19:06:14.325308+02:00",
-    "xp": 7,
-    "xpForCoin": 14,
-    "lastMin": 41,
-    "lastJoinVCTime": 637588607677956798,
+    "xp": 1,
+    "xpForCoin": 12,
+    "lastMin": 43,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -1619,7 +1628,7 @@
     "xp": 4,
     "xpForCoin": 11,
     "lastMin": 21,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -1635,7 +1644,7 @@
     "xp": 0,
     "xpForCoin": 10,
     "lastMin": 18,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -1651,7 +1660,7 @@
     "xp": 2,
     "xpForCoin": 10,
     "lastMin": 23,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -1667,7 +1676,7 @@
     "xp": 0,
     "xpForCoin": 10,
     "lastMin": 6,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -1676,14 +1685,14 @@
     "inventoryBoosters": [],
     "inventoryBadges": [],
     "decks": [],
-    "coins": 869.0,
+    "coins": 889.0,
     "dailyStreak": 0,
     "dailyMonthStreak": 0,
     "lastDaily": "0001-01-01T00:00:00",
-    "xp": 12,
-    "xpForCoin": 14,
-    "lastMin": 41,
-    "lastJoinVCTime": 637588607677956798,
+    "xp": 5,
+    "xpForCoin": 6,
+    "lastMin": 59,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -1699,7 +1708,7 @@
     "xp": 4,
     "xpForCoin": 9,
     "lastMin": 32,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -1715,7 +1724,7 @@
     "xp": 7,
     "xpForCoin": 10,
     "lastMin": 38,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -1731,7 +1740,7 @@
     "xp": 0,
     "xpForCoin": 10,
     "lastMin": 56,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -1747,7 +1756,7 @@
     "xp": 2,
     "xpForCoin": 12,
     "lastMin": 3,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -1763,7 +1772,7 @@
     "xp": 0,
     "xpForCoin": 10,
     "lastMin": 56,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -1779,7 +1788,7 @@
     "xp": 0,
     "xpForCoin": 10,
     "lastMin": 56,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -1816,7 +1825,7 @@
     "xp": 4,
     "xpForCoin": 8,
     "lastMin": 23,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -1832,7 +1841,7 @@
     "xp": 0,
     "xpForCoin": 10,
     "lastMin": 29,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -1848,7 +1857,7 @@
     "xp": 2,
     "xpForCoin": 10,
     "lastMin": 20,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -1864,7 +1873,7 @@
     "xp": 5,
     "xpForCoin": 6,
     "lastMin": 29,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -1880,7 +1889,7 @@
     "xp": 1,
     "xpForCoin": 10,
     "lastMin": 6,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -1896,7 +1905,7 @@
     "xp": 0,
     "xpForCoin": 10,
     "lastMin": 44,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -1912,7 +1921,7 @@
     "xp": 5,
     "xpForCoin": 10,
     "lastMin": 42,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -1928,7 +1937,7 @@
     "xp": 0,
     "xpForCoin": 10,
     "lastMin": 12,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -1944,7 +1953,7 @@
     "xp": 1,
     "xpForCoin": 10,
     "lastMin": 24,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -1960,7 +1969,7 @@
     "xp": 1,
     "xpForCoin": 10,
     "lastMin": 29,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -1976,7 +1985,7 @@
     "xp": 2,
     "xpForCoin": 10,
     "lastMin": 6,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -1992,7 +2001,7 @@
     "xp": 4,
     "xpForCoin": 10,
     "lastMin": 50,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -2008,7 +2017,7 @@
     "xp": 4,
     "xpForCoin": 10,
     "lastMin": 53,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -2024,7 +2033,7 @@
     "xp": 5,
     "xpForCoin": 10,
     "lastMin": 21,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -2040,7 +2049,7 @@
     "xp": 1,
     "xpForCoin": 10,
     "lastMin": 11,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -2056,7 +2065,7 @@
     "xp": 6,
     "xpForCoin": 10,
     "lastMin": 22,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -2072,7 +2081,7 @@
     "xp": 8,
     "xpForCoin": 10,
     "lastMin": 56,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -2088,7 +2097,7 @@
     "xp": 1,
     "xpForCoin": 11,
     "lastMin": 37,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -2104,7 +2113,7 @@
     "xp": 0,
     "xpForCoin": 6,
     "lastMin": 29,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -2120,7 +2129,7 @@
     "xp": 2,
     "xpForCoin": 10,
     "lastMin": 28,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -2136,7 +2145,7 @@
     "xp": 9,
     "xpForCoin": 10,
     "lastMin": 10,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -2152,7 +2161,7 @@
     "xp": 6,
     "xpForCoin": 10,
     "lastMin": 14,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -2168,7 +2177,7 @@
     "xp": 6,
     "xpForCoin": 10,
     "lastMin": 5,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -2184,7 +2193,7 @@
     "xp": 0,
     "xpForCoin": 10,
     "lastMin": 42,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -2200,7 +2209,7 @@
     "xp": 3,
     "xpForCoin": 10,
     "lastMin": 57,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -2216,7 +2225,7 @@
     "xp": 1,
     "xpForCoin": 11,
     "lastMin": 54,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -2232,7 +2241,7 @@
     "xp": 5,
     "xpForCoin": 10,
     "lastMin": 42,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -2248,7 +2257,7 @@
     "xp": 3,
     "xpForCoin": 10,
     "lastMin": 17,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -2264,7 +2273,7 @@
     "xp": 8,
     "xpForCoin": 14,
     "lastMin": 37,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -2280,7 +2289,7 @@
     "xp": 2,
     "xpForCoin": 10,
     "lastMin": 22,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -2296,7 +2305,7 @@
     "xp": 7,
     "xpForCoin": 10,
     "lastMin": 0,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -2312,7 +2321,7 @@
     "xp": 2,
     "xpForCoin": 10,
     "lastMin": 12,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -2328,7 +2337,7 @@
     "xp": 2,
     "xpForCoin": 15,
     "lastMin": 55,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -2344,7 +2353,7 @@
     "xp": 3,
     "xpForCoin": 11,
     "lastMin": 43,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -2360,7 +2369,7 @@
     "xp": 2,
     "xpForCoin": 9,
     "lastMin": 8,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -2376,7 +2385,7 @@
     "xp": 0,
     "xpForCoin": 10,
     "lastMin": 36,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -2392,7 +2401,7 @@
     "xp": 1,
     "xpForCoin": 6,
     "lastMin": 14,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -2408,7 +2417,7 @@
     "xp": 6,
     "xpForCoin": 14,
     "lastMin": 8,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -2424,7 +2433,7 @@
     "xp": 0,
     "xpForCoin": 8,
     "lastMin": 21,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -2440,7 +2449,7 @@
     "xp": 0,
     "xpForCoin": 10,
     "lastMin": 4,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -2456,7 +2465,7 @@
     "xp": 2,
     "xpForCoin": 10,
     "lastMin": 47,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -2472,7 +2481,7 @@
     "xp": 1,
     "xpForCoin": 10,
     "lastMin": 12,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -2488,7 +2497,7 @@
     "xp": 4,
     "xpForCoin": 10,
     "lastMin": 15,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -2504,7 +2513,7 @@
     "xp": 0,
     "xpForCoin": 7,
     "lastMin": 40,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -2520,7 +2529,7 @@
     "xp": 0,
     "xpForCoin": 10,
     "lastMin": 28,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -2536,7 +2545,7 @@
     "xp": 4,
     "xpForCoin": 10,
     "lastMin": 19,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -2549,10 +2558,10 @@
     "dailyStreak": 0,
     "dailyMonthStreak": 0,
     "lastDaily": "2021-02-01T22:06:03.550738+01:00",
-    "xp": 1,
+    "xp": 2,
     "xpForCoin": 6,
-    "lastMin": 15,
-    "lastJoinVCTime": 637588607677956798,
+    "lastMin": 12,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -2568,7 +2577,7 @@
     "xp": 3,
     "xpForCoin": 5,
     "lastMin": 5,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -2584,7 +2593,7 @@
     "xp": 2,
     "xpForCoin": 10,
     "lastMin": 21,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -2600,7 +2609,7 @@
     "xp": 0,
     "xpForCoin": 10,
     "lastMin": 1,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -2616,7 +2625,7 @@
     "xp": 3,
     "xpForCoin": 5,
     "lastMin": 49,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -2632,7 +2641,7 @@
     "xp": 5,
     "xpForCoin": 10,
     "lastMin": 35,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -2653,7 +2662,7 @@
     "xp": 4,
     "xpForCoin": 10,
     "lastMin": 59,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -2669,7 +2678,7 @@
     "xp": 0,
     "xpForCoin": 10,
     "lastMin": 44,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -2685,7 +2694,7 @@
     "xp": 1,
     "xpForCoin": 6,
     "lastMin": 12,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -2701,7 +2710,7 @@
     "xp": 0,
     "xpForCoin": 10,
     "lastMin": 47,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -2717,7 +2726,7 @@
     "xp": 3,
     "xpForCoin": 7,
     "lastMin": 19,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -2733,7 +2742,7 @@
     "xp": 1,
     "xpForCoin": 10,
     "lastMin": 50,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -2749,7 +2758,7 @@
     "xp": 4,
     "xpForCoin": 12,
     "lastMin": 17,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -2765,7 +2774,7 @@
     "xp": 0,
     "xpForCoin": 7,
     "lastMin": 5,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -2781,7 +2790,7 @@
     "xp": 5,
     "xpForCoin": 11,
     "lastMin": 23,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -2797,7 +2806,7 @@
     "xp": 0,
     "xpForCoin": 10,
     "lastMin": 51,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -2813,7 +2822,7 @@
     "xp": 1,
     "xpForCoin": 10,
     "lastMin": 2,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -2829,7 +2838,7 @@
     "xp": 1,
     "xpForCoin": 10,
     "lastMin": 44,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -2845,7 +2854,7 @@
     "xp": 0,
     "xpForCoin": 10,
     "lastMin": 42,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -2861,7 +2870,7 @@
     "xp": 14,
     "xpForCoin": 15,
     "lastMin": 59,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -2877,7 +2886,7 @@
     "xp": 6,
     "xpForCoin": 10,
     "lastMin": 41,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -2893,7 +2902,7 @@
     "xp": 0,
     "xpForCoin": 10,
     "lastMin": 2,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -2909,7 +2918,7 @@
     "xp": 3,
     "xpForCoin": 15,
     "lastMin": 4,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -2925,7 +2934,7 @@
     "xp": 4,
     "xpForCoin": 10,
     "lastMin": 42,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -2941,7 +2950,7 @@
     "xp": 0,
     "xpForCoin": 10,
     "lastMin": 37,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -2957,7 +2966,7 @@
     "xp": 5,
     "xpForCoin": 10,
     "lastMin": 40,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -2973,7 +2982,7 @@
     "xp": 0,
     "xpForCoin": 10,
     "lastMin": 1,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -2989,7 +2998,7 @@
     "xp": 4,
     "xpForCoin": 10,
     "lastMin": 41,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -3005,7 +3014,7 @@
     "xp": 2,
     "xpForCoin": 10,
     "lastMin": 14,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -3021,7 +3030,7 @@
     "xp": 8,
     "xpForCoin": 10,
     "lastMin": 19,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -3037,7 +3046,7 @@
     "xp": 2,
     "xpForCoin": 10,
     "lastMin": 4,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -3053,7 +3062,7 @@
     "xp": 1,
     "xpForCoin": 6,
     "lastMin": 13,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -3069,7 +3078,7 @@
     "xp": 0,
     "xpForCoin": 10,
     "lastMin": 14,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -3085,7 +3094,7 @@
     "xp": 2,
     "xpForCoin": 10,
     "lastMin": 19,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -3101,7 +3110,7 @@
     "xp": 1,
     "xpForCoin": 10,
     "lastMin": 31,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -3146,7 +3155,7 @@
     "xp": 4,
     "xpForCoin": 8,
     "lastMin": 23,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -3293,14 +3302,14 @@
     "inventoryBoosters": [],
     "inventoryBadges": [],
     "decks": [],
-    "coins": 244.0,
+    "coins": 258.0,
     "dailyStreak": 0,
     "dailyMonthStreak": 0,
     "lastDaily": "2021-05-31T17:48:02.907776+02:00",
     "xp": 3,
-    "xpForCoin": 10,
-    "lastMin": 48,
-    "lastJoinVCTime": 637588607677956798,
+    "xpForCoin": 9,
+    "lastMin": 32,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -3316,7 +3325,7 @@
     "xp": 0,
     "xpForCoin": 10,
     "lastMin": 0,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -3325,14 +3334,14 @@
     "inventoryBoosters": [],
     "inventoryBadges": [],
     "decks": [],
-    "coins": 637.0,
+    "coins": 639.0,
     "dailyStreak": 0,
     "dailyMonthStreak": 0,
     "lastDaily": "0001-01-01T00:00:00",
-    "xp": 1,
-    "xpForCoin": 10,
-    "lastMin": 6,
-    "lastJoinVCTime": 637588607677956798,
+    "xp": 11,
+    "xpForCoin": 12,
+    "lastMin": 39,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -3342,19 +3351,24 @@
       57,
       88,
       24,
-      11
+      11,
+      50,
+      31,
+      109,
+      113,
+      14
     ],
     "inventoryBoosters": [],
     "inventoryBadges": [],
     "decks": [],
-    "coins": 1987.0,
+    "coins": 1806.0,
     "dailyStreak": 0,
     "dailyMonthStreak": 1,
     "lastDaily": "2021-06-06T23:24:21.138678+02:00",
-    "xp": 3,
-    "xpForCoin": 9,
-    "lastMin": 5,
-    "lastJoinVCTime": 637588607677956798,
+    "xp": 1,
+    "xpForCoin": 10,
+    "lastMin": 23,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -3369,14 +3383,14 @@
     "inventoryBoosters": [],
     "inventoryBadges": [],
     "decks": [],
-    "coins": 2597.0,
+    "coins": 2646.0,
     "dailyStreak": 0,
     "dailyMonthStreak": 1,
     "lastDaily": "2021-06-06T23:24:37.522275+02:00",
-    "xp": 8,
-    "xpForCoin": 15,
-    "lastMin": 7,
-    "lastJoinVCTime": 637588607677956798,
+    "xp": 3,
+    "xpForCoin": 6,
+    "lastMin": 36,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -3385,14 +3399,14 @@
     "inventoryBoosters": [],
     "inventoryBadges": [],
     "decks": [],
-    "coins": 528.0,
+    "coins": 534.0,
     "dailyStreak": 0,
     "dailyMonthStreak": 0,
     "lastDaily": "0001-01-01T00:00:00",
-    "xp": 1,
-    "xpForCoin": 10,
-    "lastMin": 14,
-    "lastJoinVCTime": 637588607677956798,
+    "xp": 3,
+    "xpForCoin": 7,
+    "lastMin": 18,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -3401,14 +3415,14 @@
     "inventoryBoosters": [],
     "inventoryBadges": [],
     "decks": [],
-    "coins": 279.0,
+    "coins": 284.0,
     "dailyStreak": 0,
     "dailyMonthStreak": 0,
     "lastDaily": "0001-01-01T00:00:00",
-    "xp": 11,
-    "xpForCoin": 15,
-    "lastMin": 1,
-    "lastJoinVCTime": 637588607677956798,
+    "xp": 0,
+    "xpForCoin": 11,
+    "lastMin": 31,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -3417,14 +3431,14 @@
     "inventoryBoosters": [],
     "inventoryBadges": [],
     "decks": [],
-    "coins": 180.0,
+    "coins": 188.0,
     "dailyStreak": 0,
     "dailyMonthStreak": 0,
     "lastDaily": "0001-01-01T00:00:00",
     "xp": 6,
-    "xpForCoin": 12,
-    "lastMin": 12,
-    "lastJoinVCTime": 637588607677956798,
+    "xpForCoin": 10,
+    "lastMin": 48,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -3433,14 +3447,14 @@
     "inventoryBoosters": [],
     "inventoryBadges": [],
     "decks": [],
-    "coins": 1417.0,
+    "coins": 1421.0,
     "dailyStreak": 0,
     "dailyMonthStreak": 0,
     "lastDaily": "0001-01-01T00:00:00",
-    "xp": 6,
-    "xpForCoin": 8,
-    "lastMin": 57,
-    "lastJoinVCTime": 637588607677956798,
+    "xp": 4,
+    "xpForCoin": 15,
+    "lastMin": 40,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -3449,14 +3463,14 @@
     "inventoryBoosters": [],
     "inventoryBadges": [],
     "decks": [],
-    "coins": 548.0,
+    "coins": 556.0,
     "dailyStreak": 0,
     "dailyMonthStreak": 0,
     "lastDaily": "0001-01-01T00:00:00",
-    "xp": 6,
-    "xpForCoin": 8,
-    "lastMin": 40,
-    "lastJoinVCTime": 637588607677956798,
+    "xp": 9,
+    "xpForCoin": 10,
+    "lastMin": 32,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -3516,14 +3530,14 @@
     "inventoryBoosters": [],
     "inventoryBadges": [],
     "decks": [],
-    "coins": 774.0,
+    "coins": 781.0,
     "dailyStreak": 0,
     "dailyMonthStreak": 0,
     "lastDaily": "2020-11-15T21:28:07.049775+01:00",
-    "xp": 1,
-    "xpForCoin": 8,
-    "lastMin": 0,
-    "lastJoinVCTime": 637588607677956798,
+    "xp": 3,
+    "xpForCoin": 12,
+    "lastMin": 5,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -3535,14 +3549,14 @@
     ],
     "inventoryBadges": [],
     "decks": [],
-    "coins": 4289.0,
+    "coins": 4323.0,
     "dailyStreak": 0,
     "dailyMonthStreak": 0,
     "lastDaily": "2020-12-25T22:03:19.590689+01:00",
-    "xp": 9,
-    "xpForCoin": 12,
+    "xp": 13,
+    "xpForCoin": 14,
     "lastMin": 3,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -3551,14 +3565,14 @@
     "inventoryBoosters": [],
     "inventoryBadges": [],
     "decks": [],
-    "coins": 219.0,
+    "coins": 220.0,
     "dailyStreak": 0,
     "dailyMonthStreak": 0,
     "lastDaily": "0001-01-01T00:00:00",
-    "xp": 5,
-    "xpForCoin": 9,
-    "lastMin": 20,
-    "lastJoinVCTime": 637588607677956798,
+    "xp": 1,
+    "xpForCoin": 11,
+    "lastMin": 5,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -3567,14 +3581,14 @@
     "inventoryBoosters": [],
     "inventoryBadges": [],
     "decks": [],
-    "coins": 869.0,
+    "coins": 883.0,
     "dailyStreak": 0,
     "dailyMonthStreak": 0,
     "lastDaily": "0001-01-01T00:00:00",
-    "xp": 2,
-    "xpForCoin": 14,
-    "lastMin": 42,
-    "lastJoinVCTime": 637588607677956798,
+    "xp": 3,
+    "xpForCoin": 9,
+    "lastMin": 48,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -3583,14 +3597,14 @@
     "inventoryBoosters": [],
     "inventoryBadges": [],
     "decks": [],
-    "coins": 827.0,
+    "coins": 837.0,
     "dailyStreak": 0,
     "dailyMonthStreak": 0,
     "lastDaily": "0001-01-01T00:00:00",
     "xp": 3,
     "xpForCoin": 8,
     "lastMin": 17,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -3606,7 +3620,7 @@
     "xp": 0,
     "xpForCoin": 5,
     "lastMin": 3,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -3615,14 +3629,14 @@
     "inventoryBoosters": [],
     "inventoryBadges": [],
     "decks": [],
-    "coins": 1155.0,
+    "coins": 1160.0,
     "dailyStreak": 0,
     "dailyMonthStreak": 0,
     "lastDaily": "0001-01-01T00:00:00",
     "xp": 4,
     "xpForCoin": 14,
     "lastMin": 51,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -3638,7 +3652,7 @@
     "xp": 0,
     "xpForCoin": 14,
     "lastMin": 13,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -3654,7 +3668,7 @@
     "xp": 2,
     "xpForCoin": 10,
     "lastMin": 5,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -3670,7 +3684,7 @@
     "xp": 4,
     "xpForCoin": 11,
     "lastMin": 26,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940941454,
     "battleWins": 0
   },
   {
@@ -3683,10 +3697,10 @@
     "dailyStreak": 0,
     "dailyMonthStreak": 0,
     "lastDaily": "0001-01-01T00:00:00",
-    "xp": 8,
+    "xp": 9,
     "xpForCoin": 15,
-    "lastMin": 30,
-    "lastJoinVCTime": 637588607677956798,
+    "lastMin": 54,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -3699,10 +3713,10 @@
     "dailyStreak": 0,
     "dailyMonthStreak": 0,
     "lastDaily": "0001-01-01T00:00:00",
-    "xp": 3,
+    "xp": 14,
     "xpForCoin": 15,
-    "lastMin": 7,
-    "lastJoinVCTime": 637588607677956798,
+    "lastMin": 46,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -3718,7 +3732,7 @@
     "xp": 0,
     "xpForCoin": 6,
     "lastMin": 38,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -3734,7 +3748,7 @@
     "xp": 7,
     "xpForCoin": 14,
     "lastMin": 38,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -3750,7 +3764,7 @@
     "xp": 1,
     "xpForCoin": 15,
     "lastMin": 14,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -3766,7 +3780,7 @@
     "xp": 1,
     "xpForCoin": 5,
     "lastMin": 0,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -3782,7 +3796,7 @@
     "xp": 0,
     "xpForCoin": 13,
     "lastMin": 0,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -3791,14 +3805,14 @@
     "inventoryBoosters": [],
     "inventoryBadges": [],
     "decks": [],
-    "coins": 142.0,
+    "coins": 144.0,
     "dailyStreak": 0,
     "dailyMonthStreak": 0,
     "lastDaily": "0001-01-01T00:00:00",
-    "xp": 4,
-    "xpForCoin": 9,
-    "lastMin": 25,
-    "lastJoinVCTime": 637588607677956798,
+    "xp": 0,
+    "xpForCoin": 6,
+    "lastMin": 45,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -3814,7 +3828,7 @@
     "xp": 12,
     "xpForCoin": 15,
     "lastMin": 59,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -3830,7 +3844,7 @@
     "xp": 0,
     "xpForCoin": 10,
     "lastMin": 17,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -3839,14 +3853,14 @@
     "inventoryBoosters": [],
     "inventoryBadges": [],
     "decks": [],
-    "coins": 146.0,
+    "coins": 149.0,
     "dailyStreak": 0,
     "dailyMonthStreak": 0,
     "lastDaily": "0001-01-01T00:00:00",
     "xp": 8,
     "xpForCoin": 9,
     "lastMin": 58,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -3859,10 +3873,10 @@
     "dailyStreak": 0,
     "dailyMonthStreak": 0,
     "lastDaily": "0001-01-01T00:00:00",
-    "xp": 0,
+    "xp": 1,
     "xpForCoin": 13,
-    "lastMin": 55,
-    "lastJoinVCTime": 637588607677956798,
+    "lastMin": 47,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -3875,10 +3889,10 @@
     "dailyStreak": 0,
     "dailyMonthStreak": 0,
     "lastDaily": "0001-01-01T00:00:00",
-    "xp": 1,
+    "xp": 13,
     "xpForCoin": 14,
-    "lastMin": 29,
-    "lastJoinVCTime": 637588607677956798,
+    "lastMin": 36,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -3894,7 +3908,7 @@
     "xp": 0,
     "xpForCoin": 10,
     "lastMin": 43,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -3910,7 +3924,7 @@
     "xp": 0,
     "xpForCoin": 10,
     "lastMin": 17,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -3923,10 +3937,10 @@
     "dailyStreak": 0,
     "dailyMonthStreak": 0,
     "lastDaily": "0001-01-01T00:00:00",
-    "xp": 6,
+    "xp": 7,
     "xpForCoin": 11,
-    "lastMin": 56,
-    "lastJoinVCTime": 637588607677956798,
+    "lastMin": 57,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -3942,7 +3956,7 @@
     "xp": 3,
     "xpForCoin": 11,
     "lastMin": 35,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -3958,7 +3972,7 @@
     "xp": 1,
     "xpForCoin": 12,
     "lastMin": 0,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -3974,7 +3988,7 @@
     "xp": 0,
     "xpForCoin": 10,
     "lastMin": 22,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -3990,7 +4004,7 @@
     "xp": 4,
     "xpForCoin": 14,
     "lastMin": 42,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -4006,7 +4020,7 @@
     "xp": 8,
     "xpForCoin": 10,
     "lastMin": 55,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -4022,7 +4036,7 @@
     "xp": 5,
     "xpForCoin": 6,
     "lastMin": 2,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -4038,7 +4052,7 @@
     "xp": 1,
     "xpForCoin": 9,
     "lastMin": 55,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -4047,14 +4061,14 @@
     "inventoryBoosters": [],
     "inventoryBadges": [],
     "decks": [],
-    "coins": 31.0,
+    "coins": 34.0,
     "dailyStreak": 0,
     "dailyMonthStreak": 0,
     "lastDaily": "0001-01-01T00:00:00",
-    "xp": 2,
-    "xpForCoin": 14,
-    "lastMin": 31,
-    "lastJoinVCTime": 637588607677956798,
+    "xp": 5,
+    "xpForCoin": 13,
+    "lastMin": 28,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -4070,7 +4084,7 @@
     "xp": 2,
     "xpForCoin": 12,
     "lastMin": 56,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -4086,7 +4100,7 @@
     "xp": 4,
     "xpForCoin": 11,
     "lastMin": 1,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -4102,7 +4116,7 @@
     "xp": 0,
     "xpForCoin": 10,
     "lastMin": 9,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -4118,7 +4132,7 @@
     "xp": 0,
     "xpForCoin": 10,
     "lastMin": 5,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -4134,7 +4148,7 @@
     "xp": 0,
     "xpForCoin": 10,
     "lastMin": 10,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -4150,7 +4164,7 @@
     "xp": 4,
     "xpForCoin": 13,
     "lastMin": 56,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -4166,7 +4180,7 @@
     "xp": 1,
     "xpForCoin": 15,
     "lastMin": 49,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -4182,7 +4196,7 @@
     "xp": 4,
     "xpForCoin": 10,
     "lastMin": 25,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -4198,7 +4212,7 @@
     "xp": 1,
     "xpForCoin": 10,
     "lastMin": 2,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -4207,14 +4221,14 @@
     "inventoryBoosters": [],
     "inventoryBadges": [],
     "decks": [],
-    "coins": 500.0,
+    "coins": 501.0,
     "dailyStreak": 0,
     "dailyMonthStreak": 0,
     "lastDaily": "0001-01-01T00:00:00",
-    "xp": 5,
-    "xpForCoin": 10,
-    "lastMin": 44,
-    "lastJoinVCTime": 637588607677956798,
+    "xp": 8,
+    "xpForCoin": 12,
+    "lastMin": 52,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -4230,7 +4244,7 @@
     "xp": 8,
     "xpForCoin": 14,
     "lastMin": 39,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -4246,7 +4260,7 @@
     "xp": 1,
     "xpForCoin": 13,
     "lastMin": 21,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -4262,7 +4276,7 @@
     "xp": 2,
     "xpForCoin": 14,
     "lastMin": 10,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -4278,7 +4292,7 @@
     "xp": 0,
     "xpForCoin": 10,
     "lastMin": 45,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -4287,14 +4301,14 @@
     "inventoryBoosters": [],
     "inventoryBadges": [],
     "decks": [],
-    "coins": 86.0,
+    "coins": 87.0,
     "dailyStreak": 0,
     "dailyMonthStreak": 0,
     "lastDaily": "0001-01-01T00:00:00",
-    "xp": 6,
-    "xpForCoin": 8,
-    "lastMin": 37,
-    "lastJoinVCTime": 637588607677956798,
+    "xp": 2,
+    "xpForCoin": 6,
+    "lastMin": 1,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -4310,7 +4324,7 @@
     "xp": 0,
     "xpForCoin": 10,
     "lastMin": 41,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -4326,7 +4340,7 @@
     "xp": 2,
     "xpForCoin": 10,
     "lastMin": 56,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -4342,7 +4356,7 @@
     "xp": 4,
     "xpForCoin": 10,
     "lastMin": 30,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -4358,7 +4372,7 @@
     "xp": 6,
     "xpForCoin": 8,
     "lastMin": 38,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -4374,7 +4388,7 @@
     "xp": 5,
     "xpForCoin": 9,
     "lastMin": 14,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -4390,7 +4404,7 @@
     "xp": 0,
     "xpForCoin": 10,
     "lastMin": 50,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -4406,7 +4420,7 @@
     "xp": 3,
     "xpForCoin": 10,
     "lastMin": 6,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -4422,7 +4436,7 @@
     "xp": 2,
     "xpForCoin": 8,
     "lastMin": 14,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -4438,7 +4452,7 @@
     "xp": 1,
     "xpForCoin": 10,
     "lastMin": 13,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -4454,7 +4468,7 @@
     "xp": 0,
     "xpForCoin": 10,
     "lastMin": 22,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -4470,7 +4484,7 @@
     "xp": 0,
     "xpForCoin": 10,
     "lastMin": 59,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -4486,7 +4500,7 @@
     "xp": 4,
     "xpForCoin": 10,
     "lastMin": 5,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -4502,7 +4516,7 @@
     "xp": 5,
     "xpForCoin": 10,
     "lastMin": 53,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -4518,7 +4532,7 @@
     "xp": 1,
     "xpForCoin": 10,
     "lastMin": 28,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -4534,7 +4548,7 @@
     "xp": 6,
     "xpForCoin": 10,
     "lastMin": 47,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -4550,7 +4564,7 @@
     "xp": 1,
     "xpForCoin": 10,
     "lastMin": 38,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -4566,7 +4580,7 @@
     "xp": 3,
     "xpForCoin": 10,
     "lastMin": 0,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -4582,7 +4596,7 @@
     "xp": 10,
     "xpForCoin": 11,
     "lastMin": 13,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -4598,7 +4612,7 @@
     "xp": 1,
     "xpForCoin": 10,
     "lastMin": 34,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -4614,7 +4628,7 @@
     "xp": 2,
     "xpForCoin": 10,
     "lastMin": 54,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -4630,7 +4644,7 @@
     "xp": 0,
     "xpForCoin": 10,
     "lastMin": 13,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -4646,7 +4660,7 @@
     "xp": 6,
     "xpForCoin": 9,
     "lastMin": 54,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -4662,7 +4676,7 @@
     "xp": 5,
     "xpForCoin": 10,
     "lastMin": 32,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -4678,7 +4692,7 @@
     "xp": 10,
     "xpForCoin": 13,
     "lastMin": 1,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -4694,7 +4708,7 @@
     "xp": 0,
     "xpForCoin": 10,
     "lastMin": 53,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -4710,7 +4724,7 @@
     "xp": 1,
     "xpForCoin": 10,
     "lastMin": 15,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -4726,7 +4740,7 @@
     "xp": 1,
     "xpForCoin": 10,
     "lastMin": 42,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -4742,7 +4756,7 @@
     "xp": 1,
     "xpForCoin": 14,
     "lastMin": 10,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -4758,7 +4772,7 @@
     "xp": 1,
     "xpForCoin": 10,
     "lastMin": 44,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -4774,7 +4788,7 @@
     "xp": 4,
     "xpForCoin": 10,
     "lastMin": 15,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -4790,7 +4804,7 @@
     "xp": 0,
     "xpForCoin": 10,
     "lastMin": 33,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -4806,7 +4820,7 @@
     "xp": 0,
     "xpForCoin": 10,
     "lastMin": 27,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -4822,7 +4836,7 @@
     "xp": 4,
     "xpForCoin": 10,
     "lastMin": 54,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -4838,7 +4852,7 @@
     "xp": 3,
     "xpForCoin": 10,
     "lastMin": 54,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -4854,7 +4868,7 @@
     "xp": 0,
     "xpForCoin": 10,
     "lastMin": 2,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -4870,7 +4884,7 @@
     "xp": 6,
     "xpForCoin": 10,
     "lastMin": 59,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -4886,7 +4900,7 @@
     "xp": 1,
     "xpForCoin": 10,
     "lastMin": 58,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -4902,7 +4916,7 @@
     "xp": 3,
     "xpForCoin": 10,
     "lastMin": 0,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -4918,7 +4932,7 @@
     "xp": 7,
     "xpForCoin": 10,
     "lastMin": 25,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -4934,7 +4948,7 @@
     "xp": 9,
     "xpForCoin": 10,
     "lastMin": 54,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -4950,7 +4964,7 @@
     "xp": 7,
     "xpForCoin": 10,
     "lastMin": 48,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -4966,7 +4980,7 @@
     "xp": 0,
     "xpForCoin": 10,
     "lastMin": 33,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -4982,7 +4996,7 @@
     "xp": 5,
     "xpForCoin": 10,
     "lastMin": 12,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -4991,14 +5005,14 @@
     "inventoryBoosters": [],
     "inventoryBadges": [],
     "decks": [],
-    "coins": 282.0,
+    "coins": 284.0,
     "dailyStreak": 0,
     "dailyMonthStreak": 0,
     "lastDaily": "0001-01-01T00:00:00",
-    "xp": 6,
-    "xpForCoin": 15,
-    "lastMin": 3,
-    "lastJoinVCTime": 637588607677956798,
+    "xp": 2,
+    "xpForCoin": 8,
+    "lastMin": 2,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -5014,7 +5028,7 @@
     "xp": 2,
     "xpForCoin": 10,
     "lastMin": 49,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -5030,7 +5044,7 @@
     "xp": 0,
     "xpForCoin": 10,
     "lastMin": 9,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -5046,7 +5060,7 @@
     "xp": 0,
     "xpForCoin": 10,
     "lastMin": 9,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -5062,7 +5076,7 @@
     "xp": 0,
     "xpForCoin": 10,
     "lastMin": 54,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -5078,7 +5092,7 @@
     "xp": 4,
     "xpForCoin": 13,
     "lastMin": 18,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -5094,7 +5108,7 @@
     "xp": 0,
     "xpForCoin": 11,
     "lastMin": 24,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -5110,7 +5124,7 @@
     "xp": 6,
     "xpForCoin": 10,
     "lastMin": 49,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -5126,7 +5140,7 @@
     "xp": 0,
     "xpForCoin": 10,
     "lastMin": 48,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -5142,7 +5156,7 @@
     "xp": 0,
     "xpForCoin": 10,
     "lastMin": 42,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -5158,7 +5172,7 @@
     "xp": 4,
     "xpForCoin": 10,
     "lastMin": 38,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -5174,7 +5188,7 @@
     "xp": 1,
     "xpForCoin": 11,
     "lastMin": 37,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -5190,7 +5204,7 @@
     "xp": 0,
     "xpForCoin": 7,
     "lastMin": 34,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -5206,7 +5220,7 @@
     "xp": 0,
     "xpForCoin": 10,
     "lastMin": 26,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -5222,7 +5236,7 @@
     "xp": 0,
     "xpForCoin": 5,
     "lastMin": 12,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -5238,7 +5252,7 @@
     "xp": 0,
     "xpForCoin": 10,
     "lastMin": 38,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -5254,7 +5268,7 @@
     "xp": 11,
     "xpForCoin": 14,
     "lastMin": 10,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -5263,14 +5277,14 @@
     "inventoryBoosters": [],
     "inventoryBadges": [],
     "decks": [],
-    "coins": 136.0,
+    "coins": 138.0,
     "dailyStreak": 0,
     "dailyMonthStreak": 0,
     "lastDaily": "2021-04-22T20:02:45.392204+02:00",
-    "xp": 1,
+    "xp": 7,
     "xpForCoin": 8,
-    "lastMin": 31,
-    "lastJoinVCTime": 637588607677956798,
+    "lastMin": 10,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -5286,7 +5300,7 @@
     "xp": 2,
     "xpForCoin": 13,
     "lastMin": 34,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -5302,7 +5316,7 @@
     "xp": 0,
     "xpForCoin": 10,
     "lastMin": 40,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -5315,10 +5329,10 @@
     "dailyStreak": 0,
     "dailyMonthStreak": 0,
     "lastDaily": "0001-01-01T00:00:00",
-    "xp": 6,
+    "xp": 7,
     "xpForCoin": 10,
-    "lastMin": 51,
-    "lastJoinVCTime": 637588607677956798,
+    "lastMin": 38,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -5334,7 +5348,7 @@
     "xp": 0,
     "xpForCoin": 10,
     "lastMin": 36,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -5350,7 +5364,7 @@
     "xp": 0,
     "xpForCoin": 10,
     "lastMin": 11,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -5366,7 +5380,7 @@
     "xp": 1,
     "xpForCoin": 10,
     "lastMin": 59,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -5382,7 +5396,7 @@
     "xp": 1,
     "xpForCoin": 10,
     "lastMin": 15,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -5398,7 +5412,7 @@
     "xp": 8,
     "xpForCoin": 11,
     "lastMin": 31,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -5414,7 +5428,7 @@
     "xp": 9,
     "xpForCoin": 12,
     "lastMin": 33,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -5430,7 +5444,7 @@
     "xp": 5,
     "xpForCoin": 10,
     "lastMin": 22,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -5446,7 +5460,7 @@
     "xp": 9,
     "xpForCoin": 10,
     "lastMin": 22,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -5462,7 +5476,7 @@
     "xp": 5,
     "xpForCoin": 10,
     "lastMin": 30,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -5478,7 +5492,7 @@
     "xp": 2,
     "xpForCoin": 9,
     "lastMin": 40,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -5494,7 +5508,7 @@
     "xp": 0,
     "xpForCoin": 10,
     "lastMin": 22,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -5510,7 +5524,7 @@
     "xp": 1,
     "xpForCoin": 10,
     "lastMin": 35,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -5526,7 +5540,7 @@
     "xp": 1,
     "xpForCoin": 10,
     "lastMin": 52,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -5542,7 +5556,7 @@
     "xp": 7,
     "xpForCoin": 8,
     "lastMin": 25,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -5558,7 +5572,7 @@
     "xp": 0,
     "xpForCoin": 10,
     "lastMin": 21,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -5574,7 +5588,7 @@
     "xp": 1,
     "xpForCoin": 10,
     "lastMin": 46,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -5590,7 +5604,7 @@
     "xp": 0,
     "xpForCoin": 10,
     "lastMin": 54,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -5606,7 +5620,7 @@
     "xp": 3,
     "xpForCoin": 7,
     "lastMin": 6,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -5622,7 +5636,7 @@
     "xp": 0,
     "xpForCoin": 7,
     "lastMin": 4,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -5638,7 +5652,7 @@
     "xp": 0,
     "xpForCoin": 10,
     "lastMin": 26,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -5654,7 +5668,7 @@
     "xp": 0,
     "xpForCoin": 10,
     "lastMin": 54,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -5670,7 +5684,7 @@
     "xp": 1,
     "xpForCoin": 10,
     "lastMin": 33,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -5686,7 +5700,7 @@
     "xp": 1,
     "xpForCoin": 7,
     "lastMin": 54,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -5702,7 +5716,7 @@
     "xp": 8,
     "xpForCoin": 10,
     "lastMin": 6,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -5718,7 +5732,7 @@
     "xp": 0,
     "xpForCoin": 10,
     "lastMin": 33,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -5734,7 +5748,7 @@
     "xp": 3,
     "xpForCoin": 10,
     "lastMin": 16,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -5750,7 +5764,7 @@
     "xp": 0,
     "xpForCoin": 10,
     "lastMin": 4,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -5766,7 +5780,7 @@
     "xp": 1,
     "xpForCoin": 10,
     "lastMin": 11,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -5782,7 +5796,7 @@
     "xp": 0,
     "xpForCoin": 8,
     "lastMin": 49,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -5798,7 +5812,7 @@
     "xp": 2,
     "xpForCoin": 10,
     "lastMin": 19,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -5814,7 +5828,7 @@
     "xp": 9,
     "xpForCoin": 13,
     "lastMin": 27,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -5830,7 +5844,7 @@
     "xp": 10,
     "xpForCoin": 14,
     "lastMin": 38,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -5846,7 +5860,7 @@
     "xp": 9,
     "xpForCoin": 10,
     "lastMin": 45,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -5862,7 +5876,7 @@
     "xp": 4,
     "xpForCoin": 10,
     "lastMin": 4,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -5891,14 +5905,14 @@
     "inventoryBoosters": [],
     "inventoryBadges": [],
     "decks": [],
-    "coins": 4.0,
+    "coins": 19.0,
     "dailyStreak": 0,
-    "dailyMonthStreak": 1,
-    "lastDaily": "2021-06-07T17:04:43.492032+02:00",
-    "xp": 2,
-    "xpForCoin": 10,
-    "lastMin": 52,
-    "lastJoinVCTime": 637588607677956798,
+    "dailyMonthStreak": 3,
+    "lastDaily": "2021-06-11T06:20:05.909013+02:00",
+    "xp": 6,
+    "xpForCoin": 13,
+    "lastMin": 51,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -5914,7 +5928,7 @@
     "xp": 6,
     "xpForCoin": 10,
     "lastMin": 21,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -5930,7 +5944,7 @@
     "xp": 0,
     "xpForCoin": 10,
     "lastMin": 6,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -5946,7 +5960,7 @@
     "xp": 4,
     "xpForCoin": 14,
     "lastMin": 14,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -5962,7 +5976,7 @@
     "xp": 0,
     "xpForCoin": 10,
     "lastMin": 59,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -5978,7 +5992,7 @@
     "xp": 1,
     "xpForCoin": 10,
     "lastMin": 16,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -5987,14 +6001,14 @@
     "inventoryBoosters": [],
     "inventoryBadges": [],
     "decks": [],
-    "coins": 201.0,
+    "coins": 243.0,
     "dailyStreak": 0,
     "dailyMonthStreak": 1,
     "lastDaily": "2021-06-05T08:49:46.610764+02:00",
-    "xp": 10,
-    "xpForCoin": 12,
-    "lastMin": 48,
-    "lastJoinVCTime": 637588607677956798,
+    "xp": 8,
+    "xpForCoin": 15,
+    "lastMin": 31,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -6010,7 +6024,7 @@
     "xp": 5,
     "xpForCoin": 10,
     "lastMin": 26,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -6026,7 +6040,7 @@
     "xp": 2,
     "xpForCoin": 10,
     "lastMin": 48,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -6042,7 +6056,7 @@
     "xp": 7,
     "xpForCoin": 10,
     "lastMin": 3,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -6058,7 +6072,7 @@
     "xp": 7,
     "xpForCoin": 9,
     "lastMin": 58,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -6067,14 +6081,14 @@
     "inventoryBoosters": [],
     "inventoryBadges": [],
     "decks": [],
-    "coins": 57.0,
+    "coins": 59.0,
     "dailyStreak": 0,
     "dailyMonthStreak": 0,
     "lastDaily": "0001-01-01T00:00:00",
-    "xp": 3,
+    "xp": 4,
     "xpForCoin": 5,
-    "lastMin": 38,
-    "lastJoinVCTime": 637588607677956798,
+    "lastMin": 59,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -6090,7 +6104,7 @@
     "xp": 1,
     "xpForCoin": 10,
     "lastMin": 40,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -6106,7 +6120,7 @@
     "xp": 0,
     "xpForCoin": 10,
     "lastMin": 29,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -6122,7 +6136,7 @@
     "xp": 0,
     "xpForCoin": 10,
     "lastMin": 33,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -6138,7 +6152,7 @@
     "xp": 2,
     "xpForCoin": 10,
     "lastMin": 14,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -6154,7 +6168,7 @@
     "xp": 8,
     "xpForCoin": 9,
     "lastMin": 23,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -6170,7 +6184,7 @@
     "xp": 8,
     "xpForCoin": 10,
     "lastMin": 45,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -6186,7 +6200,7 @@
     "xp": 6,
     "xpForCoin": 10,
     "lastMin": 25,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -6202,7 +6216,7 @@
     "xp": 0,
     "xpForCoin": 10,
     "lastMin": 38,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -6218,7 +6232,7 @@
     "xp": 1,
     "xpForCoin": 8,
     "lastMin": 12,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -6234,7 +6248,7 @@
     "xp": 0,
     "xpForCoin": 10,
     "lastMin": 10,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -6250,7 +6264,7 @@
     "xp": 2,
     "xpForCoin": 10,
     "lastMin": 7,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -6263,10 +6277,10 @@
     "dailyStreak": 0,
     "dailyMonthStreak": 0,
     "lastDaily": "0001-01-01T00:00:00",
-    "xp": 4,
+    "xp": 7,
     "xpForCoin": 9,
-    "lastMin": 55,
-    "lastJoinVCTime": 637588607677956798,
+    "lastMin": 3,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -6282,7 +6296,7 @@
     "xp": 2,
     "xpForCoin": 10,
     "lastMin": 29,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -6298,7 +6312,7 @@
     "xp": 0,
     "xpForCoin": 10,
     "lastMin": 34,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -6314,7 +6328,7 @@
     "xp": 2,
     "xpForCoin": 10,
     "lastMin": 8,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -6330,7 +6344,7 @@
     "xp": 0,
     "xpForCoin": 10,
     "lastMin": 47,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -6346,7 +6360,7 @@
     "xp": 6,
     "xpForCoin": 14,
     "lastMin": 58,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -6362,7 +6376,7 @@
     "xp": 1,
     "xpForCoin": 10,
     "lastMin": 14,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -6378,7 +6392,7 @@
     "xp": 1,
     "xpForCoin": 10,
     "lastMin": 31,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -6394,7 +6408,7 @@
     "xp": 0,
     "xpForCoin": 10,
     "lastMin": 53,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -6410,7 +6424,7 @@
     "xp": 1,
     "xpForCoin": 10,
     "lastMin": 10,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -6426,7 +6440,7 @@
     "xp": 0,
     "xpForCoin": 10,
     "lastMin": 14,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -6442,7 +6456,7 @@
     "xp": 5,
     "xpForCoin": 10,
     "lastMin": 54,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -6458,7 +6472,7 @@
     "xp": 3,
     "xpForCoin": 10,
     "lastMin": 53,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -6474,7 +6488,7 @@
     "xp": 1,
     "xpForCoin": 10,
     "lastMin": 23,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -6490,7 +6504,7 @@
     "xp": 0,
     "xpForCoin": 7,
     "lastMin": 12,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -6503,10 +6517,10 @@
     "dailyStreak": 0,
     "dailyMonthStreak": 0,
     "lastDaily": "0001-01-01T00:00:00",
-    "xp": 5,
+    "xp": 7,
     "xpForCoin": 12,
-    "lastMin": 59,
-    "lastJoinVCTime": 637588607677956798,
+    "lastMin": 17,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -6522,7 +6536,7 @@
     "xp": 8,
     "xpForCoin": 10,
     "lastMin": 2,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -6538,7 +6552,7 @@
     "xp": 3,
     "xpForCoin": 10,
     "lastMin": 37,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -6554,7 +6568,7 @@
     "xp": 1,
     "xpForCoin": 10,
     "lastMin": 40,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -6570,7 +6584,7 @@
     "xp": 5,
     "xpForCoin": 10,
     "lastMin": 9,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -6586,7 +6600,7 @@
     "xp": 5,
     "xpForCoin": 10,
     "lastMin": 21,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -6602,7 +6616,7 @@
     "xp": 0,
     "xpForCoin": 10,
     "lastMin": 15,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -6618,7 +6632,7 @@
     "xp": 1,
     "xpForCoin": 10,
     "lastMin": 21,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -6634,7 +6648,7 @@
     "xp": 1,
     "xpForCoin": 10,
     "lastMin": 21,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -6650,7 +6664,7 @@
     "xp": 1,
     "xpForCoin": 10,
     "lastMin": 21,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -6666,7 +6680,7 @@
     "xp": 1,
     "xpForCoin": 10,
     "lastMin": 21,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -6682,7 +6696,7 @@
     "xp": 2,
     "xpForCoin": 10,
     "lastMin": 23,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -6698,7 +6712,7 @@
     "xp": 1,
     "xpForCoin": 10,
     "lastMin": 22,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -6714,7 +6728,7 @@
     "xp": 1,
     "xpForCoin": 10,
     "lastMin": 21,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -6730,7 +6744,7 @@
     "xp": 1,
     "xpForCoin": 10,
     "lastMin": 21,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -6746,7 +6760,7 @@
     "xp": 2,
     "xpForCoin": 10,
     "lastMin": 22,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -6762,7 +6776,7 @@
     "xp": 0,
     "xpForCoin": 10,
     "lastMin": 21,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -6778,7 +6792,7 @@
     "xp": 1,
     "xpForCoin": 10,
     "lastMin": 22,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -6794,7 +6808,7 @@
     "xp": 0,
     "xpForCoin": 10,
     "lastMin": 22,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -6810,7 +6824,7 @@
     "xp": 0,
     "xpForCoin": 10,
     "lastMin": 22,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -6826,7 +6840,7 @@
     "xp": 1,
     "xpForCoin": 10,
     "lastMin": 0,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -6842,7 +6856,7 @@
     "xp": 0,
     "xpForCoin": 10,
     "lastMin": 31,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -6858,7 +6872,7 @@
     "xp": 1,
     "xpForCoin": 9,
     "lastMin": 48,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -6867,14 +6881,14 @@
     "inventoryBoosters": [],
     "inventoryBadges": [],
     "decks": [],
-    "coins": 42.0,
+    "coins": 50.0,
     "dailyStreak": 0,
     "dailyMonthStreak": 0,
     "lastDaily": "0001-01-01T00:00:00",
-    "xp": 1,
-    "xpForCoin": 13,
-    "lastMin": 18,
-    "lastJoinVCTime": 637588607677956798,
+    "xp": 7,
+    "xpForCoin": 11,
+    "lastMin": 45,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -6890,7 +6904,7 @@
     "xp": 7,
     "xpForCoin": 10,
     "lastMin": 19,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -6906,7 +6920,7 @@
     "xp": 0,
     "xpForCoin": 10,
     "lastMin": 22,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -6915,14 +6929,14 @@
     "inventoryBoosters": [],
     "inventoryBadges": [],
     "decks": [],
-    "coins": 23.0,
+    "coins": 24.0,
     "dailyStreak": 0,
     "dailyMonthStreak": 0,
     "lastDaily": "0001-01-01T00:00:00",
-    "xp": 0,
-    "xpForCoin": 11,
-    "lastMin": 55,
-    "lastJoinVCTime": 637588607677956798,
+    "xp": 3,
+    "xpForCoin": 15,
+    "lastMin": 29,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -6938,7 +6952,7 @@
     "xp": 1,
     "xpForCoin": 10,
     "lastMin": 17,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -6947,14 +6961,14 @@
     "inventoryBoosters": [],
     "inventoryBadges": [],
     "decks": [],
-    "coins": 21.0,
+    "coins": 38.0,
     "dailyStreak": 0,
     "dailyMonthStreak": 0,
     "lastDaily": "0001-01-01T00:00:00",
-    "xp": 7,
-    "xpForCoin": 10,
-    "lastMin": 6,
-    "lastJoinVCTime": 637588607677956798,
+    "xp": 0,
+    "xpForCoin": 14,
+    "lastMin": 29,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -6970,7 +6984,7 @@
     "xp": 0,
     "xpForCoin": 10,
     "lastMin": 24,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -6986,7 +7000,7 @@
     "xp": 0,
     "xpForCoin": 10,
     "lastMin": 43,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -7002,7 +7016,7 @@
     "xp": 4,
     "xpForCoin": 10,
     "lastMin": 23,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -7018,7 +7032,7 @@
     "xp": 0,
     "xpForCoin": 10,
     "lastMin": 18,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -7034,7 +7048,7 @@
     "xp": 7,
     "xpForCoin": 10,
     "lastMin": 38,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -7050,7 +7064,7 @@
     "xp": 5,
     "xpForCoin": 10,
     "lastMin": 52,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -7059,14 +7073,14 @@
     "inventoryBoosters": [],
     "inventoryBadges": [],
     "decks": [],
-    "coins": 26.0,
+    "coins": 27.0,
     "dailyStreak": 0,
     "dailyMonthStreak": 0,
     "lastDaily": "0001-01-01T00:00:00",
-    "xp": 7,
-    "xpForCoin": 11,
-    "lastMin": 42,
-    "lastJoinVCTime": 637588607677956798,
+    "xp": 1,
+    "xpForCoin": 6,
+    "lastMin": 30,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -7082,7 +7096,7 @@
     "xp": 0,
     "xpForCoin": 10,
     "lastMin": 59,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -7098,7 +7112,7 @@
     "xp": 9,
     "xpForCoin": 10,
     "lastMin": 16,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -7114,7 +7128,7 @@
     "xp": 0,
     "xpForCoin": 10,
     "lastMin": 44,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -7130,7 +7144,7 @@
     "xp": 2,
     "xpForCoin": 10,
     "lastMin": 57,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
@@ -7146,11 +7160,59 @@
     "xp": 1,
     "xpForCoin": 15,
     "lastMin": 4,
-    "lastJoinVCTime": 637588607677956798,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   },
   {
     "userId": 851850208152387634,
+    "inventoryCards": [],
+    "inventoryBoosters": [],
+    "inventoryBadges": [],
+    "decks": [],
+    "coins": 29.0,
+    "dailyStreak": 0,
+    "dailyMonthStreak": 0,
+    "lastDaily": "0001-01-01T00:00:00",
+    "xp": 0,
+    "xpForCoin": 10,
+    "lastMin": 39,
+    "lastJoinVCTime": 637590097940951295,
+    "battleWins": 0
+  },
+  {
+    "userId": 590304855029972992,
+    "inventoryCards": [],
+    "inventoryBoosters": [],
+    "inventoryBadges": [],
+    "decks": [],
+    "coins": 20.0,
+    "dailyStreak": 0,
+    "dailyMonthStreak": 0,
+    "lastDaily": "0001-01-01T00:00:00",
+    "xp": 3,
+    "xpForCoin": 10,
+    "lastMin": 35,
+    "lastJoinVCTime": 637590097940951295,
+    "battleWins": 0
+  },
+  {
+    "userId": 718729321807740968,
+    "inventoryCards": [],
+    "inventoryBoosters": [],
+    "inventoryBadges": [],
+    "decks": [],
+    "coins": 20.0,
+    "dailyStreak": 0,
+    "dailyMonthStreak": 0,
+    "lastDaily": "0001-01-01T00:00:00",
+    "xp": 1,
+    "xpForCoin": 10,
+    "lastMin": 49,
+    "lastJoinVCTime": 637590097940951295,
+    "battleWins": 0
+  },
+  {
+    "userId": 751268630490251294,
     "inventoryCards": [],
     "inventoryBoosters": [],
     "inventoryBadges": [],
@@ -7161,8 +7223,24 @@
     "lastDaily": "0001-01-01T00:00:00",
     "xp": 0,
     "xpForCoin": 10,
-    "lastMin": 39,
-    "lastJoinVCTime": 637588607677956798,
+    "lastMin": 47,
+    "lastJoinVCTime": 637590097940951295,
+    "battleWins": 0
+  },
+  {
+    "userId": 852617429800190005,
+    "inventoryCards": [],
+    "inventoryBoosters": [],
+    "inventoryBadges": [],
+    "decks": [],
+    "coins": 20.0,
+    "dailyStreak": 0,
+    "dailyMonthStreak": 0,
+    "lastDaily": "0001-01-01T00:00:00",
+    "xp": 2,
+    "xpForCoin": 10,
+    "lastMin": 43,
+    "lastJoinVCTime": 637590097940951295,
     "battleWins": 0
   }
 ]
