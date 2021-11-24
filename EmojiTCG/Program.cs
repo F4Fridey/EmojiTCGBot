@@ -75,6 +75,8 @@ namespace EmojiTCG
                 _token = CurrentData.settings.token;
             }
 
+            //_token = "ODA5ODU4NDY5MzgwNDg5Mjcw.YCbNeQ.ivg8BerfhjtOxuTeWcKNhJiNHdg"; // For testing
+
             fileExists = File.Exists(@"Bot/Settings/boosters.json");
             if (!fileExists)
             {
@@ -346,6 +348,7 @@ namespace EmojiTCG
                             {
                                 CurrentData.userData[i].lastMin = DateTime.Now.Minute;
                                 CurrentData.userData[i].xp += 1 * CurrentData.settings.chatXPmultiplier;
+
                                 if (CurrentData.userData[i].xp >= CurrentData.userData[i].xpForCoin)
                                 {
                                     CurrentData.userData[i].xp = 0;
@@ -358,17 +361,23 @@ namespace EmojiTCG
                                     {
                                         if (CurrentData.serverData[j].serverId == context.Guild.Id)
                                         {
-                                            if (CurrentData.serverData[j].coinboard != 0)
+                                            if (CurrentData.serverData[j].coinboard != 0 && CurrentData.serverData[j].coinboard != null)
                                             {
-                                                try
+                                                
+                                                var adminChannel = CurrentData.client.GetChannel(CurrentData.serverData[j].coinboard) as IMessageChannel;
+                                                string msg = ":coin:";
+                                                if (context.Message.Content != "" && context.Message.Content != null)
                                                 {
-                                                    var adminChannel = CurrentData.client.GetChannel(CurrentData.serverData[j].coinboard) as IMessageChannel;
-                                                    await adminChannel.SendMessageAsync(":coin: \"" + context.Message.Content + "\" - <@" + context.User.Id + ">");
+                                                    msg += " \" " + context.Message.Content + " \"";
                                                 }
-                                                catch (Exception e)
+                                                IEnumerator<Attachment> attachments = context.Message.Attachments.GetEnumerator();
+                                                for (int k = 0; k < context.Message.Attachments.Count; k++)
                                                 {
-                                                    CurrentData.serverData[j].coinboard = 0;
+                                                    attachments.MoveNext();
+                                                    msg += "\n" + attachments.Current.Url;
                                                 }
+                                                msg += "\n> <@" + context.User.Id + ">\n<" + context.Message.GetJumpUrl() + ">";
+                                                await adminChannel.SendMessageAsync(msg);
                                             }
                                         }
                                     }
