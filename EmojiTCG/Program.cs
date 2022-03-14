@@ -376,7 +376,7 @@ namespace EmojiTCG
                                                     attachments.MoveNext();
                                                     msg += "\n" + attachments.Current.Url;
                                                 }
-                                                msg += "\n> <@" + context.User.Id + ">\n<" + context.Message.GetJumpUrl() + ">";
+                                                msg += "\n> " + context.User.Username + "\n<" + context.Message.GetJumpUrl() + ">";
                                                 await adminChannel.SendMessageAsync(msg);
                                             }
                                         }
