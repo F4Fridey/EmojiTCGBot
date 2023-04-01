@@ -354,13 +354,40 @@ namespace EmojiTCG
                                     CurrentData.userData[i].xp = 0;
                                     CurrentData.userData[i].coins += 1;
                                     Random rnd = new Random();
-                                    CurrentData.userData[i].xpForCoin = rnd.Next(CurrentData.settings.minXPreq, CurrentData.settings.maxXPreq);
-                                    IEmote emote = new Emoji("\U0001FA99");
-                                    await context.Message.AddReactionAsync(emote);
+                                    //CurrentData.userData[i].xpForCoin = rnd.Next(CurrentData.settings.minXPreq, CurrentData.settings.maxXPreq);
                                     for (int j = 0; j < CurrentData.serverData.Count; j++)
                                     {
                                         if (CurrentData.serverData[j].serverId == context.Guild.Id)
                                         {
+                                            if (CurrentData.serverData[j].maxXp != null && CurrentData.serverData[j].minXp != null)
+                                            {
+                                                int minXp;
+                                                int maxXp;
+                                                if (CurrentData.serverData[j].minXp != -1)
+                                                {
+                                                    minXp = CurrentData.serverData[j].minXp;
+                                                }
+                                                else
+                                                {
+                                                    minXp = CurrentData.settings.minXPreq;
+                                                }
+                                                if (CurrentData.serverData[j].maxXp != -1)
+                                                {
+                                                    maxXp = CurrentData.serverData[j].maxXp;
+                                                }
+                                                else
+                                                {
+                                                    maxXp = CurrentData.settings.maxXPreq;
+                                                }
+                                                if (minXp > maxXp)
+                                                {
+                                                    minXp = CurrentData.settings.minXPreq;
+                                                    maxXp = CurrentData.settings.maxXPreq;
+                                                }
+
+                                                CurrentData.userData[i].xpForCoin = rnd.Next(minXp, maxXp);
+                                            }
+
                                             if (CurrentData.serverData[j].coinboard != 0 && CurrentData.serverData[j].coinboard != null)
                                             {
                                                 
@@ -381,6 +408,8 @@ namespace EmojiTCG
                                             }
                                         }
                                     }
+                                    IEmote emote = new Emoji("\U0001FA99");
+                                    await context.Message.AddReactionAsync(emote);
                                 }
                             }
                             break;

@@ -11,5 +11,7 @@ namespace EmojiTCG.Data
         public ulong serverId { get; set; }
         public string prefix { get; set; }
         public ulong coinboard { get; set; }
+        public int minXp { get; set; }
+        public int maxXp { get; set; }
     }
 }

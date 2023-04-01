@@ -1357,27 +1357,30 @@ namespace EmojiTCG.Modules
             }
         }
 
-        [Command("coinboard"), RequireUserPermission(GuildPermission.Administrator)]
+        [Command("settings"), RequireUserPermission(GuildPermission.Administrator)]
         public async Task Coinboard(params String[] stringArray)
         {
+            Data.ServerData sd = new Data.ServerData
+                {
+                serverId = Context.Guild.Id,
+                    prefix = "=",
+                    coinboard = 0,
+                    minXp = -1,
+                    maxXp = -1
+                };
             bool serverExists = false;
             for (int i = 0; i < CurrentData.serverData.Count; i++)
             {
                 if (CurrentData.serverData[i].serverId == Context.Guild.Id)
                 {
                     serverExists = true;
+                    sd = CurrentData.serverData[i];
                     break;
                 }
             }
             if (!serverExists)
             {
-                Data.ServerData serverDat = new Data.ServerData
-                {
-                    serverId = Context.Guild.Id,
-                    prefix = "=",
-                    coinboard = 0
-                };
-                CurrentData.serverData.Add(serverDat);
+                CurrentData.serverData.Add(sd);
             }
 
             try
@@ -1385,127 +1388,169 @@ namespace EmojiTCG.Modules
                 switch (stringArray[0])
                 {
                     default:
-                        await ReplyAsync("```diff\n+ coinboard set\n+ coinbord off\n```");
+                        await ReplyAsync("```diff\n+ settings coinboard set channelID - Replace channelID with the channels ID\n+ settings coinbord off+ settings coinxp - Guide on how coin xp works\n\n+ settings minxp # - Replace # with number\n+ settings maxxp # - Replace # with number\n```");
                         break;
-                    case "set":
-                        for (int i = 0; i < CurrentData.serverData.Count; i++)
+                    case "coinboard":
+                        switch (stringArray[1])
                         {
-                            if (CurrentData.serverData[i].serverId == Context.Guild.Id)
-                            {
-                                if (CurrentData.serverData[i].coinboard == Context.Channel.Id)
+                            default:
+                                await ReplyAsync("```diff\n+ settings coinboard set channelID - Replace channelID with the channels ID\n+ settings coinbord off+ settings coinxp - Guide on how coin xp works\n\n+ settings minxp # - Replace # with number\n+ settings maxxp # - Replace # with number\n```");
+                                break;
+                            case "set":
+                                for (int i = 0; i < CurrentData.serverData.Count; i++)
                                 {
-                                    await ReplyAsync("```diff\n- This channel is already set as the coin board.\n```");
-                                }
-                                else
-                                {
-                                    CurrentData.serverData[i].coinboard = Context.Channel.Id;
-                                    await ReplyAsync("```diff\n+ This channel is now set as the coin board.\n  Use \"=coinboard off\" to remove the board from this channel.\n```");
+                                    if (CurrentData.serverData[i].serverId == Context.Guild.Id)
+                                    {
+                                        if (CurrentData.serverData[i].coinboard == Context.Channel.Id)
+                                        {
+                                            await ReplyAsync("```diff\n- This channel is already set as the coin board.\n```");
+                                        }
+                                       else
+                                        {
+                                            CurrentData.serverData[i].coinboard = Context.Channel.Id;
+                                            await ReplyAsync("```diff\n+ This channel is now set as the coin board.\n  Use \"=coinboard off\" to remove the board from this channel.\n```");
+                                        }
+                                        break;
+                                    }
                                 }
                                 break;
-                            }
-                        }
-                        break;
-                    case "off":
-                        for (int i = 0; i < CurrentData.serverData.Count; i++)
-                        {
-                            if (CurrentData.serverData[i].serverId == Context.Guild.Id)
-                            {
-                                CurrentData.serverData[i].coinboard = 0;
-                                await ReplyAsync("```diff\n+ Coinboard now disabled.\n```");
+                            case "off":
+                                for (int i = 0; i < CurrentData.serverData.Count; i++)
+                                {
+                                    if (CurrentData.serverData[i].serverId == Context.Guild.Id)
+                                    {
+                                        CurrentData.serverData[i].coinboard = 0;
+                                        await ReplyAsync("```diff\n+ Coinboard now disabled.\n```");
+                                       break;
+                                    }
+                                }
                                 break;
-                            }
-                        }
-                        break;
-                }
-            }catch (Exception e)
-            {
-                await ReplyAsync("```diff\n+ coinboard set\n+ coinbord off\n```");
-            }
-        }
 
-        [Command("admin"), RequireUserPermission(GuildPermission.Administrator)]
-        public async Task Admin(params String[] stringArray)
-        {
-            if (Context.Guild.Id == CurrentData.settings.adminServerID)
-            {
-                IEmote tick = new Emoji("\U00002705");
-                IEmote noEntry = new Emoji("\U000026D4");
-                switch (stringArray[0])
-                {
-                    default:
-                        await Context.Message.AddReactionAsync(noEntry);
-                        break;
-                    case "help":
-                        await ReplyAsync("```diff\n+ Admin Arguments:\n  help\n  save\n  load\n  commandsoff\n  commandson\n  maintenancetrue\n  maintenancefalse\n  maintenancetext <text>\n  shutdown\n  kill\n  test - Test announcemnts\n  announce important/notify\n```");
-                        break;
-                    case "save":
-                        Functions.SaveAllData();
-                        await Context.Message.AddReactionAsync(tick);
-                        break;
-                    case "load":
-                        Functions.LoadAllData();
-                        await Context.Message.AddReactionAsync(tick);
-                        break;
-                    case "commandsoff":
-                        if (!CurrentData.commandsEnabled) { await ReplyAsync("```diff\n- Commands are already off.\n```"); return; }
-                        CurrentData.commandsEnabled = false;
-                        await CurrentData.client.SetStatusAsync(UserStatus.DoNotDisturb);
-                        await Context.Message.AddReactionAsync(tick);
-                        break;
-                    case "commandson":
-                        if (CurrentData.commandsEnabled) { await ReplyAsync("```diff\n- Commands are already on.\n```"); return; }
-                        CurrentData.commandsEnabled = true;
-                        await CurrentData.client.SetStatusAsync(UserStatus.Online);
-                        await Context.Message.AddReactionAsync(tick);
-                        break;
-                    case "maintenancetrue":
-                        if (CurrentData.maintenance) { await ReplyAsync("```diff\n- Maintenance is already true.\n```"); return; }
-                        CurrentData.maintenance = true;
-                        await Context.Message.AddReactionAsync(tick);
-                        break;
-                    case "maintenancefalse":
-                        if (!CurrentData.maintenance) { await ReplyAsync("```diff\n- Maintenance is already false.\n```"); return; }
-                        CurrentData.maintenance = false;
-                        await Context.Message.AddReactionAsync(tick);
-                        break;
-                    case "maintenancetext":
-                        string str = "";
-                        foreach (string _str in stringArray)
-                        {
-                            str += _str + " ";
                         }
-                        CurrentData.statusText = str;
-                        await Context.Message.AddReactionAsync(tick);
                         break;
-                    case "shutdown":
-                        Functions.SaveAllData();
-                        Emote shtdwn = Emote.Parse("<:powerBtnOn:768910368474005545>");
-                        await Context.Message.AddReactionAsync(shtdwn);
-                        Environment.Exit(0);
-                        break;
-                    case "kill":
-                        Emote kil = Emote.Parse("<:powerBtn:768907604176011314>");
-                        await Context.Message.AddReactionAsync(kil);
-                        Environment.Exit(0);
-                        break;
-                    case "test":
-                        await Context.Message.AddReactionAsync(tick);
-                        break;
-                    case "listallemotes":
-                        string stri = ".\n";
-                        for (int i = 0; i < CurrentData.cards.Count; i++)
+                    case "coinxp":
+                        string xpinfo;
+                        if (sd.maxXp != null && sd.maxXp > -1 && sd.minXp != null && sd.minXp > -1 && !(sd.minXp > sd.maxXp))
                         {
-                            stri += CurrentData.cards[i].emoji;
-                            if (i % 3 == 0)
+                            xpinfo = "`minXp = " + sd.minXp + "`\n`maxXp = " + sd.maxXp + "`\n";
+                        }
+                        else
+                        {
+                            xpinfo = "`minXp = " + CurrentData.settings.minXPreq + "`\n`maxXp = " + CurrentData.settings.maxXPreq + "`";
+                        }
+                        string reply = "Gaining Coins works as follows:\n\nEvery user has a number randomly chosen between the servers minXp and maxXp, this is their xp threshold. Every minute when a user sends a message they gain 1 xp. Once the user reaches their xp threshold, they gain a coin and the user gets a new randomly generated xp threshold.\n\nThese are you settings:\n\n" + xpinfo;
+                        await ReplyAsync(reply);
+                        break;
+                    case "minxp":
+                        int newMinXp;
+                        if (int.TryParse(stringArray[2], out newMinXp))
+                        {
+                            for (int i = 0; i < CurrentData.serverData.Count; i++)
                             {
-                                await ReplyAsync(stri);
-                                stri = ".\n";
+                                if (CurrentData.serverData[i].serverId == Context.Guild.Id)
+                                {
+                                    CurrentData.serverData[i].minXp = newMinXp;
+                                    await ReplyAsync("```diff\n+ MinXp updated\n```");
+                                    break;
+                                }
                             }
                         }
-                        await ReplyAsync(stri);
+                        else
+                        {
+                            await ReplyAsync("```diff\n- Error: " + stringArray[2] + " is not a valid number\n```");
+                        }
                         break;
                 }
             }
+            catch (Exception e)
+            {
+                await ReplyAsync("```diff\n+ settings coinboard set channelID - Replace channelID with the channels ID\n+ settings coinbord off+ settings coinxp - Guide on how coin xp works\n\n+ settings minxp # - Replace # with number\n+ settings maxxp # - Replace # with number\n```");
+    }
+}
+
+[Command("admin"), RequireUserPermission(GuildPermission.Administrator)]
+public async Task Admin(params String[] stringArray)
+{
+    if (Context.Guild.Id == CurrentData.settings.adminServerID)
+    {
+        IEmote tick = new Emoji("\U00002705");
+        IEmote noEntry = new Emoji("\U000026D4");
+        switch (stringArray[0])
+        {
+            default:
+                await Context.Message.AddReactionAsync(noEntry);
+                break;
+            case "help":
+                await ReplyAsync("```diff\n+ Admin Arguments:\n  help\n  save\n  load\n  commandsoff\n  commandson\n  maintenancetrue\n  maintenancefalse\n  maintenancetext <text>\n  shutdown\n  kill\n  test - Test announcemnts\n  announce important/notify\n```");
+                break;
+            case "save":
+                Functions.SaveAllData();
+                await Context.Message.AddReactionAsync(tick);
+                break;
+            case "load":
+                Functions.LoadAllData();
+                await Context.Message.AddReactionAsync(tick);
+                break;
+            case "commandsoff":
+                if (!CurrentData.commandsEnabled) { await ReplyAsync("```diff\n- Commands are already off.\n```"); return; }
+                CurrentData.commandsEnabled = false;
+                await CurrentData.client.SetStatusAsync(UserStatus.DoNotDisturb);
+                await Context.Message.AddReactionAsync(tick);
+                break;
+            case "commandson":
+                if (CurrentData.commandsEnabled) { await ReplyAsync("```diff\n- Commands are already on.\n```"); return; }
+                CurrentData.commandsEnabled = true;
+                await CurrentData.client.SetStatusAsync(UserStatus.Online);
+                await Context.Message.AddReactionAsync(tick);
+                break;
+            case "maintenancetrue":
+                if (CurrentData.maintenance) { await ReplyAsync("```diff\n- Maintenance is already true.\n```"); return; }
+                CurrentData.maintenance = true;
+                await Context.Message.AddReactionAsync(tick);
+                break;
+            case "maintenancefalse":
+                if (!CurrentData.maintenance) { await ReplyAsync("```diff\n- Maintenance is already false.\n```"); return; }
+                CurrentData.maintenance = false;
+                await Context.Message.AddReactionAsync(tick);
+                break;
+            case "maintenancetext":
+                string str = "";
+                foreach (string _str in stringArray)
+                {
+                    str += _str + " ";
+                }
+                CurrentData.statusText = str;
+                await Context.Message.AddReactionAsync(tick);
+                break;
+            case "shutdown":
+                Functions.SaveAllData();
+                Emote shtdwn = Emote.Parse("<:powerBtnOn:768910368474005545>");
+                await Context.Message.AddReactionAsync(shtdwn);
+                Environment.Exit(0);
+                break;
+            case "kill":
+                Emote kil = Emote.Parse("<:powerBtn:768907604176011314>");
+                await Context.Message.AddReactionAsync(kil);
+                Environment.Exit(0);
+                break;
+            case "test":
+                await Context.Message.AddReactionAsync(tick);
+                break;
+            case "listallemotes":
+                string stri = ".\n";
+                for (int i = 0; i < CurrentData.cards.Count; i++)
+                {
+                    stri += CurrentData.cards[i].emoji;
+                    if (i % 3 == 0)
+                    {
+                        await ReplyAsync(stri);
+                        stri = ".\n";
+                    }
+                }
+                await ReplyAsync(stri);
+                break;
         }
+    }
+}
     }
 }
