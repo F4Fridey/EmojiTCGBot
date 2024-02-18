@@ -7,7 +7,7 @@
         "type": 0,
         "stock": 4000000000,
         "price": 20.0,
-        "name": "Noarmal Booster Pack",
+        "name": "Normal Booster Pack",
         "id": 0
       },
       {
@@ -17,6 +17,14 @@
         "price": 60.0,
         "name": "Rare Booster Pack",
         "id": 1
+      },
+      {
+        "itemId": 2,
+        "type": 0,
+        "stock": 4000000000,
+        "price": 200.0,
+        "name": "Legendary Booster Pack",
+        "id": 2
       }
     ],
     "topThreeSlots": [
@@ -25,7 +33,7 @@
         "type": 0,
         "stock": 4000000000,
         "price": 20.0,
-        "name": "Noarmal Booster Pack",
+        "name": "Normal Booster Pack",
         "id": 0
       },
       {
@@ -35,9 +43,17 @@
         "price": 60.0,
         "name": "Rare Booster Pack",
         "id": 1
+      },
+      {
+        "itemId": 2,
+        "type": 0,
+        "stock": 4000000000,
+        "price": 200.0,
+        "name": "Legendary Booster Pack",
+        "id": 2
       }
     ],
-    "text": "**__SHOP__**\n*To buy do `=shop buy id`*\n*Do `=shop category` to see other categories*\n**Category: __Pinned__**\n<:normaltl:766791680778436628><:normalt:766791680782499850><:normaltr:766791680795344896><:rare_tl:774504275895255100><:rare_t:774504275900235776><:rare_tr:774504275874807840>\n<:normall:766791680376307714>:grinning:<:normalr:766791680791281674><:rare_l:774504275925008414>:grinning:<:rare_mr:774504275958300692>\n<:normalbl:766791680762183730><:normalb:766791680765853736><:normalbr:766791680816185345><:rare_bl:774504275883458620><:rare_b:774504275656441907><:rare_br:774504275896041502>\nID:  0                 1\n0: Normal Booster Pack 20 coins\n1: Rare Booster Pack 60 coins\n<:normaltl:766791680778436628><:normalt:766791680782499850><:normaltr:766791680795344896><:rare_tl:774504275895255100><:rare_t:774504275900235776><:rare_tr:774504275874807840>\n<:normall:766791680376307714>:grinning:<:normalr:766791680791281674><:rare_l:774504275925008414>:grinning:<:rare_mr:774504275958300692>\n<:normalbl:766791680762183730><:normalb:766791680765853736><:normalbr:766791680816185345><:rare_bl:774504275883458620><:rare_b:774504275656441907><:rare_br:774504275896041502>\nID:  0                 1\n0: Normal Booster Pack 20 coins\n1: Rare Booster Pack 60 coins\n*Page: 1 of 1*",
+    "text": "**__SHOP__**\n*To buy do `=shop buy id`*\n*Do `=shop category` to see other categories*\n**Category: __Pinned__**\n<:normaltl:766791680778436628><:normalt:766791680782499850><:normaltr:766791680795344896><:rare_tl:774504275895255100><:rare_t:774504275900235776><:rare_tr:774504275874807840><:legend_tr:780253749145763862><:legend_t:780253749389295637><:legend_tl:780253749234761740>\n<:normall:766791680376307714>:grinning:<:normalr:766791680791281674><:rare_l:774504275925008414>:grinning:<:rare_mr:774504275958300692><:legend_ml:780253749415116821>:grinning:<:legend_mr:780253749305147402>\n<:normalbl:766791680762183730><:normalb:766791680765853736><:normalbr:766791680816185345><:rare_bl:774504275883458620><:rare_b:774504275656441907><:rare_br:774504275896041502><:legend_bl:780253749359673344><:legend_bm:780253749309734922><:legend_br:780253749285355530>\nID:  0                 1                 2\n0: Normal Booster Pack 20 coins\n1: Rare Booster Pack 60 coins\n2: Legendary Booster Pack 200 coins\n<:normaltl:766791680778436628><:normalt:766791680782499850><:normaltr:766791680795344896><:rare_tl:774504275895255100><:rare_t:774504275900235776><:rare_tr:774504275874807840><:legend_tr:780253749145763862><:legend_t:780253749389295637><:legend_tl:780253749234761740>\n<:normall:766791680376307714>:grinning:<:normalr:766791680791281674><:rare_l:774504275925008414>:grinning:<:rare_mr:774504275958300692><:legend_ml:780253749415116821>:grinning:<:legend_mr:780253749305147402>\n<:normalbl:766791680762183730><:normalb:766791680765853736><:normalbr:766791680816185345><:rare_bl:774504275883458620><:rare_b:774504275656441907><:rare_br:774504275896041502><:legend_bl:780253749359673344><:legend_bm:780253749309734922><:legend_br:780253749285355530>\nID:  0                 1                 2\n0: Normal Booster Pack 20 coins\n1: Rare Booster Pack 60 coins\n2: Legendary Booster Pack 200 coins\n*Page: 1 of 1*",
     "id": 0
   },
   {
@@ -48,7 +64,7 @@
         "type": 0,
         "stock": 4000000000,
         "price": 20.0,
-        "name": "Noarmal Booster Pack",
+        "name": "Normal Booster Pack",
         "id": 0
       },
       {
@@ -58,6 +74,14 @@
         "price": 60.0,
         "name": "Rare Booster Pack",
         "id": 1
+      },
+      {
+        "itemId": 2,
+        "type": 0,
+        "stock": 4000000000,
+        "price": 200.0,
+        "name": "Legendary Booster Pack",
+        "id": 2
       }
     ],
     "topThreeSlots": [
@@ -66,7 +90,7 @@
         "type": 0,
         "stock": 4000000000,
         "price": 20.0,
-        "name": "Noarmal Booster Pack",
+        "name": "Normal Booster Pack",
         "id": 0
       },
       {
@@ -76,9 +100,17 @@
         "price": 60.0,
         "name": "Rare Booster Pack",
         "id": 1
+      },
+      {
+        "itemId": 2,
+        "type": 0,
+        "stock": 4000000000,
+        "price": 200.0,
+        "name": "Legendary Booster Pack",
+        "id": 2
       }
     ],
-    "text": "**__SHOP__**\n*To buy do `=shop buy id`*\n*Do `=shop category` to see other categories*\n**Category: __Normal__**\n<:normaltl:766791680778436628><:normalt:766791680782499850><:normaltr:766791680795344896><:rare_tl:774504275895255100><:rare_t:774504275900235776><:rare_tr:774504275874807840>\n<:normall:766791680376307714>:grinning:<:normalr:766791680791281674><:rare_l:774504275925008414>:grinning:<:rare_mr:774504275958300692>\n<:normalbl:766791680762183730><:normalb:766791680765853736><:normalbr:766791680816185345><:rare_bl:774504275883458620><:rare_b:774504275656441907><:rare_br:774504275896041502>\nID:  0                 1\n0: Normal Booster Pack 20 coins\n1: Rare Booster Pack 60 coins\n<:normaltl:766791680778436628><:normalt:766791680782499850><:normaltr:766791680795344896><:rare_tl:774504275895255100><:rare_t:774504275900235776><:rare_tr:774504275874807840>\n<:normall:766791680376307714>:grinning:<:normalr:766791680791281674><:rare_l:774504275925008414>:grinning:<:rare_mr:774504275958300692>\n<:normalbl:766791680762183730><:normalb:766791680765853736><:normalbr:766791680816185345><:rare_bl:774504275883458620><:rare_b:774504275656441907><:rare_br:774504275896041502>\nID:  0                 1\n0: Normal Booster Pack 20 coins\n1: Rare Booster Pack 60 coins\n*Page: 1 of 1*",
+    "text": "**__SHOP__**\n*To buy do `=shop buy id`*\n*Do `=shop category` to see other categories*\n**Category: __Normal__**\n<:normaltl:766791680778436628><:normalt:766791680782499850><:normaltr:766791680795344896><:rare_tl:774504275895255100><:rare_t:774504275900235776><:rare_tr:774504275874807840><:legend_tr:780253749145763862><:legend_t:780253749389295637><:legend_tl:780253749234761740>\n<:normall:766791680376307714>:grinning:<:normalr:766791680791281674><:rare_l:774504275925008414>:grinning:<:rare_mr:774504275958300692><:legend_ml:780253749415116821>:grinning:<:legend_mr:780253749305147402>\n<:normalbl:766791680762183730><:normalb:766791680765853736><:normalbr:766791680816185345><:rare_bl:774504275883458620><:rare_b:774504275656441907><:rare_br:774504275896041502><:legend_bl:780253749359673344><:legend_bm:780253749309734922><:legend_br:780253749285355530>\nID:  0                 1                 2\n0: Normal Booster Pack 20 coins\n1: Rare Booster Pack 60 coins\n2: Legendary Booster Pack 200 coins\n<:normaltl:766791680778436628><:normalt:766791680782499850><:normaltr:766791680795344896><:rare_tl:774504275895255100><:rare_t:774504275900235776><:rare_tr:774504275874807840><:legend_tr:780253749145763862><:legend_t:780253749389295637><:legend_tl:780253749234761740>\n<:normall:766791680376307714>:grinning:<:normalr:766791680791281674><:rare_l:774504275925008414>:grinning:<:rare_mr:774504275958300692><:legend_ml:780253749415116821>:grinning:<:legend_mr:780253749305147402>\n<:normalbl:766791680762183730><:normalb:766791680765853736><:normalbr:766791680816185345><:rare_bl:774504275883458620><:rare_b:774504275656441907><:rare_br:774504275896041502><:legend_bl:780253749359673344><:legend_bm:780253749309734922><:legend_br:780253749285355530>\nID:  0                 1                 2\n0: Normal Booster Pack 20 coins\n1: Rare Booster Pack 60 coins\n2: Legendary Booster Pack 200 coins\n*Page: 1 of 1*",
     "id": 1
   }
 ]

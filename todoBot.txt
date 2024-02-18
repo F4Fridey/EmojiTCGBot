@@ -1,7 +1,7 @@
-DONE Card ouline emojis
-DONE Card Notes
-DONE Card emoji sides betterization
-     New Cards
-     Booster pack emoji betterization
-     New booster packs
-DONE New monthly daily prizes
+battle
+
+fix dr gravity got bot creator in their private server
+
+add melt multiple cards at once
+add zen garden type thing
+add shards you can get that when u collect them all you get stuff

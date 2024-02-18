@@ -864,12 +864,12 @@
     "notes": "0§0§0§0§"
   },
   {
-    "name": "Pickel",
+    "name": "Pickle",
     "type": 2,
     "emoji": "<:rare_ml:769348056918392832>:cucumber:<:rare_r:769348056763990087>",
     "id": 96,
     "fullEmoji": "<:rare_ml:769348056918392832>:cucumber:<:rare_r:769348056763990087>",
-    "desc": "Pickel rick!",
+    "desc": "Pickle rick!",
     "notes": "0§0§0§0§"
   },
   {
@@ -1095,6 +1095,15 @@
     "id": 120,
     "fullEmoji": "<:rare_ml:769348056918392832>:firecracker:<:rare_r:769348056763990087>",
     "desc": "'Cause I'm T.N.T., I'm dynamite. T.N.T., and I'll win the fight. T.N.T., I'm a power load. T.N.T., watch me explode",
+    "notes": "0§0§0§0§"
+  },
+  {
+    "name": "No Nut November",
+    "type": 4,
+    "emoji": "<a:leg_l:769679906240987147><a:NNN:780248657243930634><a:leg_r:769679906845622272>",
+    "id": 121,
+    "fullEmoji": "<a:leg_l:769679906240987147><a:NNN:780248657243930634><a:leg_r:769679906845622272>",
+    "desc": "Thou shall not nut!",
     "notes": "0§0§0§0§"
   }
 ]
